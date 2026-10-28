@@ -1,0 +1,614 @@
+{
+  "version": 1,
+  "tracks": [
+    {
+      "id": "terra-encantada-exploracao",
+      "scope": "Terra Encantada",
+      "kind": "exploracao",
+      "title": "Exploracao — Terra Encantada",
+      "src": null
+    },
+    {
+      "id": "terra-encantada-boss",
+      "scope": "Terra Encantada",
+      "kind": "boss",
+      "title": "Boss — Terra Encantada",
+      "src": null
+    },
+    {
+      "id": "terra-encantada-ambiente",
+      "scope": "Terra Encantada",
+      "kind": "ambiente",
+      "title": "Ambiente — Terra Encantada",
+      "src": null
+    },
+    {
+      "id": "terra-encantada-encontro",
+      "scope": "Terra Encantada",
+      "kind": "encontro",
+      "title": "Encontro — Terra Encantada",
+      "src": null
+    },
+    {
+      "id": "terra-de-fogo-exploracao",
+      "scope": "Terra de Fogo",
+      "kind": "exploracao",
+      "title": "Exploracao — Terra de Fogo",
+      "src": null
+    },
+    {
+      "id": "terra-de-fogo-boss",
+      "scope": "Terra de Fogo",
+      "kind": "boss",
+      "title": "Boss — Terra de Fogo",
+      "src": null
+    },
+    {
+      "id": "terra-de-fogo-ambiente",
+      "scope": "Terra de Fogo",
+      "kind": "ambiente",
+      "title": "Ambiente — Terra de Fogo",
+      "src": null
+    },
+    {
+      "id": "terra-de-fogo-encontro",
+      "scope": "Terra de Fogo",
+      "kind": "encontro",
+      "title": "Encontro — Terra de Fogo",
+      "src": null
+    },
+    {
+      "id": "terra-do-gelo-exploracao",
+      "scope": "Terra do Gelo",
+      "kind": "exploracao",
+      "title": "Exploracao — Terra do Gelo",
+      "src": null
+    },
+    {
+      "id": "terra-do-gelo-boss",
+      "scope": "Terra do Gelo",
+      "kind": "boss",
+      "title": "Boss — Terra do Gelo",
+      "src": null
+    },
+    {
+      "id": "terra-do-gelo-ambiente",
+      "scope": "Terra do Gelo",
+      "kind": "ambiente",
+      "title": "Ambiente — Terra do Gelo",
+      "src": null
+    },
+    {
+      "id": "terra-do-gelo-encontro",
+      "scope": "Terra do Gelo",
+      "kind": "encontro",
+      "title": "Encontro — Terra do Gelo",
+      "src": null
+    },
+    {
+      "id": "terra-dos-doces-exploracao",
+      "scope": "Terra dos Doces",
+      "kind": "exploracao",
+      "title": "Exploracao — Terra dos Doces",
+      "src": null
+    },
+    {
+      "id": "terra-dos-doces-boss",
+      "scope": "Terra dos Doces",
+      "kind": "boss",
+      "title": "Boss — Terra dos Doces",
+      "src": null
+    },
+    {
+      "id": "terra-dos-doces-ambiente",
+      "scope": "Terra dos Doces",
+      "kind": "ambiente",
+      "title": "Ambiente — Terra dos Doces",
+      "src": null
+    },
+    {
+      "id": "terra-dos-doces-encontro",
+      "scope": "Terra dos Doces",
+      "kind": "encontro",
+      "title": "Encontro — Terra dos Doces",
+      "src": null
+    },
+    {
+      "id": "cavernas-obscuras-exploracao",
+      "scope": "Cavernas Obscuras",
+      "kind": "exploracao",
+      "title": "Exploracao — Cavernas Obscuras",
+      "src": null
+    },
+    {
+      "id": "cavernas-obscuras-boss",
+      "scope": "Cavernas Obscuras",
+      "kind": "boss",
+      "title": "Boss — Cavernas Obscuras",
+      "src": null
+    },
+    {
+      "id": "cavernas-obscuras-ambiente",
+      "scope": "Cavernas Obscuras",
+      "kind": "ambiente",
+      "title": "Ambiente — Cavernas Obscuras",
+      "src": null
+    },
+    {
+      "id": "cavernas-obscuras-encontro",
+      "scope": "Cavernas Obscuras",
+      "kind": "encontro",
+      "title": "Encontro — Cavernas Obscuras",
+      "src": null
+    },
+    {
+      "id": "terra-dos-mortos-exploracao",
+      "scope": "Terra dos Mortos",
+      "kind": "exploracao",
+      "title": "Exploracao — Terra dos Mortos",
+      "src": null
+    },
+    {
+      "id": "terra-dos-mortos-boss",
+      "scope": "Terra dos Mortos",
+      "kind": "boss",
+      "title": "Boss — Terra dos Mortos",
+      "src": null
+    },
+    {
+      "id": "terra-dos-mortos-ambiente",
+      "scope": "Terra dos Mortos",
+      "kind": "ambiente",
+      "title": "Ambiente — Terra dos Mortos",
+      "src": null
+    },
+    {
+      "id": "terra-dos-mortos-encontro",
+      "scope": "Terra dos Mortos",
+      "kind": "encontro",
+      "title": "Encontro — Terra dos Mortos",
+      "src": null
+    },
+    {
+      "id": "pântano-venenoso-exploracao",
+      "scope": "Pântano Venenoso",
+      "kind": "exploracao",
+      "title": "Exploracao — Pântano Venenoso",
+      "src": null
+    },
+    {
+      "id": "pântano-venenoso-boss",
+      "scope": "Pântano Venenoso",
+      "kind": "boss",
+      "title": "Boss — Pântano Venenoso",
+      "src": null
+    },
+    {
+      "id": "pântano-venenoso-ambiente",
+      "scope": "Pântano Venenoso",
+      "kind": "ambiente",
+      "title": "Ambiente — Pântano Venenoso",
+      "src": null
+    },
+    {
+      "id": "pântano-venenoso-encontro",
+      "scope": "Pântano Venenoso",
+      "kind": "encontro",
+      "title": "Encontro — Pântano Venenoso",
+      "src": null
+    },
+    {
+      "id": "terra-dos-dinossauros-exploracao",
+      "scope": "Terra dos Dinossauros",
+      "kind": "exploracao",
+      "title": "Exploracao — Terra dos Dinossauros",
+      "src": null
+    },
+    {
+      "id": "terra-dos-dinossauros-boss",
+      "scope": "Terra dos Dinossauros",
+      "kind": "boss",
+      "title": "Boss — Terra dos Dinossauros",
+      "src": null
+    },
+    {
+      "id": "terra-dos-dinossauros-ambiente",
+      "scope": "Terra dos Dinossauros",
+      "kind": "ambiente",
+      "title": "Ambiente — Terra dos Dinossauros",
+      "src": null
+    },
+    {
+      "id": "terra-dos-dinossauros-encontro",
+      "scope": "Terra dos Dinossauros",
+      "kind": "encontro",
+      "title": "Encontro — Terra dos Dinossauros",
+      "src": null
+    },
+    {
+      "id": "terra-do-futuro-exploracao",
+      "scope": "Terra do Futuro",
+      "kind": "exploracao",
+      "title": "Exploracao — Terra do Futuro",
+      "src": null
+    },
+    {
+      "id": "terra-do-futuro-boss",
+      "scope": "Terra do Futuro",
+      "kind": "boss",
+      "title": "Boss — Terra do Futuro",
+      "src": null
+    },
+    {
+      "id": "terra-do-futuro-ambiente",
+      "scope": "Terra do Futuro",
+      "kind": "ambiente",
+      "title": "Ambiente — Terra do Futuro",
+      "src": null
+    },
+    {
+      "id": "terra-do-futuro-encontro",
+      "scope": "Terra do Futuro",
+      "kind": "encontro",
+      "title": "Encontro — Terra do Futuro",
+      "src": null
+    },
+    {
+      "id": "déia-tema",
+      "scope": "Déia",
+      "kind": "tema",
+      "title": "Tema de Déia",
+      "src": null
+    },
+    {
+      "id": "fhenrir-tema",
+      "scope": "Fhenrir",
+      "kind": "tema",
+      "title": "Tema de Fhenrir",
+      "src": null
+    },
+    {
+      "id": "vael-zhar-tema",
+      "scope": "Vael’Zhar",
+      "kind": "tema",
+      "title": "Tema de Vael’Zhar",
+      "src": null
+    },
+    {
+      "id": "vovó-brasa-tema",
+      "scope": "Vovó Brasa",
+      "kind": "tema",
+      "title": "Tema de Vovó Brasa",
+      "src": null
+    },
+    {
+      "id": "alderyon-tema",
+      "scope": "Alderyon",
+      "kind": "tema",
+      "title": "Tema de Alderyon",
+      "src": null
+    },
+    {
+      "id": "seralyth-tema",
+      "scope": "Seralyth",
+      "kind": "tema",
+      "title": "Tema de Seralyth",
+      "src": null
+    },
+    {
+      "id": "thalorien-tema",
+      "scope": "Thalorien",
+      "kind": "tema",
+      "title": "Tema de Thalorien",
+      "src": null
+    },
+    {
+      "id": "elyndor-tema",
+      "scope": "Elyndor",
+      "kind": "tema",
+      "title": "Tema de Elyndor",
+      "src": null
+    },
+    {
+      "id": "primeiro-alvorecer-tema",
+      "scope": "Primeiro Alvorecer",
+      "kind": "tema",
+      "title": "Tema de Primeiro Alvorecer",
+      "src": null
+    },
+    {
+      "id": "confronto-final-tema",
+      "scope": "Confronto Final",
+      "kind": "tema",
+      "title": "Tema de Confronto Final",
+      "src": null
+    },
+    {
+      "id": "reino-das-sombras-tema",
+      "scope": "Reino das Sombras",
+      "kind": "tema",
+      "title": "Tema de Reino das Sombras",
+      "src": null
+    },
+    {
+      "id": "abertura-e-ovo-cósmico-cena",
+      "scope": "Abertura e ovo cósmico",
+      "kind": "cena",
+      "title": "Abertura e ovo cósmico",
+      "src": null
+    },
+    {
+      "id": "última-chama-de-brasa-cena",
+      "scope": "Última Chama de Brasa",
+      "kind": "cena",
+      "title": "Última Chama de Brasa",
+      "src": null
+    },
+    {
+      "id": "despedida-de-brasa-cena",
+      "scope": "Despedida de Brasa",
+      "kind": "cena",
+      "title": "Despedida de Brasa",
+      "src": null
+    },
+    {
+      "id": "primeiro-encontro-com-fhenrir-cena",
+      "scope": "Primeiro encontro com Fhenrir",
+      "kind": "cena",
+      "title": "Primeiro encontro com Fhenrir",
+      "src": null
+    },
+    {
+      "id": "reencontro-dos-guardiões-cena",
+      "scope": "Reencontro dos guardiões",
+      "kind": "cena",
+      "title": "Reencontro dos guardiões",
+      "src": null
+    },
+    {
+      "id": "guerra-das-mil-estrelas-cena",
+      "scope": "Guerra das Mil Estrelas",
+      "kind": "cena",
+      "title": "Guerra das Mil Estrelas",
+      "src": null
+    },
+    {
+      "id": "vaelor-pede-perdão-cena",
+      "scope": "Vaelor pede perdão",
+      "kind": "cena",
+      "title": "Vaelor pede perdão",
+      "src": null
+    },
+    {
+      "id": "segunda-aurora-melhor-final-cena",
+      "scope": "Segunda Aurora — melhor final",
+      "kind": "cena",
+      "title": "Segunda Aurora — melhor final",
+      "src": null
+    },
+    {
+      "id": "diálogos-comuns-cena",
+      "scope": "Diálogos comuns",
+      "kind": "cena",
+      "title": "Diálogos comuns",
+      "src": null
+    },
+    {
+      "id": "santuário-dos-sonhos-cena",
+      "scope": "Santuário dos Sonhos",
+      "kind": "cena",
+      "title": "Santuário dos Sonhos",
+      "src": null
+    },
+    {
+      "id": "chefe-sir-musgoval",
+      "scope": "Terra Encantada",
+      "kind": "boss individual",
+      "title": "Tema de batalha — Sir Musgoval",
+      "src": null
+    },
+    {
+      "id": "chefe-lunac-rnio-guardi-o",
+      "scope": "Terra Encantada",
+      "kind": "boss individual",
+      "title": "Tema de batalha — Lunacórnio Guardião",
+      "src": null
+    },
+    {
+      "id": "chefe-rainha-florabel",
+      "scope": "Terra Encantada",
+      "kind": "boss individual",
+      "title": "Tema de batalha — Rainha Florabel",
+      "src": null
+    },
+    {
+      "id": "chefe-javali-magmabrasa",
+      "scope": "Terra de Fogo",
+      "kind": "boss individual",
+      "title": "Tema de batalha — Javali Magmabrasa",
+      "src": null
+    },
+    {
+      "id": "chefe-salamandrix",
+      "scope": "Terra de Fogo",
+      "kind": "boss individual",
+      "title": "Tema de batalha — Salamandrix",
+      "src": null
+    },
+    {
+      "id": "chefe-vulkrag",
+      "scope": "Terra de Fogo",
+      "kind": "boss individual",
+      "title": "Tema de batalha — Vulkrag",
+      "src": null
+    },
+    {
+      "id": "chefe-yetigor",
+      "scope": "Terra do Gelo",
+      "kind": "boss individual",
+      "title": "Tema de batalha — Yetigor",
+      "src": null
+    },
+    {
+      "id": "chefe-morsa-de-cristal",
+      "scope": "Terra do Gelo",
+      "kind": "boss individual",
+      "title": "Tema de batalha — Morsa de Cristal",
+      "src": null
+    },
+    {
+      "id": "chefe-aurorix",
+      "scope": "Terra do Gelo",
+      "kind": "boss individual",
+      "title": "Tema de batalha — Aurorix",
+      "src": null
+    },
+    {
+      "id": "chefe-golem-de-caramelo",
+      "scope": "Terra dos Doces",
+      "kind": "boss individual",
+      "title": "Tema de batalha — Golem de Caramelo",
+      "src": null
+    },
+    {
+      "id": "chefe-bobo-marshmello",
+      "scope": "Terra dos Doces",
+      "kind": "boss individual",
+      "title": "Tema de batalha — Bobo Marshmello",
+      "src": null
+    },
+    {
+      "id": "chefe-dona-glac-suprema",
+      "scope": "Terra dos Doces",
+      "kind": "boss individual",
+      "title": "Tema de batalha — Dona Glacê Suprema",
+      "src": null
+    },
+    {
+      "id": "chefe-morcegaia-eco",
+      "scope": "Cavernas Obscuras",
+      "kind": "boss individual",
+      "title": "Tema de batalha — Morcegaia Eco",
+      "src": null
+    },
+    {
+      "id": "chefe-toupeira-obsidiana",
+      "scope": "Cavernas Obscuras",
+      "kind": "boss individual",
+      "title": "Tema de batalha — Toupeira Obsidiana",
+      "src": null
+    },
+    {
+      "id": "chefe-nocturnox",
+      "scope": "Cavernas Obscuras",
+      "kind": "boss individual",
+      "title": "Tema de batalha — Nocturnox",
+      "src": null
+    },
+    {
+      "id": "chefe-guardi-o-sepulcral",
+      "scope": "Terra dos Mortos",
+      "kind": "boss individual",
+      "title": "Tema de batalha — Guardião Sepulcral",
+      "src": null
+    },
+    {
+      "id": "chefe-dama-lamento",
+      "scope": "Terra dos Mortos",
+      "kind": "boss individual",
+      "title": "Tema de batalha — Dama Lamento",
+      "src": null
+    },
+    {
+      "id": "chefe-necrodrake-rei",
+      "scope": "Terra dos Mortos",
+      "kind": "boss individual",
+      "title": "Tema de batalha — Necrodrake Rei",
+      "src": null
+    },
+    {
+      "id": "chefe-sapo-toximago",
+      "scope": "Pântano Venenoso",
+      "kind": "boss individual",
+      "title": "Tema de batalha — Sapo Toximago",
+      "src": null
+    },
+    {
+      "id": "chefe-hidra-lodoverde",
+      "scope": "Pântano Venenoso",
+      "kind": "boss individual",
+      "title": "Tema de batalha — Hidra Lodoverde",
+      "src": null
+    },
+    {
+      "id": "chefe-crocomandra",
+      "scope": "Pântano Venenoso",
+      "kind": "boss individual",
+      "title": "Tema de batalha — Crocomandra",
+      "src": null
+    },
+    {
+      "id": "chefe-raptor-alfa-escarlate",
+      "scope": "Terra dos Dinossauros",
+      "kind": "boss individual",
+      "title": "Tema de batalha — Raptor Alfa Escarlate",
+      "src": null
+    },
+    {
+      "id": "chefe-anquilo-xam",
+      "scope": "Terra dos Dinossauros",
+      "kind": "boss individual",
+      "title": "Tema de batalha — Anquilo Xamã",
+      "src": null
+    },
+    {
+      "id": "chefe-tirano-rexor",
+      "scope": "Terra dos Dinossauros",
+      "kind": "boss individual",
+      "title": "Tema de batalha — Tirano Rexor",
+      "src": null
+    },
+    {
+      "id": "chefe-samurai-drone-x",
+      "scope": "Terra do Futuro",
+      "kind": "boss individual",
+      "title": "Tema de batalha — Samurai Drone-X",
+      "src": null
+    },
+    {
+      "id": "chefe-escorpiotron",
+      "scope": "Terra do Futuro",
+      "kind": "boss individual",
+      "title": "Tema de batalha — Escorpiotron",
+      "src": null
+    },
+    {
+      "id": "chefe-overlord-chronark",
+      "scope": "Terra do Futuro",
+      "kind": "boss individual",
+      "title": "Tema de batalha — Overlord Chronark",
+      "src": null
+    },
+    {
+      "id": "chefe-kharvok",
+      "scope": "Reino das Sombras",
+      "kind": "boss individual",
+      "title": "Tema de batalha — Kharvok",
+      "src": null
+    },
+    {
+      "id": "chefe-seraphyne",
+      "scope": "Reino das Sombras",
+      "kind": "boss individual",
+      "title": "Tema de batalha — Seraphyne",
+      "src": null
+    },
+    {
+      "id": "chefe-vael-zhar-3-fases",
+      "scope": "Reino das Sombras",
+      "kind": "boss individual",
+      "title": "Tema de batalha — Vael’Zhar — 3 fases",
+      "src": null
+    }
+  ]
+}
