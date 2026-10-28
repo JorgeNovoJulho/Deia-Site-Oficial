@@ -14,6 +14,10 @@ const base = process.env.PORTAL_URL || 'http://127.0.0.1:8000/';
       await page.waitForFunction(()=>document.querySelector('.v13-banner-img')?.naturalWidth===1983);
       assert(await page.locator('.v9-cover').evaluate(e=>e.classList.contains('v13-banner-ready')));
       assert(await page.locator('.v13-banner-img').evaluate(e=>Math.abs(e.clientWidth/e.clientHeight-1983/793)<.04),'Banner aspect ratio');
+      if(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth)){
+        console.log('OVERFLOW',width,await page.evaluate(()=>({total:document.documentElement.scrollWidth,nodes:[...document.querySelectorAll('body *')].filter(e=>e.getClientRects().length&&getComputedStyle(e).visibility!=='hidden'&&e.getBoundingClientRect().right>innerWidth+1).slice(0,25).map(e=>({tag:e.tagName,cls:e.className,width:e.getBoundingClientRect().width,right:e.getBoundingClientRect().right}))})));
+        await page.screenshot({path:`/tmp/portal-overflow-${width}.png`});
+      }
       assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),'Horizontal overflow');
       if(width>1100) assert(await page.locator('#personagens').evaluate(e=>e.getBoundingClientRect().left>=132),'Rail overlaps content');
       if(width<=920){
