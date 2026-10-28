@@ -1,0 +1,148 @@
+{
+  "method": "Recortes retangulares sem redimensionamento, filtros ou redesenho; WebP sem perdas. Fontes oficiais preservadas.",
+  "images": [
+    {
+      "source": "assets/img/deia.webp",
+      "source_sha256": "a07811951106d1a4aab05cb7bbc972ed2baebfe6181dbacd8cd2b9b7c68f30aa",
+      "file": "assets/img/personagens/deia-retrato-oficial.webp",
+      "crop_xywh": [
+        705,
+        44,
+        128,
+        155
+      ]
+    },
+    {
+      "source": "assets/img/fhenrir.webp",
+      "source_sha256": "491f5e5149e978fe24e9e9eecb639a7b7020d55aff1e1b1c9ffbe469ddc4ea86",
+      "file": "assets/img/personagens/fhenrir-retrato-oficial.webp",
+      "crop_xywh": [
+        658,
+        32,
+        132,
+        225
+      ]
+    },
+    {
+      "source": "assets/img/deia_celestial.webp",
+      "source_sha256": "aa821d26795f23ca95703fb4c41875ce68ae271ed84d0eed25e3097cb988645b",
+      "file": "assets/img/personagens/deia-celestial-retrato-oficial.webp",
+      "crop_xywh": [
+        782,
+        24,
+        330,
+        338
+      ]
+    },
+    {
+      "source": "assets/img/map.webp",
+      "source_sha256": "3180c33fbf100c6cdd1138ef1be422b1f20c7b20c615f508c5b80c3e424f7a17",
+      "file": "assets/img/reinos/reino-0-paisagem-oficial.webp",
+      "crop_xywh": [
+        419,
+        119,
+        164,
+        156
+      ]
+    },
+    {
+      "source": "assets/img/map.webp",
+      "source_sha256": "3180c33fbf100c6cdd1138ef1be422b1f20c7b20c615f508c5b80c3e424f7a17",
+      "file": "assets/img/reinos/reino-1-paisagem-oficial.webp",
+      "crop_xywh": [
+        573,
+        218,
+        325,
+        111
+      ]
+    },
+    {
+      "source": "assets/img/map.webp",
+      "source_sha256": "3180c33fbf100c6cdd1138ef1be422b1f20c7b20c615f508c5b80c3e424f7a17",
+      "file": "assets/img/reinos/reino-2-paisagem-oficial.webp",
+      "crop_xywh": [
+        893,
+        201,
+        298,
+        110
+      ]
+    },
+    {
+      "source": "assets/img/map.webp",
+      "source_sha256": "3180c33fbf100c6cdd1138ef1be422b1f20c7b20c615f508c5b80c3e424f7a17",
+      "file": "assets/img/reinos/reino-3-paisagem-oficial.webp",
+      "crop_xywh": [
+        280,
+        371,
+        308,
+        105
+      ]
+    },
+    {
+      "source": "assets/img/map.webp",
+      "source_sha256": "3180c33fbf100c6cdd1138ef1be422b1f20c7b20c615f508c5b80c3e424f7a17",
+      "file": "assets/img/reinos/reino-4-paisagem-oficial.webp",
+      "crop_xywh": [
+        598,
+        377,
+        241,
+        106
+      ]
+    },
+    {
+      "source": "assets/img/map.webp",
+      "source_sha256": "3180c33fbf100c6cdd1138ef1be422b1f20c7b20c615f508c5b80c3e424f7a17",
+      "file": "assets/img/reinos/reino-5-paisagem-oficial.webp",
+      "crop_xywh": [
+        845,
+        367,
+        245,
+        109
+      ]
+    },
+    {
+      "source": "assets/img/map.webp",
+      "source_sha256": "3180c33fbf100c6cdd1138ef1be422b1f20c7b20c615f508c5b80c3e424f7a17",
+      "file": "assets/img/reinos/reino-6-paisagem-oficial.webp",
+      "crop_xywh": [
+        352,
+        531,
+        334,
+        87
+      ]
+    },
+    {
+      "source": "assets/img/map.webp",
+      "source_sha256": "3180c33fbf100c6cdd1138ef1be422b1f20c7b20c615f508c5b80c3e424f7a17",
+      "file": "assets/img/reinos/reino-7-paisagem-oficial.webp",
+      "crop_xywh": [
+        716,
+        535,
+        302,
+        100
+      ]
+    },
+    {
+      "source": "assets/img/map.webp",
+      "source_sha256": "3180c33fbf100c6cdd1138ef1be422b1f20c7b20c615f508c5b80c3e424f7a17",
+      "file": "assets/img/reinos/reino-8-paisagem-oficial.webp",
+      "crop_xywh": [
+        1048,
+        516,
+        215,
+        122
+      ]
+    },
+    {
+      "source": "assets/img/deia.webp",
+      "source_sha256": "a07811951106d1a4aab05cb7bbc972ed2baebfe6181dbacd8cd2b9b7c68f30aa",
+      "file": "assets/img/personagens/deia-acao-oficial.webp",
+      "crop_xywh": [
+        305,
+        830,
+        335,
+        270
+      ]
+    }
+  ]
+}
