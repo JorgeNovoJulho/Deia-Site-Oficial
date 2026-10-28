@@ -93,3 +93,6 @@ main>.section{position:relative;scroll-margin-top:var(--portal-header);min-width
 }
 /* A translated invisible drawer still enlarged the mobile scroll area. */
 @media(max-width:920px){.nav:not(.open){display:none!important}.nav.open{display:flex;transform:none}}
+
+/* Approved illustrations retain their complete crop inside each character card. */
+.codex-cover img.portrait-approved{object-fit:contain!important;object-position:center!important;background:#0a1023}

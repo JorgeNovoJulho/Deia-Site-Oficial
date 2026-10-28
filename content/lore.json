@@ -105,42 +105,42 @@
     {
       "name": "Vaelor / Vael’Zhar",
       "role": "O irmão que se perdeu",
-      "image": "assets/img/vaelzhar.webp",
+      "image": "assets/img/personagens/vaelzhar-aprovado.webp",
       "description": "Vaelor Valtheris, irmão de Alderyon e tio de Fhenrir, outrora guerreiro honrado; a inveja após a sucessão abriu caminho às Sombras. Vael’Zhar pode recuperar a consciência de Vaelor e despedir-se do sobrinho; destino material permanece ambíguo.",
       "status": "confirmado"
     },
     {
       "name": "Vovó Brasa",
       "role": "A Última Chama da Terra Encantada",
-      "image": null,
+      "image": "assets/img/personagens/vovo-brasa-aprovada.webp",
       "description": "Ex-guardiã da Terra Encantada, aposentada pela idade; encontra e cria Déia nascida de ovo cósmico. Sacrifica a própria reserva vital ao derrotar invasores para proteger sua neta. Restauração excepcional no melhor final.",
       "status": "confirmado"
     },
     {
       "name": "Alderyon Valtheris",
       "role": "Rei do Juramento Eterno",
-      "image": null,
+      "image": "assets/img/personagens/alderyon-valtheris-aprovado.webp",
       "description": "Pai de Fhenrir, soberano honrado, estrategista e guerreiro exemplar; irmão de Vaelor. Sua confiança fraterna não equivale a negligência.",
       "status": "confirmado"
     },
     {
       "name": "Seralyth Asterion",
       "role": "Rainha das Mil Lâminas",
-      "image": null,
+      "image": "assets/img/personagens/seralyth-asterion-aprovada.webp",
       "description": "Mãe de Fhenrir, maior amazona guerreira, protetora e carinhosa; percebe o sofrimento de Vaelor, mas não antecipa a armadilha. Sua última mensagem permanece nas constelações.",
       "status": "confirmado"
     },
     {
       "name": "Elyndor",
       "role": "O Cronista das Eras",
-      "image": null,
+      "image": "assets/img/personagens/elyndor-aprovado.webp",
       "description": "Mais antigo dos nove sobreviventes; Arquivo das Eras reúne registros de todas as Guerras Santas conhecidas, sem torná-lo onisciente.",
       "status": "confirmado"
     },
     {
       "name": "Aethrakar",
       "role": "O Primeiro Juramento",
-      "image": null,
+      "image": "assets/img/personagens/aethrakar-aprovado.webp",
       "description": "Força antagonista misteriosa reservada à continuação de Fhenrir; não revelar o segredo ou a eventual ligação com Alderyon no primeiro jogo.",
       "status": "reservado"
     }

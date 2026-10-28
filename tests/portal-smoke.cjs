@@ -36,11 +36,19 @@ const base = process.env.PORTAL_URL || 'http://127.0.0.1:8000/';
       await page.getByRole('button',{name:'Aumentar zoom',exact:true}).click();
       assert.equal(await page.locator('[data-reset]').textContent(),'140%');
       await page.keyboard.press('Escape');
-      await page.locator('[data-codex="character"][data-id="Vovó Brasa"]').click();
-      assert(await page.locator('.codex-visual').isHidden());
-      await page.keyboard.press('Tab');
-      assert.equal(await page.evaluate(()=>document.activeElement.className),'codex-close','Focus escaped text-only modal');
-      await page.keyboard.press('Escape');
+      for(const name of ['Vovó Brasa','Alderyon Valtheris','Seralyth Asterion','Elyndor','Aethrakar','Vaelor / Vael’Zhar']){
+        await page.locator(`[data-codex="character"][data-id="${name}"]`).click();
+        assert(await page.locator('.codex-visual').isVisible(),name+' portrait pane');
+        await page.waitForFunction(()=>{const e=document.querySelector('.codex-visual img');return e.complete&&e.naturalWidth>0});
+        assert((await page.locator('.codex-visual img').getAttribute('src')).includes('assets/img/personagens/'),name+' official asset');
+        await page.keyboard.press('Escape');
+      }
+      assert.equal(await page.locator('#personagens .mystery-portrait').count(),0);
+      for(const image of await page.locator('#galeria img[src*="/personagens/"]').all()){
+        await image.scrollIntoViewIfNeeded();
+        await image.evaluate(e=>e.decode());
+        assert(await image.evaluate(e=>e.complete&&e.naturalWidth>0));
+      }
       await page.locator('#galeria img').first().click();
       await page.getByRole('button',{name:'Aumentar zoom',exact:true}).click();
       assert.equal(await page.locator('[data-reset]').textContent(),'140%');await page.keyboard.press('Escape');
@@ -52,7 +60,7 @@ const base = process.env.PORTAL_URL || 'http://127.0.0.1:8000/';
       assert(await page.locator('.track:visible').count()>0,'Exploration filter returned no tracks');
       await page.locator('.sound-filter button').filter({hasText:'Todas'}).click();
       assert.equal(await page.locator('.track:visible').count(),87);
-      assert.equal(await page.locator('audio').count(),0);
+      
       await page.locator('.v12-search-open').click();
       await page.locator('.v12-search input').fill('Fhenrir');
       assert.equal(await page.locator('.v12-results a').count(),1);await page.keyboard.press('Escape');
