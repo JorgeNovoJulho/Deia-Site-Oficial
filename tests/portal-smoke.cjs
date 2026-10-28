@@ -56,6 +56,7 @@ const base = process.env.PORTAL_URL || 'http://127.0.0.1:8000/';
       await page.locator('.v12-search-open').click();
       await page.locator('.v12-search input').fill('Fhenrir');
       assert.equal(await page.locator('.v12-results a').count(),1);await page.keyboard.press('Escape');
+      await page.locator('.brand').click();
       await page.screenshot({path:`/tmp/portal-${width}.png`});
       assert.deepEqual(errors,[]);
       await page.goto(new URL('admin/',base).href);
