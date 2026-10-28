@@ -1,0 +1,14 @@
+/* V13 — replacement cinematic hero. Activated only when actual banner image exists. */
+.v9-cover{position:relative;isolation:isolate}
+.v9-cover.v13-banner-ready{background:#070b19!important}
+.v9-cover.v13-banner-ready:before,.v9-cover.v13-banner-ready:after{display:none!important}
+.v13-banner-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center center;z-index:0;display:block;filter:saturate(1.07)}
+.v9-cover.v13-banner-ready .v9-inner{pointer-events:none;opacity:0}
+.v13-linkzones{position:absolute;inset:0;z-index:2;pointer-events:none;display:block}
+.v13-linkzones a{position:absolute;pointer-events:auto;display:block;border-radius:8px}
+.v13-linkzones a:focus-visible{outline:3px solid white;outline-offset:4px;box-shadow:0 0 0 7px #0d1c33a8}
+.v13-linkzones a:first-child{left:2.2%;top:66%;width:17%;height:11%}
+.v13-linkzones a:last-child{left:19%;top:66%;width:14%;height:11%}
+.v13-banner-footnote{position:absolute;z-index:3;right:16px;bottom:9px;background:#061027aa;color:#ffdfaa;border:1px solid #f8cb815c;padding:5px 9px;border-radius:6px;font:700 9px Manrope,sans-serif}
+@media(max-width:980px){.v9-cover.v13-banner-ready .v13-banner-img{object-fit:contain;background:#0a1023}.v9-cover.v13-banner-ready{height:auto!important;aspect-ratio:1983/793}.v13-banner-footnote{display:none}}
+@media(max-width:630px){.v9-cover.v13-banner-ready{aspect-ratio:1.5;min-height:350px!important}.v9-cover.v13-banner-ready .v13-banner-img{object-fit:cover;object-position:38% center;opacity:.75}.v9-cover.v13-banner-ready .v9-inner{opacity:1;pointer-events:auto;z-index:2;position:relative;padding:15px!important}.v9-cover.v13-banner-ready .v9-intro{max-width:93%}.v9-cover.v13-banner-ready .v9-intro h1{font-size:50px!important}.v9-cover.v13-banner-ready .v9-intro p{font-size:11px!important}.v9-cover.v13-banner-ready .v9-intro .eyebrow{display:none}.v9-cover.v13-banner-ready .v9-actions{margin-top:12px!important}.v9-cover.v13-banner-ready .v9-actions .btn{font-size:9px!important;padding:10px!important}.v13-linkzones{display:none}}
