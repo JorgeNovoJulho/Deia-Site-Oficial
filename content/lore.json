@@ -1,0 +1,1346 @@
+{
+  "title": "Déia e os Nove Reinos Majestosos",
+  "version": "V6.3 — Portal de referência 01",
+  "date": "2026-10-28",
+  "status": "lore consolidada em elaboração; implementação não inferida",
+  "chapters": [
+    {
+      "id": "cap-0",
+      "title": "Prólogo — Antes da primeira aurora",
+      "text": "Uma consciência anterior às fronteiras dos nove mundos, chamada Primeiro Alvorecer, guarda a possibilidade de renovação da vida. Não determina o livre-arbítrio da futura herdeira. O Reino do Crepúsculo, independente e povoado por guerreiros guardiões, envia defensores a outros mundos ameaçados. A Guerra das Mil Estrelas consolida a amizade dos irmãos Alderyon e Vaelor e o Juramento dos Dois Irmãos."
+    },
+    {
+      "id": "cap-1",
+      "title": "I — A dinastia Valtheris",
+      "text": "Alderyon, soberano humilde e estrategista, une-se a Seralyth, poderosa rainha amazona. Vaelor, seu irmão e amigo íntimo, torna-se padrinho e mestre de armas do jovem Fhenrir. Os irmãos consagram Val’Aster, a Espada Estelar, que somente Fhenrir pode comandar. No Julgamento das Sete Virtudes, Alderyon é escolhido para o trono. Vaelor, antes herói genuíno, passa de mágoa e inveja à corrupção consciente. Como Vael’Zhar, rompe seu juramento e petrifica o Crepúsculo mediante a malha estelar e a linhagem soberana; o reino e as constelações desaparecem."
+    },
+    {
+      "id": "cap-2",
+      "title": "II — A guerra que uniu Alvorecer e Crepúsculo",
+      "text": "Fhenrir sobrevive porque combatia fora do alcance da malha estelar. Seguindo Vael’Zhar, encontra Déia já adulta e celestial na primeira Guerra Santa que os dois lutam juntos — não na primeira guerra da longa vida de Déia. Suas energias ressoam. Fhenrir enfrenta o tio e se sacrifica para proteger Déia; ela sela Vael’Zhar por aproximadamente mil anos. As memórias de ambos atravessam os ciclos de modo distinto."
+    },
+    {
+      "id": "cap-3",
+      "title": "III — O ovo sob um segundo amanhecer",
+      "text": "Após incontáveis ciclos de renovação, a essência consciente do Primeiro Alvorecer retorna na forma de ovo cósmico. Vovó Brasa, antiga protetora da Terra Encantada e agora idosa, encontra-o e escolhe acolher a pequena dragonesa. A fita vermelha une sua infância ao amor da avó. Brasa conheceu Alderyon e Seralyth por antigas rotas dimensionais, mas sua memória idosa é imprecisa."
+    },
+    {
+      "id": "cap-4",
+      "title": "IV — A Última Chama de Vovó Brasa",
+      "text": "A vida doméstica é interrompida por uma invasão das Sombras, que ataca uma zona de proteção, não Déia especificamente: sua assinatura celestial está adormecida. Brasa, já sem força, resistência ou magia confiável, usa um esforço derradeiro para recuperar por instantes a potência de juventude; derrota os agressores daquele setor e morre pelo custo vital. Antes, despede-se carinhosamente da neta, reforça a fita vermelha e entrega sua relíquia familiar. A sucessora da guardiã defende outro setor; não será aprofundada como personagem nesta versão."
+    },
+    {
+      "id": "cap-5",
+      "title": "V — A promessa e o guardião das estrelas",
+      "text": "Thalorien, sobrevivente do Crepúsculo presente na Terra Encantada, conta a Déia sobre uma possibilidade extraordinária: o Coração da Segunda Aurora. A menina inicia a jornada para tentar restaurar a vida de Brasa. A relíquia não é uma ferramenta comum nem uma coleta obrigatória de nove pedaços. O pedido íntimo de Déia conduz à guerra pelos nove mundos."
+    },
+    {
+      "id": "cap-6",
+      "title": "VI — O desconhecido de armadura azul",
+      "text": "Ainda criança, Déia cruza com Fhenrir, renascido antes dela e portador de lembranças incompletas. Ele a protege, suspeita reconhecer a antiga companheira, mas não a pressiona nem revela certezas que não possui. O primeiro vínculo é amizade, proteção e descoberta. Romance somente poderá surgir quando Déia atingir maturidade adulta, sempre opcional."
+    },
+    {
+      "id": "cap-7",
+      "title": "VII — Nove reinos, nove auroras",
+      "text": "Déia percorre os nove mundos interligados. A armadura é energia do Primeiro Alvorecer materializada em nove peças, vinculadas a chefes e núcleos de proteção corrompidos. O crescimento físico e emocional acompanha memórias, experiências e despertar; Déia alcança estatura adulta compatível com Fhenrir, sem perder humor ou individualidade. Cada reino comporta dois subchefes, um chefe principal e registros de um sobrevivente do Crepúsculo. Os sobreviventes protegem suas comunidades, vendem e aprimoram itens e contam relatos progressivos; reconhecem Déia de modo gradual."
+    },
+    {
+      "id": "cap-8",
+      "title": "VIII — Vulkrag e o eco do sacrifício",
+      "text": "Na Terra de Fogo, se Déia enfrenta Vulkrag como protagonista, Fhenrir intervém obrigatoriamente em um momento crítico da batalha, independentemente de mortes anteriores. Enfraquece Vulkrag, libera a manifestação da armadura, Déia recupera HP e ganha defesa permanente, concluindo o combate. Se a campanha for jogada com Fhenrir, a variante do evento continua pendente de definição para não contrariar esse acontecimento."
+    },
+    {
+      "id": "cap-9",
+      "title": "IX — A biblioteca das vidas esquecidas",
+      "text": "Elyndor, guardião mais antigo, conserva no Arquivo das Eras registros de todas as Guerras Santas conhecidas. Seu conhecimento não é onisciência: crônicas, cristais e relatos possuem lacunas. Déia recupera memórias de vidas e perdas; continua sendo a neta de Brasa. Os guardiões também registram histórias contraditórias em interpretação, mas coerentes nos fatos, sobre o Vaelor bondoso e sua queda."
+    },
+    {
+      "id": "cap-10",
+      "title": "X — Os Nove Refúgios e o Atlas",
+      "text": "A Guerra dos Nove Refúgios é CONTEXTO NARRATIVO, não conteúdo jogável: os sobreviventes do Crepúsculo defendem as novas comunidades em que construíram laços. As histórias são contadas por diálogos, memórias e registros. Cada guardião conserva um fragmento opcional do Atlas das Constelações Perdidas; os nove registros sugerem rotas para localizar o Crepúsculo sem liberar o reino nem substituir a campanha de Déia."
+    },
+    {
+      "id": "cap-11",
+      "title": "XI — Duas vontades e um destino",
+      "text": "Depois do encontro e desbloqueio narrativo, Fhenrir torna-se segundo protagonista. Mapa e mundo são compartilhados; XP, habilidades, equipamentos e memórias são próprios. Déia pode emprestar energia do Alvorecer para acelerar a recuperação de Fhenrir, cuja joia perde brilho sem as constelações; ao zerar, a armadura desaparece, sua espada permanece com 50% do dano, e a energia recarrega gradualmente. A amizade basta para sincronia máxima. Nenhum dos dois vence Vael’Zhar sozinho."
+    },
+    {
+      "id": "cap-12",
+      "title": "XII — O reino das sombras e os três confrontos",
+      "text": "O Reino das Sombras apresenta Kharvok e Seraphyne antes do confronto em três fases com Vael’Zhar: quebra de defesa, manifestação da corrupção e eclipse/sincronia. Fhenrir reconhece o tio amado; suas hesitações permitem contra-ataques. Vael’Zhar também hesita diante de lembranças do sobrinho e do irmão, criando aberturas. Déia possui o golpe e a decisão finais. Vaelor pode recuperar a consciência, arrepender-se e se despedir de Fhenrir, mas não apaga seus crimes nem desfaz a prisão do Crepúsculo."
+    },
+    {
+      "id": "cap-13",
+      "title": "XIII — Cinco destinos e a Segunda Aurora",
+      "text": "A campanha possui exatamente cinco finais principais, ainda sem catálogo formal completo. A vitória melhor, associada à purificação definitiva e condições narrativas, manifesta o Coração da Segunda Aurora e restaura Vovó Brasa. A essência da avó foi preservada de forma excepcional pelo sacrifício em ressonância com Déia; a restauração não pode ser repetida livremente. Os demais finais continuam válidos e conclusivos, sem obrigação de romance. A cena final pode reunir Brasa e Déia adulta na antiga casa."
+    },
+    {
+      "id": "cap-14",
+      "title": "Epílogo — O Crepúsculo permanece oculto",
+      "text": "O desaparecimento de Vaelor em partículas crepusculares deixa em aberto se sua essência morreu ou foi levada, petrificada, à Dimensão das Sombras; sua derrota como Vael’Zhar permanece efetiva. Os registros de Seralyth, o símbolo de Alderyon, a espada e os sinais estelares preparam discretamente a continuação de Fhenrir. Aethrakar — O Primeiro Juramento — e a possível ligação de Alderyon ao último selo não são revelados no primeiro jogo."
+    }
+  ],
+  "characters": [
+    {
+      "name": "Déia",
+      "role": "Herdeira do Primeiro Alvorecer",
+      "image": "assets/img/deia.webp",
+      "description": "Pequena dragonesa coral-avermelhada, barriga amarela, olhos âmbar, coque e fita vermelha; renasce de ovo cósmico, amadurece fisicamente e emocionalmente até adulta, mas mantém alegria, apetite, humor e autonomia.",
+      "status": "confirmado"
+    },
+    {
+      "name": "Déia Celestial",
+      "role": "Alvorecer Pleno",
+      "image": "assets/img/deia_celestial.webp",
+      "description": "Forma adulta com nove manifestações materiais de energia do Alvorecer, asas douradas, armadura azul e dourada. A forma sem armadura permanece adulta.",
+      "status": "confirmado"
+    },
+    {
+      "name": "Fhenrir",
+      "role": "Guardião do Crepúsculo",
+      "image": "assets/img/fhenrir.webp",
+      "description": "Dragão azul-índigo, herdeiro de Alderyon e Seralyth; segundo protagonista após o primeiro encontro; joia torácica e Espada Estelar Val’Aster; ligação histórica e emocional com Déia.",
+      "status": "confirmado"
+    },
+    {
+      "name": "Vaelor / Vael’Zhar",
+      "role": "O irmão que se perdeu",
+      "image": "assets/img/vaelzhar.webp",
+      "description": "Vaelor Valtheris, irmão de Alderyon e tio de Fhenrir, outrora guerreiro honrado; a inveja após a sucessão abriu caminho às Sombras. Vael’Zhar pode recuperar a consciência de Vaelor e despedir-se do sobrinho; destino material permanece ambíguo.",
+      "status": "confirmado"
+    },
+    {
+      "name": "Vovó Brasa",
+      "role": "A Última Chama da Terra Encantada",
+      "image": null,
+      "description": "Ex-guardiã da Terra Encantada, aposentada pela idade; encontra e cria Déia nascida de ovo cósmico. Sacrifica a própria reserva vital ao derrotar invasores para proteger sua neta. Restauração excepcional no melhor final.",
+      "status": "confirmado"
+    },
+    {
+      "name": "Alderyon Valtheris",
+      "role": "Rei do Juramento Eterno",
+      "image": null,
+      "description": "Pai de Fhenrir, soberano honrado, estrategista e guerreiro exemplar; irmão de Vaelor. Sua confiança fraterna não equivale a negligência.",
+      "status": "confirmado"
+    },
+    {
+      "name": "Seralyth Asterion",
+      "role": "Rainha das Mil Lâminas",
+      "image": null,
+      "description": "Mãe de Fhenrir, maior amazona guerreira, protetora e carinhosa; percebe o sofrimento de Vaelor, mas não antecipa a armadilha. Sua última mensagem permanece nas constelações.",
+      "status": "confirmado"
+    },
+    {
+      "name": "Elyndor",
+      "role": "O Cronista das Eras",
+      "image": null,
+      "description": "Mais antigo dos nove sobreviventes; Arquivo das Eras reúne registros de todas as Guerras Santas conhecidas, sem torná-lo onisciente.",
+      "status": "confirmado"
+    },
+    {
+      "name": "Aethrakar",
+      "role": "O Primeiro Juramento",
+      "image": null,
+      "description": "Força antagonista misteriosa reservada à continuação de Fhenrir; não revelar o segredo ou a eventual ligação com Alderyon no primeiro jogo.",
+      "status": "reservado"
+    }
+  ],
+  "guardians": [
+    {
+      "name": "Thalorien",
+      "world": "Terra Encantada",
+      "role": "Mercador das Estrelas",
+      "description": "Comércio, mapas, esperança do Coração da Segunda Aurora e histórias antigas de Déia."
+    },
+    {
+      "name": "Kaeldrath",
+      "world": "Terra de Fogo",
+      "role": "Forjador do Juramento",
+      "description": "Armas e participação na consagração de Val’Aster."
+    },
+    {
+      "name": "Elyndor",
+      "world": "Terra do Gelo",
+      "role": "Cronista das Eras",
+      "description": "Registros de todas as Guerras Santas, relatos liberados progressivamente."
+    },
+    {
+      "name": "Miralune",
+      "world": "Terra dos Doces",
+      "role": "Sentinela Sorridente",
+      "description": "Consumíveis, humor com Déia e lembranças familiares de Fhenrir."
+    },
+    {
+      "name": "Vorathen",
+      "world": "Cavernas Obscuras",
+      "role": "Sentinela Esquecido",
+      "description": "Treino e campanhas de Alderyon e Vaelor."
+    },
+    {
+      "name": "Selvaris",
+      "world": "Terra dos Mortos",
+      "role": "Guardiã dos Ecos",
+      "description": "Crônicas dos mortos, memória e Juramento dos Dois Irmãos."
+    },
+    {
+      "name": "Aeryndra",
+      "world": "Pântano Venenoso",
+      "role": "Lança das Amazonas",
+      "description": "Guerreira de Seralyth, defesa de comunidades e treinamento."
+    },
+    {
+      "name": "Drakmorn",
+      "world": "Terra dos Dinossauros",
+      "role": "Escudo das Eras",
+      "description": "Treinamento de combate, testemunhos dos irmãos e proteção local."
+    },
+    {
+      "name": "Caelthar",
+      "world": "Terra do Futuro",
+      "role": "Navegador do Horizonte",
+      "description": "Tecnologia dimensional e pistas para localizar o Crepúsculo."
+    }
+  ],
+  "worlds": [
+    {
+      "id": "world-0",
+      "name": "Terra Encantada",
+      "image": "assets/img/world_0.webp",
+      "subbosses": [
+        "Sir Musgoval",
+        "Lunacórnio Guardião"
+      ],
+      "boss": "Rainha Florabel",
+      "guardian": "Thalorien",
+      "description": "Floresta encantada, aldeia de Brasa, nascimento e perda; primeira âncora emocional e exploração inicial.",
+      "demo": null,
+      "demo_status": "não há build jogável publicada",
+      "music_ids": [
+        "terra-encantada-exploracao",
+        "terra-encantada-boss",
+        "terra-encantada-ambiente",
+        "terra-encantada-encontro"
+      ]
+    },
+    {
+      "id": "world-1",
+      "name": "Terra de Fogo",
+      "image": "assets/img/world_1.webp",
+      "subbosses": [
+        "Javali Magmabrasa",
+        "Salamandrix"
+      ],
+      "boss": "Vulkrag",
+      "guardian": "Kaeldrath",
+      "description": "Calor extremo, fortalezas vulcânicas e intervenção obrigatória de Fhenrir no combate de Déia contra Vulkrag.",
+      "demo": null,
+      "demo_status": "não há build jogável publicada",
+      "music_ids": [
+        "terra-de-fogo-exploracao",
+        "terra-de-fogo-boss",
+        "terra-de-fogo-ambiente",
+        "terra-de-fogo-encontro"
+      ]
+    },
+    {
+      "id": "world-2",
+      "name": "Terra do Gelo",
+      "image": "assets/img/world_2.webp",
+      "subbosses": [
+        "Yetigor",
+        "Morsa de Cristal"
+      ],
+      "boss": "Aurorix",
+      "guardian": "Elyndor",
+      "description": "Memória congelada, Arquivo das Eras e registros de ciclos milenares.",
+      "demo": null,
+      "demo_status": "não há build jogável publicada",
+      "music_ids": [
+        "terra-do-gelo-exploracao",
+        "terra-do-gelo-boss",
+        "terra-do-gelo-ambiente",
+        "terra-do-gelo-encontro"
+      ]
+    },
+    {
+      "id": "world-3",
+      "name": "Terra dos Doces",
+      "image": "assets/img/world_3.webp",
+      "subbosses": [
+        "Golem de Caramelo",
+        "Bobo Marshmello"
+      ],
+      "boss": "Dona Glacê Suprema",
+      "guardian": "Miralune",
+      "description": "Fantasia doce e perigo encantado; humor, culinária, vínculos de Déia e histórias de Seralyth.",
+      "demo": null,
+      "demo_status": "não há build jogável publicada",
+      "music_ids": [
+        "terra-dos-doces-exploracao",
+        "terra-dos-doces-boss",
+        "terra-dos-doces-ambiente",
+        "terra-dos-doces-encontro"
+      ]
+    },
+    {
+      "id": "world-4",
+      "name": "Cavernas Obscuras",
+      "image": "assets/img/world_4.webp",
+      "subbosses": [
+        "Morcegaia Eco",
+        "Toupeira Obsidiana"
+      ],
+      "boss": "Nocturnox",
+      "guardian": "Vorathen",
+      "description": "Profundezas, ruínas e testemunhos das antigas campanhas dos irmãos.",
+      "demo": null,
+      "demo_status": "não há build jogável publicada",
+      "music_ids": [
+        "cavernas-obscuras-exploracao",
+        "cavernas-obscuras-boss",
+        "cavernas-obscuras-ambiente",
+        "cavernas-obscuras-encontro"
+      ]
+    },
+    {
+      "id": "world-5",
+      "name": "Terra dos Mortos",
+      "image": "assets/img/world_5.webp",
+      "subbosses": [
+        "Guardião Sepulcral",
+        "Dama Lamento"
+      ],
+      "boss": "Necrodrake Rei",
+      "guardian": "Selvaris",
+      "description": "Ecos de perdas e memórias; distinguir morte e aprisionamento espiritual.",
+      "demo": null,
+      "demo_status": "não há build jogável publicada",
+      "music_ids": [
+        "terra-dos-mortos-exploracao",
+        "terra-dos-mortos-boss",
+        "terra-dos-mortos-ambiente",
+        "terra-dos-mortos-encontro"
+      ]
+    },
+    {
+      "id": "world-6",
+      "name": "Pântano Venenoso",
+      "image": "assets/img/world_6.webp",
+      "subbosses": [
+        "Sapo Toximago",
+        "Hidra Lodoverde"
+      ],
+      "boss": "Crocomandra",
+      "guardian": "Aeryndra",
+      "description": "Biomas venenosos, proteção de comunidades e memórias da rainha Seralyth.",
+      "demo": null,
+      "demo_status": "não há build jogável publicada",
+      "music_ids": [
+        "pântano-venenoso-exploracao",
+        "pântano-venenoso-boss",
+        "pântano-venenoso-ambiente",
+        "pântano-venenoso-encontro"
+      ]
+    },
+    {
+      "id": "world-7",
+      "name": "Terra dos Dinossauros",
+      "image": "assets/img/world_7.webp",
+      "subbosses": [
+        "Raptor Alfa Escarlate",
+        "Anquilo Xamã"
+      ],
+      "boss": "Tirano Rexor",
+      "guardian": "Drakmorn",
+      "description": "Terras ancestrais, criaturas enormes e treinamentos opcionais.",
+      "demo": null,
+      "demo_status": "não há build jogável publicada",
+      "music_ids": [
+        "terra-dos-dinossauros-exploracao",
+        "terra-dos-dinossauros-boss",
+        "terra-dos-dinossauros-ambiente",
+        "terra-dos-dinossauros-encontro"
+      ]
+    },
+    {
+      "id": "world-8",
+      "name": "Terra do Futuro",
+      "image": "assets/img/world_8.webp",
+      "subbosses": [
+        "Samurai Drone-X",
+        "Escorpiotron"
+      ],
+      "boss": "Overlord Chronark",
+      "guardian": "Caelthar",
+      "description": "Tecnologias e anomalias temporais; análise das rotas para o Crepúsculo.",
+      "demo": null,
+      "demo_status": "não há build jogável publicada",
+      "music_ids": [
+        "terra-do-futuro-exploracao",
+        "terra-do-futuro-boss",
+        "terra-do-futuro-ambiente",
+        "terra-do-futuro-encontro"
+      ]
+    },
+    {
+      "id": "world-shadow",
+      "name": "Reino das Sombras",
+      "image": null,
+      "subbosses": [
+        "Kharvok",
+        "Seraphyne"
+      ],
+      "boss": "Vael’Zhar — 3 fases",
+      "guardian": null,
+      "description": "Destino final, não um décimo reino com peça de armadura. Confronto exige os dois protagonistas.",
+      "demo": null,
+      "demo_status": "não há build jogável publicada",
+      "music_ids": []
+    }
+  ],
+  "abilities": [
+    {
+      "control": "J",
+      "name": "Soco",
+      "status": "implementado conforme relatório anterior"
+    },
+    {
+      "control": "K",
+      "name": "Cauda rápida / carregada ao segurar",
+      "status": "implementado"
+    },
+    {
+      "control": "Shift",
+      "name": "Rolamento",
+      "status": "implementado"
+    },
+    {
+      "control": "L",
+      "name": "Dash terrestre",
+      "status": "implementado"
+    },
+    {
+      "control": "Espaço (novo toque)",
+      "name": "Pulo duplo",
+      "status": "implementado"
+    },
+    {
+      "control": "G",
+      "name": "Garras na parede",
+      "status": "implementado"
+    },
+    {
+      "control": "Espaço junto à parede",
+      "name": "Salto entre paredes",
+      "status": "implementado"
+    },
+    {
+      "control": "Baixo",
+      "name": "Agachamento",
+      "status": "implementado"
+    },
+    {
+      "control": "Baixo + Shift",
+      "name": "Slide; upgrade ofensivo sweep_kick",
+      "status": "implementado"
+    },
+    {
+      "control": "Espaço mantido na queda",
+      "name": "Planagem glide",
+      "status": "implementado"
+    },
+    {
+      "control": "Baixo + K",
+      "name": "Chute Meteoro Flamejante",
+      "status": "planejado"
+    },
+    {
+      "control": "Forma celestial ativa",
+      "name": "Escudo Alado / Flecha Celestial",
+      "status": "planejado"
+    },
+    {
+      "control": "Fhenrir",
+      "name": "Égide, Avatar, Lança, Punho, Juízo das Estrelas Partidas",
+      "status": "projeto aprovado, não integrado"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "terra-encantada-exploracao",
+      "scope": "Terra Encantada",
+      "kind": "exploracao",
+      "title": "Exploracao — Terra Encantada",
+      "src": null,
+      "status": "aguardando composição Suno"
+    },
+    {
+      "id": "terra-encantada-boss",
+      "scope": "Terra Encantada",
+      "kind": "boss",
+      "title": "Boss — Terra Encantada",
+      "src": null,
+      "status": "aguardando composição Suno"
+    },
+    {
+      "id": "terra-encantada-ambiente",
+      "scope": "Terra Encantada",
+      "kind": "ambiente",
+      "title": "Ambiente — Terra Encantada",
+      "src": null,
+      "status": "aguardando composição Suno"
+    },
+    {
+      "id": "terra-encantada-encontro",
+      "scope": "Terra Encantada",
+      "kind": "encontro",
+      "title": "Encontro — Terra Encantada",
+      "src": null,
+      "status": "aguardando composição Suno"
+    },
+    {
+      "id": "terra-de-fogo-exploracao",
+      "scope": "Terra de Fogo",
+      "kind": "exploracao",
+      "title": "Exploracao — Terra de Fogo",
+      "src": null,
+      "status": "aguardando composição Suno"
+    },
+    {
+      "id": "terra-de-fogo-boss",
+      "scope": "Terra de Fogo",
+      "kind": "boss",
+      "title": "Boss — Terra de Fogo",
+      "src": null,
+      "status": "aguardando composição Suno"
+    },
+    {
+      "id": "terra-de-fogo-ambiente",
+      "scope": "Terra de Fogo",
+      "kind": "ambiente",
+      "title": "Ambiente — Terra de Fogo",
+      "src": null,
+      "status": "aguardando composição Suno"
+    },
+    {
+      "id": "terra-de-fogo-encontro",
+      "scope": "Terra de Fogo",
+      "kind": "encontro",
+      "title": "Encontro — Terra de Fogo",
+      "src": null,
+      "status": "aguardando composição Suno"
+    },
+    {
+      "id": "terra-do-gelo-exploracao",
+      "scope": "Terra do Gelo",
+      "kind": "exploracao",
+      "title": "Exploracao — Terra do Gelo",
+      "src": null,
+      "status": "aguardando composição Suno"
+    },
+    {
+      "id": "terra-do-gelo-boss",
+      "scope": "Terra do Gelo",
+      "kind": "boss",
+      "title": "Boss — Terra do Gelo",
+      "src": null,
+      "status": "aguardando composição Suno"
+    },
+    {
+      "id": "terra-do-gelo-ambiente",
+      "scope": "Terra do Gelo",
+      "kind": "ambiente",
+      "title": "Ambiente — Terra do Gelo",
+      "src": null,
+      "status": "aguardando composição Suno"
+    },
+    {
+      "id": "terra-do-gelo-encontro",
+      "scope": "Terra do Gelo",
+      "kind": "encontro",
+      "title": "Encontro — Terra do Gelo",
+      "src": null,
+      "status": "aguardando composição Suno"
+    },
+    {
+      "id": "terra-dos-doces-exploracao",
+      "scope": "Terra dos Doces",
+      "kind": "exploracao",
+      "title": "Exploracao — Terra dos Doces",
+      "src": null,
+      "status": "aguardando composição Suno"
+    },
+    {
+      "id": "terra-dos-doces-boss",
+      "scope": "Terra dos Doces",
+      "kind": "boss",
+      "title": "Boss — Terra dos Doces",
+      "src": null,
+      "status": "aguardando composição Suno"
+    },
+    {
+      "id": "terra-dos-doces-ambiente",
+      "scope": "Terra dos Doces",
+      "kind": "ambiente",
+      "title": "Ambiente — Terra dos Doces",
+      "src": null,
+      "status": "aguardando composição Suno"
+    },
+    {
+      "id": "terra-dos-doces-encontro",
+      "scope": "Terra dos Doces",
+      "kind": "encontro",
+      "title": "Encontro — Terra dos Doces",
+      "src": null,
+      "status": "aguardando composição Suno"
+    },
+    {
+      "id": "cavernas-obscuras-exploracao",
+      "scope": "Cavernas Obscuras",
+      "kind": "exploracao",
+      "title": "Exploracao — Cavernas Obscuras",
+      "src": null,
+      "status": "aguardando composição Suno"
+    },
+    {
+      "id": "cavernas-obscuras-boss",
+      "scope": "Cavernas Obscuras",
+      "kind": "boss",
+      "title": "Boss — Cavernas Obscuras",
+      "src": null,
+      "status": "aguardando composição Suno"
+    },
+    {
+      "id": "cavernas-obscuras-ambiente",
+      "scope": "Cavernas Obscuras",
+      "kind": "ambiente",
+      "title": "Ambiente — Cavernas Obscuras",
+      "src": null,
+      "status": "aguardando composição Suno"
+    },
+    {
+      "id": "cavernas-obscuras-encontro",
+      "scope": "Cavernas Obscuras",
+      "kind": "encontro",
+      "title": "Encontro — Cavernas Obscuras",
+      "src": null,
+      "status": "aguardando composição Suno"
+    },
+    {
+      "id": "terra-dos-mortos-exploracao",
+      "scope": "Terra dos Mortos",
+      "kind": "exploracao",
+      "title": "Exploracao — Terra dos Mortos",
+      "src": null,
+      "status": "aguardando composição Suno"
+    },
+    {
+      "id": "terra-dos-mortos-boss",
+      "scope": "Terra dos Mortos",
+      "kind": "boss",
+      "title": "Boss — Terra dos Mortos",
+      "src": null,
+      "status": "aguardando composição Suno"
+    },
+    {
+      "id": "terra-dos-mortos-ambiente",
+      "scope": "Terra dos Mortos",
+      "kind": "ambiente",
+      "title": "Ambiente — Terra dos Mortos",
+      "src": null,
+      "status": "aguardando composição Suno"
+    },
+    {
+      "id": "terra-dos-mortos-encontro",
+      "scope": "Terra dos Mortos",
+      "kind": "encontro",
+      "title": "Encontro — Terra dos Mortos",
+      "src": null,
+      "status": "aguardando composição Suno"
+    },
+    {
+      "id": "pântano-venenoso-exploracao",
+      "scope": "Pântano Venenoso",
+      "kind": "exploracao",
+      "title": "Exploracao — Pântano Venenoso",
+      "src": null,
+      "status": "aguardando composição Suno"
+    },
+    {
+      "id": "pântano-venenoso-boss",
+      "scope": "Pântano Venenoso",
+      "kind": "boss",
+      "title": "Boss — Pântano Venenoso",
+      "src": null,
+      "status": "aguardando composição Suno"
+    },
+    {
+      "id": "pântano-venenoso-ambiente",
+      "scope": "Pântano Venenoso",
+      "kind": "ambiente",
+      "title": "Ambiente — Pântano Venenoso",
+      "src": null,
+      "status": "aguardando composição Suno"
+    },
+    {
+      "id": "pântano-venenoso-encontro",
+      "scope": "Pântano Venenoso",
+      "kind": "encontro",
+      "title": "Encontro — Pântano Venenoso",
+      "src": null,
+      "status": "aguardando composição Suno"
+    },
+    {
+      "id": "terra-dos-dinossauros-exploracao",
+      "scope": "Terra dos Dinossauros",
+      "kind": "exploracao",
+      "title": "Exploracao — Terra dos Dinossauros",
+      "src": null,
+      "status": "aguardando composição Suno"
+    },
+    {
+      "id": "terra-dos-dinossauros-boss",
+      "scope": "Terra dos Dinossauros",
+      "kind": "boss",
+      "title": "Boss — Terra dos Dinossauros",
+      "src": null,
+      "status": "aguardando composição Suno"
+    },
+    {
+      "id": "terra-dos-dinossauros-ambiente",
+      "scope": "Terra dos Dinossauros",
+      "kind": "ambiente",
+      "title": "Ambiente — Terra dos Dinossauros",
+      "src": null,
+      "status": "aguardando composição Suno"
+    },
+    {
+      "id": "terra-dos-dinossauros-encontro",
+      "scope": "Terra dos Dinossauros",
+      "kind": "encontro",
+      "title": "Encontro — Terra dos Dinossauros",
+      "src": null,
+      "status": "aguardando composição Suno"
+    },
+    {
+      "id": "terra-do-futuro-exploracao",
+      "scope": "Terra do Futuro",
+      "kind": "exploracao",
+      "title": "Exploracao — Terra do Futuro",
+      "src": null,
+      "status": "aguardando composição Suno"
+    },
+    {
+      "id": "terra-do-futuro-boss",
+      "scope": "Terra do Futuro",
+      "kind": "boss",
+      "title": "Boss — Terra do Futuro",
+      "src": null,
+      "status": "aguardando composição Suno"
+    },
+    {
+      "id": "terra-do-futuro-ambiente",
+      "scope": "Terra do Futuro",
+      "kind": "ambiente",
+      "title": "Ambiente — Terra do Futuro",
+      "src": null,
+      "status": "aguardando composição Suno"
+    },
+    {
+      "id": "terra-do-futuro-encontro",
+      "scope": "Terra do Futuro",
+      "kind": "encontro",
+      "title": "Encontro — Terra do Futuro",
+      "src": null,
+      "status": "aguardando composição Suno"
+    },
+    {
+      "id": "déia-tema",
+      "scope": "Déia",
+      "kind": "tema",
+      "title": "Tema de Déia",
+      "src": null,
+      "status": "aguardando composição Suno"
+    },
+    {
+      "id": "fhenrir-tema",
+      "scope": "Fhenrir",
+      "kind": "tema",
+      "title": "Tema de Fhenrir",
+      "src": null,
+      "status": "aguardando composição Suno"
+    },
+    {
+      "id": "vael-zhar-tema",
+      "scope": "Vael’Zhar",
+      "kind": "tema",
+      "title": "Tema de Vael’Zhar",
+      "src": null,
+      "status": "aguardando composição Suno"
+    },
+    {
+      "id": "vovó-brasa-tema",
+      "scope": "Vovó Brasa",
+      "kind": "tema",
+      "title": "Tema de Vovó Brasa",
+      "src": null,
+      "status": "aguardando composição Suno"
+    },
+    {
+      "id": "alderyon-tema",
+      "scope": "Alderyon",
+      "kind": "tema",
+      "title": "Tema de Alderyon",
+      "src": null,
+      "status": "aguardando composição Suno"
+    },
+    {
+      "id": "seralyth-tema",
+      "scope": "Seralyth",
+      "kind": "tema",
+      "title": "Tema de Seralyth",
+      "src": null,
+      "status": "aguardando composição Suno"
+    },
+    {
+      "id": "thalorien-tema",
+      "scope": "Thalorien",
+      "kind": "tema",
+      "title": "Tema de Thalorien",
+      "src": null,
+      "status": "aguardando composição Suno"
+    },
+    {
+      "id": "elyndor-tema",
+      "scope": "Elyndor",
+      "kind": "tema",
+      "title": "Tema de Elyndor",
+      "src": null,
+      "status": "aguardando composição Suno"
+    },
+    {
+      "id": "primeiro-alvorecer-tema",
+      "scope": "Primeiro Alvorecer",
+      "kind": "tema",
+      "title": "Tema de Primeiro Alvorecer",
+      "src": null,
+      "status": "aguardando composição Suno"
+    },
+    {
+      "id": "confronto-final-tema",
+      "scope": "Confronto Final",
+      "kind": "tema",
+      "title": "Tema de Confronto Final",
+      "src": null,
+      "status": "aguardando composição Suno"
+    },
+    {
+      "id": "reino-das-sombras-tema",
+      "scope": "Reino das Sombras",
+      "kind": "tema",
+      "title": "Tema de Reino das Sombras",
+      "src": null,
+      "status": "aguardando composição Suno"
+    },
+    {
+      "id": "abertura-e-ovo-cósmico-cena",
+      "scope": "Abertura e ovo cósmico",
+      "kind": "cena",
+      "title": "Abertura e ovo cósmico",
+      "src": null,
+      "status": "aguardando composição Suno"
+    },
+    {
+      "id": "última-chama-de-brasa-cena",
+      "scope": "Última Chama de Brasa",
+      "kind": "cena",
+      "title": "Última Chama de Brasa",
+      "src": null,
+      "status": "aguardando composição Suno"
+    },
+    {
+      "id": "despedida-de-brasa-cena",
+      "scope": "Despedida de Brasa",
+      "kind": "cena",
+      "title": "Despedida de Brasa",
+      "src": null,
+      "status": "aguardando composição Suno"
+    },
+    {
+      "id": "primeiro-encontro-com-fhenrir-cena",
+      "scope": "Primeiro encontro com Fhenrir",
+      "kind": "cena",
+      "title": "Primeiro encontro com Fhenrir",
+      "src": null,
+      "status": "aguardando composição Suno"
+    },
+    {
+      "id": "reencontro-dos-guardiões-cena",
+      "scope": "Reencontro dos guardiões",
+      "kind": "cena",
+      "title": "Reencontro dos guardiões",
+      "src": null,
+      "status": "aguardando composição Suno"
+    },
+    {
+      "id": "guerra-das-mil-estrelas-cena",
+      "scope": "Guerra das Mil Estrelas",
+      "kind": "cena",
+      "title": "Guerra das Mil Estrelas",
+      "src": null,
+      "status": "aguardando composição Suno"
+    },
+    {
+      "id": "vaelor-pede-perdão-cena",
+      "scope": "Vaelor pede perdão",
+      "kind": "cena",
+      "title": "Vaelor pede perdão",
+      "src": null,
+      "status": "aguardando composição Suno"
+    },
+    {
+      "id": "segunda-aurora-melhor-final-cena",
+      "scope": "Segunda Aurora — melhor final",
+      "kind": "cena",
+      "title": "Segunda Aurora — melhor final",
+      "src": null,
+      "status": "aguardando composição Suno"
+    },
+    {
+      "id": "diálogos-comuns-cena",
+      "scope": "Diálogos comuns",
+      "kind": "cena",
+      "title": "Diálogos comuns",
+      "src": null,
+      "status": "aguardando composição Suno"
+    },
+    {
+      "id": "santuário-dos-sonhos-cena",
+      "scope": "Santuário dos Sonhos",
+      "kind": "cena",
+      "title": "Santuário dos Sonhos",
+      "src": null,
+      "status": "aguardando composição Suno"
+    },
+    {
+      "id": "chefe-sir-musgoval",
+      "scope": "Terra Encantada",
+      "kind": "boss individual",
+      "title": "Tema de batalha — Sir Musgoval",
+      "src": null,
+      "status": "aguardando composição Suno"
+    },
+    {
+      "id": "chefe-lunac-rnio-guardi-o",
+      "scope": "Terra Encantada",
+      "kind": "boss individual",
+      "title": "Tema de batalha — Lunacórnio Guardião",
+      "src": null,
+      "status": "aguardando composição Suno"
+    },
+    {
+      "id": "chefe-rainha-florabel",
+      "scope": "Terra Encantada",
+      "kind": "boss individual",
+      "title": "Tema de batalha — Rainha Florabel",
+      "src": null,
+      "status": "aguardando composição Suno"
+    },
+    {
+      "id": "chefe-javali-magmabrasa",
+      "scope": "Terra de Fogo",
+      "kind": "boss individual",
+      "title": "Tema de batalha — Javali Magmabrasa",
+      "src": null,
+      "status": "aguardando composição Suno"
+    },
+    {
+      "id": "chefe-salamandrix",
+      "scope": "Terra de Fogo",
+      "kind": "boss individual",
+      "title": "Tema de batalha — Salamandrix",
+      "src": null,
+      "status": "aguardando composição Suno"
+    },
+    {
+      "id": "chefe-vulkrag",
+      "scope": "Terra de Fogo",
+      "kind": "boss individual",
+      "title": "Tema de batalha — Vulkrag",
+      "src": null,
+      "status": "aguardando composição Suno"
+    },
+    {
+      "id": "chefe-yetigor",
+      "scope": "Terra do Gelo",
+      "kind": "boss individual",
+      "title": "Tema de batalha — Yetigor",
+      "src": null,
+      "status": "aguardando composição Suno"
+    },
+    {
+      "id": "chefe-morsa-de-cristal",
+      "scope": "Terra do Gelo",
+      "kind": "boss individual",
+      "title": "Tema de batalha — Morsa de Cristal",
+      "src": null,
+      "status": "aguardando composição Suno"
+    },
+    {
+      "id": "chefe-aurorix",
+      "scope": "Terra do Gelo",
+      "kind": "boss individual",
+      "title": "Tema de batalha — Aurorix",
+      "src": null,
+      "status": "aguardando composição Suno"
+    },
+    {
+      "id": "chefe-golem-de-caramelo",
+      "scope": "Terra dos Doces",
+      "kind": "boss individual",
+      "title": "Tema de batalha — Golem de Caramelo",
+      "src": null,
+      "status": "aguardando composição Suno"
+    },
+    {
+      "id": "chefe-bobo-marshmello",
+      "scope": "Terra dos Doces",
+      "kind": "boss individual",
+      "title": "Tema de batalha — Bobo Marshmello",
+      "src": null,
+      "status": "aguardando composição Suno"
+    },
+    {
+      "id": "chefe-dona-glac-suprema",
+      "scope": "Terra dos Doces",
+      "kind": "boss individual",
+      "title": "Tema de batalha — Dona Glacê Suprema",
+      "src": null,
+      "status": "aguardando composição Suno"
+    },
+    {
+      "id": "chefe-morcegaia-eco",
+      "scope": "Cavernas Obscuras",
+      "kind": "boss individual",
+      "title": "Tema de batalha — Morcegaia Eco",
+      "src": null,
+      "status": "aguardando composição Suno"
+    },
+    {
+      "id": "chefe-toupeira-obsidiana",
+      "scope": "Cavernas Obscuras",
+      "kind": "boss individual",
+      "title": "Tema de batalha — Toupeira Obsidiana",
+      "src": null,
+      "status": "aguardando composição Suno"
+    },
+    {
+      "id": "chefe-nocturnox",
+      "scope": "Cavernas Obscuras",
+      "kind": "boss individual",
+      "title": "Tema de batalha — Nocturnox",
+      "src": null,
+      "status": "aguardando composição Suno"
+    },
+    {
+      "id": "chefe-guardi-o-sepulcral",
+      "scope": "Terra dos Mortos",
+      "kind": "boss individual",
+      "title": "Tema de batalha — Guardião Sepulcral",
+      "src": null,
+      "status": "aguardando composição Suno"
+    },
+    {
+      "id": "chefe-dama-lamento",
+      "scope": "Terra dos Mortos",
+      "kind": "boss individual",
+      "title": "Tema de batalha — Dama Lamento",
+      "src": null,
+      "status": "aguardando composição Suno"
+    },
+    {
+      "id": "chefe-necrodrake-rei",
+      "scope": "Terra dos Mortos",
+      "kind": "boss individual",
+      "title": "Tema de batalha — Necrodrake Rei",
+      "src": null,
+      "status": "aguardando composição Suno"
+    },
+    {
+      "id": "chefe-sapo-toximago",
+      "scope": "Pântano Venenoso",
+      "kind": "boss individual",
+      "title": "Tema de batalha — Sapo Toximago",
+      "src": null,
+      "status": "aguardando composição Suno"
+    },
+    {
+      "id": "chefe-hidra-lodoverde",
+      "scope": "Pântano Venenoso",
+      "kind": "boss individual",
+      "title": "Tema de batalha — Hidra Lodoverde",
+      "src": null,
+      "status": "aguardando composição Suno"
+    },
+    {
+      "id": "chefe-crocomandra",
+      "scope": "Pântano Venenoso",
+      "kind": "boss individual",
+      "title": "Tema de batalha — Crocomandra",
+      "src": null,
+      "status": "aguardando composição Suno"
+    },
+    {
+      "id": "chefe-raptor-alfa-escarlate",
+      "scope": "Terra dos Dinossauros",
+      "kind": "boss individual",
+      "title": "Tema de batalha — Raptor Alfa Escarlate",
+      "src": null,
+      "status": "aguardando composição Suno"
+    },
+    {
+      "id": "chefe-anquilo-xam",
+      "scope": "Terra dos Dinossauros",
+      "kind": "boss individual",
+      "title": "Tema de batalha — Anquilo Xamã",
+      "src": null,
+      "status": "aguardando composição Suno"
+    },
+    {
+      "id": "chefe-tirano-rexor",
+      "scope": "Terra dos Dinossauros",
+      "kind": "boss individual",
+      "title": "Tema de batalha — Tirano Rexor",
+      "src": null,
+      "status": "aguardando composição Suno"
+    },
+    {
+      "id": "chefe-samurai-drone-x",
+      "scope": "Terra do Futuro",
+      "kind": "boss individual",
+      "title": "Tema de batalha — Samurai Drone-X",
+      "src": null,
+      "status": "aguardando composição Suno"
+    },
+    {
+      "id": "chefe-escorpiotron",
+      "scope": "Terra do Futuro",
+      "kind": "boss individual",
+      "title": "Tema de batalha — Escorpiotron",
+      "src": null,
+      "status": "aguardando composição Suno"
+    },
+    {
+      "id": "chefe-overlord-chronark",
+      "scope": "Terra do Futuro",
+      "kind": "boss individual",
+      "title": "Tema de batalha — Overlord Chronark",
+      "src": null,
+      "status": "aguardando composição Suno"
+    },
+    {
+      "id": "chefe-kharvok",
+      "scope": "Reino das Sombras",
+      "kind": "boss individual",
+      "title": "Tema de batalha — Kharvok",
+      "src": null,
+      "status": "aguardando composição Suno"
+    },
+    {
+      "id": "chefe-seraphyne",
+      "scope": "Reino das Sombras",
+      "kind": "boss individual",
+      "title": "Tema de batalha — Seraphyne",
+      "src": null,
+      "status": "aguardando composição Suno"
+    },
+    {
+      "id": "chefe-vael-zhar-3-fases",
+      "scope": "Reino das Sombras",
+      "kind": "boss individual",
+      "title": "Tema de batalha — Vael’Zhar — 3 fases",
+      "src": null,
+      "status": "aguardando composição Suno"
+    }
+  ],
+  "art": [
+    {
+      "name": "cover",
+      "src": "assets/img/cover.webp",
+      "source": "déia_e_os_nove_reinos_majestosos.png",
+      "validation": "Imagem de referência do acervo disponível"
+    },
+    {
+      "name": "deia",
+      "src": "assets/img/deia.webp",
+      "source": "déia_conceito_da_pequena_dragonesa.png",
+      "validation": "Imagem de referência do acervo disponível"
+    },
+    {
+      "name": "deia_celestial",
+      "src": "assets/img/deia_celestial.webp",
+      "source": "déia_armadura_celestial_do_alvorecer.png",
+      "validation": "Imagem de referência do acervo disponível"
+    },
+    {
+      "name": "fhenrir",
+      "src": "assets/img/fhenrir.webp",
+      "source": "fhenrir_guardião_do_crepúsculo.png",
+      "validation": "Imagem de referência do acervo disponível"
+    },
+    {
+      "name": "vaelzhar",
+      "src": "assets/img/vaelzhar.webp",
+      "source": "ficha_de_conceito_vael_zhar_soberano_das_sombras.png",
+      "validation": "Imagem de referência do acervo disponível"
+    },
+    {
+      "name": "map",
+      "src": "assets/img/map.webp",
+      "source": "mapa_dos_nove_reinos_majestosos.png",
+      "validation": "Imagem de referência do acervo disponível"
+    },
+    {
+      "name": "boss_fogo",
+      "src": "assets/img/boss_fogo.webp",
+      "source": "terra_de_fogo_heróis_vulcânicos.png",
+      "validation": "Referência presente nos materiais anteriores; associação nome–arte de chefes requer conferência"
+    },
+    {
+      "name": "boss_gelo",
+      "src": "assets/img/boss_gelo.webp",
+      "source": "concept_art_da_terra_do_gelo.png",
+      "validation": "Referência presente nos materiais anteriores; associação nome–arte de chefes requer conferência"
+    },
+    {
+      "name": "boss_doces",
+      "src": "assets/img/boss_doces.webp",
+      "source": "terra_dos_doces_chefes_confeiteiros.png",
+      "validation": "Referência presente nos materiais anteriores; associação nome–arte de chefes requer conferência"
+    },
+    {
+      "name": "boss_cavernas",
+      "src": "assets/img/boss_cavernas.webp",
+      "source": "cavernas_obscuras_bestiário_abissal.png",
+      "validation": "Referência presente nos materiais anteriores; associação nome–arte de chefes requer conferência"
+    },
+    {
+      "name": "boss_mortos",
+      "src": "assets/img/boss_mortos.webp",
+      "source": "terra_dos_mortos_chefes_do_submundo.png",
+      "validation": "Referência presente nos materiais anteriores; associação nome–arte de chefes requer conferência"
+    },
+    {
+      "name": "boss_pantano",
+      "src": "assets/img/boss_pantano.webp",
+      "source": "bestiário_dos_chefes_do_pântano.png",
+      "validation": "Referência presente nos materiais anteriores; associação nome–arte de chefes requer conferência"
+    },
+    {
+      "name": "boss_dinos",
+      "src": "assets/img/boss_dinos.webp",
+      "source": "terra_dos_dinossauros_chefes_da_selva.png",
+      "validation": "Referência presente nos materiais anteriores; associação nome–arte de chefes requer conferência"
+    },
+    {
+      "name": "boss_futuro",
+      "src": "assets/img/boss_futuro.webp",
+      "source": "pôster_de_chefes_cibernéticos_do_futuro.png",
+      "validation": "Referência presente nos materiais anteriores; associação nome–arte de chefes requer conferência"
+    },
+    {
+      "name": "boss_encantada",
+      "src": "assets/img/boss_encantada.webp",
+      "source": "terra_encantada_guardiões_da_floresta.png",
+      "validation": "Referência presente nos materiais anteriores; associação nome–arte de chefes requer conferência"
+    },
+    {
+      "name": "world_0",
+      "src": "assets/img/world_0.webp",
+      "source": "terra encantada.png",
+      "validation": "Imagem de referência do acervo disponível"
+    },
+    {
+      "name": "world_1",
+      "src": "assets/img/world_1.webp",
+      "source": "terra do fogo.png",
+      "validation": "Imagem de referência do acervo disponível"
+    },
+    {
+      "name": "world_2",
+      "src": "assets/img/world_2.webp",
+      "source": "terra do gelo.png",
+      "validation": "Imagem de referência do acervo disponível"
+    },
+    {
+      "name": "world_3",
+      "src": "assets/img/world_3.webp",
+      "source": "terra dos doces.png",
+      "validation": "Imagem de referência do acervo disponível"
+    },
+    {
+      "name": "world_4",
+      "src": "assets/img/world_4.webp",
+      "source": "cavernas obscuras.png",
+      "validation": "Imagem de referência do acervo disponível"
+    },
+    {
+      "name": "world_5",
+      "src": "assets/img/world_5.webp",
+      "source": "terra dos mortos.png",
+      "validation": "Imagem de referência do acervo disponível"
+    },
+    {
+      "name": "world_6",
+      "src": "assets/img/world_6.webp",
+      "source": "pantano venenoso.png",
+      "validation": "Imagem de referência do acervo disponível"
+    },
+    {
+      "name": "world_7",
+      "src": "assets/img/world_7.webp",
+      "source": "terra dos dinossauros.png",
+      "validation": "Imagem de referência do acervo disponível"
+    },
+    {
+      "name": "world_8",
+      "src": "assets/img/world_8.webp",
+      "source": "terra do futuro.png",
+      "validation": "Imagem de referência do acervo disponível"
+    }
+  ],
+  "development": {
+    "engine": "Godot 4.7.2",
+    "phase": "02C.10 — integração de habilidades, pausada, execução não confirmada",
+    "last_commit": "7966688efb9b275ba1a36957805966a7fd4c20e4",
+    "push": "NÃO autorizado",
+    "save": "produção v3; ARCH-02B v4 isolado",
+    "tests": "última fase: 33/33 + 12/12 + ARCH-02B 36/36 conforme relatório do OpenCode"
+  },
+  "rules": [
+    "Cânone mais recente aprovado prevalece sobre V6.1 em caso de conflito pontual.",
+    "Guerra dos Nove Refúgios é narrativa NÃO jogável.",
+    "A Sucessora de Vovó Brasa não precisa de desenvolvimento próprio.",
+    "Primeiro encontro com Fhenrir enquanto Déia ainda é criança; nenhum romance infantil.",
+    "Fhenrir jogável apenas após primeiro encontro; integração real futura.",
+    "Mundo compartilhado; progressão individual.",
+    "Nove peças energéticas da armadura; possibilidade de recuperação por Fhenrir mas despertar só por Déia.",
+    "Cinco finais; estrutura formal ainda pendente.",
+    "Melhor final traz Brasa de volta por evento singular.",
+    "Fhenrir e Déia ambos indispensáveis contra Vael’Zhar.",
+    "Não publicar builds fictícias ou links de teste quebrados.",
+    "Música só toca se arquivo real licenciado/produzido for fornecido."
+  ],
+  "pending": [
+    "Catálogo formal dos cinco finais, gatilhos e epílogos.",
+    "Alcance e custo final da relíquia inicial de Brasa; nome Medalhão da Chama Viva e habilidade Calor de Brasa propostos.",
+    "Nome Última Chama do Coração e Coração da Segunda Aurora propostos; validação nominal pendente.",
+    "Como o nível 100 será integrado no código.",
+    "Variante Vulkrag quando Fhenrir é personagem controlado.",
+    "Associação definitiva das artes aprovadas aos nomes de subchefes e chefes.",
+    "Gates exatos e ordem de acesso aos reinos; rampas e mapas definitivos.",
+    "Detalhes da consciência Primeiro Alvorecer e condições cósmicas de ressurreição.",
+    "Fase 02C.10 ainda não executada / confirmada.",
+    "Nome Atlas das Constelações Perdidas já aprovado, registros ainda não implementados."
+  ]
+}
