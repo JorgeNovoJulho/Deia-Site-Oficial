@@ -1,7 +1,7 @@
 name: Verify portal
 on:
   push:
-    branches: [main, visual-v14]
+    branches: [main, visual-v14, audit-v16]
   workflow_dispatch:
 permissions:
   contents: read

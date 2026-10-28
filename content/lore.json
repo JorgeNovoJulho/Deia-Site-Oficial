@@ -84,21 +84,21 @@
     {
       "name": "Déia",
       "role": "Herdeira do Primeiro Alvorecer",
-      "image": "assets/img/deia.webp",
+      "image": "assets/img/personagens/deia-retrato-oficial.webp",
       "description": "Pequena dragonesa coral-avermelhada, barriga amarela, olhos âmbar, coque e fita vermelha; renasce de ovo cósmico, amadurece fisicamente e emocionalmente até adulta, mas mantém alegria, apetite, humor e autonomia.",
       "status": "confirmado"
     },
     {
       "name": "Déia Celestial",
       "role": "Alvorecer Pleno",
-      "image": "assets/img/deia_celestial.webp",
+      "image": "assets/img/personagens/deia-celestial-retrato-oficial.webp",
       "description": "Forma adulta com nove manifestações materiais de energia do Alvorecer, asas douradas, armadura azul e dourada. A forma sem armadura permanece adulta.",
       "status": "confirmado"
     },
     {
       "name": "Fhenrir",
       "role": "Guardião do Crepúsculo",
-      "image": "assets/img/fhenrir.webp",
+      "image": "assets/img/personagens/fhenrir-retrato-oficial.webp",
       "description": "Dragão azul-índigo, herdeiro de Alderyon e Seralyth; segundo protagonista após o primeiro encontro; joia torácica e Espada Estelar Val’Aster; ligação histórica e emocional com Déia.",
       "status": "confirmado"
     },

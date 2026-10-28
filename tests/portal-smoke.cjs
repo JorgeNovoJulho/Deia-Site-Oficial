@@ -4,12 +4,13 @@ const base = process.env.PORTAL_URL || 'http://127.0.0.1:8000/';
 (async () => {
   const browser = await chromium.launch({headless:true});
   try {
-    for (const width of [1440, 1024, 390, 360]) {
+    for (const width of [1440, 1024, 768, 390, 360]) {
       const page = await browser.newPage({viewport:{width,height:900},reducedMotion:'reduce'});
       const errors=[];
       page.on('pageerror',e=>errors.push(e.message));
       page.on('response',r=>{if(r.status()>=400 && r.url().startsWith(base)) errors.push(`${r.status()} ${r.url()}`)});
       await page.goto(base);
+      await page.waitForFunction(()=>document.querySelector('#musicas .music-card-grid audio'));
       await page.locator('.v13-banner-img').waitFor({state:'visible'});
       await page.waitForFunction(()=>document.querySelector('.v13-banner-img')?.naturalWidth===1983);
       assert(await page.locator('.v9-cover').evaluate(e=>e.classList.contains('v13-banner-ready')));
@@ -56,12 +57,53 @@ const base = process.env.PORTAL_URL || 'http://127.0.0.1:8000/';
       assert.equal(await page.locator('#codex-heading').textContent(),'Terra Encantada');await page.keyboard.press('Escape');
       await page.getByRole('button',{name:'Próximo reino',exact:true}).click();
       assert.equal(await page.locator('.spotlight-copy h3').textContent(),'Terra de Fogo');
-      const musicCard=await page.locator('.music-entry').count()?'.music-entry':'.track';
+      const musicCard='#musicas .music-entry';
       await page.locator('.sound-filter button').filter({hasText:'Exploração'}).click();
       assert(await page.locator(musicCard+':visible').count()>0,'Exploration filter returned no tracks');
       await page.locator('.sound-filter button').filter({hasText:'Todas'}).click();
-      assert.equal(await page.locator(musicCard+':visible').count(),87);
+      assert.equal(await page.locator('#musicas .music-entry:visible').count(),await page.locator('#musicas audio').count());
       
+      // Every image must load, and character images must stay inside the portrait frame.
+      const imageAudit=[];
+      for(const image of await page.locator('img[src]:not(.codex-modal img)').all()){
+        await image.scrollIntoViewIfNeeded();await image.evaluate(e=>e.decode());
+        imageAudit.push(await image.evaluate(e=>({src:e.getAttribute('src'),w:e.naturalWidth,h:e.naturalHeight})));
+      }
+      assert(imageAudit.every(x=>x.w>0&&x.h>0),'Missing image');
+      for(const image of await page.locator('.codex-cover img').all()){
+        assert(await image.evaluate(e=>{const p=e.parentElement.getBoundingClientRect(),i=e.getBoundingClientRect();return i.top>=p.top-1&&i.bottom<=p.bottom+1&&i.width<=p.width+1&&getComputedStyle(e).objectFit==='contain'}),'Portrait escapes frame');
+      }
+      for(const button of await page.locator('[data-codex="world"]').all()){
+        await button.click();await page.locator('.codex-modal:not([hidden])').waitFor();
+        await page.locator('.codex-visual img').evaluate(e=>e.decode());
+        assert(await page.locator('.codex-visual img').evaluate(e=>e.naturalWidth===1400));
+        await page.keyboard.press('Escape');
+      }
+      for(const button of await page.locator('[data-codex="guardian"]').all()){
+        await button.click();assert(await page.locator('#codex-heading').isVisible());await page.keyboard.press('Escape');
+      }
+      for(const image of await page.locator('#galeria img,.v9-gallery img').all()){
+        await image.click();await page.locator('.codex-visual img').evaluate(e=>e.decode());
+        await page.getByRole('button',{name:'Aumentar zoom',exact:true}).click();
+        assert.equal(await page.locator('[data-reset]').textContent(),'140%');
+        await page.locator('[data-reset]').click();assert.equal(await page.locator('[data-reset]').textContent(),'100%');
+        await page.keyboard.press('Escape');
+      }
+      for(const id of await page.locator('a[href^="#"]').evaluateAll(links=>[...new Set(links.map(a=>a.getAttribute('href')).filter(s=>s.length>1))])){
+        assert.equal(await page.locator(id).count(),1,'Broken anchor '+id);
+      }
+      await page.locator('.sound-filter button').filter({hasText:'Encontros'}).click();
+      assert(await page.locator('.music-empty').isVisible());
+      await page.locator('.sound-filter button').filter({hasText:'Todas'}).click();
+      const players=await page.locator('#musicas audio').all();
+      for(const player of players){
+        await player.evaluate(async e=>{await e.play()});
+        await page.waitForFunction(()=>[...document.querySelectorAll('#musicas audio')].some(a=>!a.paused&&a.currentTime>0));
+        assert(await player.evaluate(e=>!e.paused&&Number.isFinite(e.duration)&&e.duration>0),'Audio cannot play');
+      }
+      assert.equal(await page.locator('audio').evaluateAll(es=>es.filter(e=>!e.paused).length),1,'Simultaneous players');
+      await players[players.length-1].evaluate(e=>e.pause());
+      console.log('IMAGE AUDIT',width,JSON.stringify(imageAudit));
       await page.locator('.v12-search-open').click();
       await page.locator('.v12-search input').fill('Fhenrir');
       assert.equal(await page.locator('.v12-results a').count(),1);await page.keyboard.press('Escape');
@@ -72,6 +114,9 @@ const base = process.env.PORTAL_URL || 'http://127.0.0.1:8000/';
       await page.keyboard.press('Escape');
       await page.locator('.brand').click();
       await page.screenshot({path:`/tmp/portal-${width}.png`});
+      await page.locator('.nav a[href="#personagens"]').count();
+      await page.locator('#personagens').scrollIntoViewIfNeeded();
+      await page.screenshot({path:`/tmp/portal-characters-${width}.png`});
       assert.deepEqual(errors,[]);
       await page.goto(new URL('admin/',base).href);
       assert(await page.locator('#login').isVisible());assert(await page.locator('#console').isHidden());
