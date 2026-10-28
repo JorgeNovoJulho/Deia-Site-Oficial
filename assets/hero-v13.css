@@ -1,14 +1,19 @@
-/* V13 — replacement cinematic hero. Activated only when actual banner image exists. */
+/* V13: approved artwork, preserved at its original aspect ratio. */
 .v9-cover{position:relative;isolation:isolate}
-.v9-cover.v13-banner-ready{background:#070b19!important}
+.v9-cover.v13-banner-ready{display:block!important;height:auto!important;min-height:0!important;aspect-ratio:auto;background:#070b19!important}
 .v9-cover.v13-banner-ready:before,.v9-cover.v13-banner-ready:after{display:none!important}
-.v13-banner-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center center;z-index:0;display:block;filter:saturate(1.07)}
-.v9-cover.v13-banner-ready .v9-inner{pointer-events:none;opacity:0}
+.v13-banner-img{position:relative;display:block;width:100%;height:auto;object-fit:contain;z-index:0;filter:none}
+.v9-cover.v13-banner-ready .v9-inner{display:none!important}
 .v13-linkzones{position:absolute;inset:0;z-index:2;pointer-events:none;display:block}
 .v13-linkzones a{position:absolute;pointer-events:auto;display:block;border-radius:8px}
 .v13-linkzones a:focus-visible{outline:3px solid white;outline-offset:4px;box-shadow:0 0 0 7px #0d1c33a8}
-.v13-linkzones a:first-child{left:2.2%;top:66%;width:17%;height:11%}
-.v13-linkzones a:last-child{left:19%;top:66%;width:14%;height:11%}
-.v13-banner-footnote{position:absolute;z-index:3;right:16px;bottom:9px;background:#061027aa;color:#ffdfaa;border:1px solid #f8cb815c;padding:5px 9px;border-radius:6px;font:700 9px Manrope,sans-serif}
-@media(max-width:980px){.v9-cover.v13-banner-ready .v13-banner-img{object-fit:contain;background:#0a1023}.v9-cover.v13-banner-ready{height:auto!important;aspect-ratio:1983/793}.v13-banner-footnote{display:none}}
-@media(max-width:630px){.v9-cover.v13-banner-ready{aspect-ratio:1.5;min-height:350px!important}.v9-cover.v13-banner-ready .v13-banner-img{object-fit:cover;object-position:38% center;opacity:.75}.v9-cover.v13-banner-ready .v9-inner{opacity:1;pointer-events:auto;z-index:2;position:relative;padding:15px!important}.v9-cover.v13-banner-ready .v9-intro{max-width:93%}.v9-cover.v13-banner-ready .v9-intro h1{font-size:50px!important}.v9-cover.v13-banner-ready .v9-intro p{font-size:11px!important}.v9-cover.v13-banner-ready .v9-intro .eyebrow{display:none}.v9-cover.v13-banner-ready .v9-actions{margin-top:12px!important}.v9-cover.v13-banner-ready .v9-actions .btn{font-size:9px!important;padding:10px!important}.v13-linkzones{display:none}}
+.v13-linkzones a:first-child{left:2.2%;top:69%;width:16.5%;height:9%}
+.v13-linkzones a:last-child{left:19.7%;top:69%;width:13.4%;height:9%}
+@media(max-width:630px){
+ .v13-linkzones{display:none}
+ .v9-cover.v13-banner-ready .v9-inner{display:flex!important;position:relative;width:100%!important;height:auto;padding:18px!important;align-items:center;background:#0a1023}
+ .v9-cover.v13-banner-ready .v9-intro{max-width:100%;width:100%}
+ .v9-cover.v13-banner-ready .v9-intro h1,.v9-cover.v13-banner-ready .v9-sub,.v9-cover.v13-banner-ready .eyebrow,.v9-cover.v13-banner-ready .v9-intro p{display:none}
+ .v9-cover.v13-banner-ready .v9-actions{display:flex;margin:0!important;gap:10px}
+ .v9-cover.v13-banner-ready .v9-actions .btn{flex:1;min-height:44px;display:flex;align-items:center;justify-content:center;text-align:center;font-size:11px!important;padding:12px 10px!important}
+}
