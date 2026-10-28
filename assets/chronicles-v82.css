@@ -1,0 +1,20 @@
+/* Crônicas públicas sem spoilers */
+.chronicles{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;margin:28px 0 38px}
+.chronicle{position:relative;background:linear-gradient(145deg,#202b45e8,#11182be8);border:1px solid #dab98963;border-radius:18px;padding:clamp(23px,3vw,38px);box-shadow:0 22px 55px #0009;overflow:hidden;transition:transform .3s,box-shadow .3s}
+.chronicle:hover{transform:translateY(-4px);box-shadow:0 25px 65px #000a,0 0 35px #d7a36e22}
+.chronicle:after{content:'✧';position:absolute;top:-24px;right:12px;color:#ffc98716;font:100px Georgia,serif}
+.chronicle-index{font:800 10px Manrope,sans-serif;letter-spacing:.18em;color:#f9c47e}
+.chronicle h3{font:700 clamp(19px,2vw,25px)/1.4 Cinzel,serif;color:#ffe1aa;margin:14px 0}
+.chronicle p{font:400 13px/1.95 Manrope,sans-serif;color:#d8e2ed;margin:12px 0}
+.chronicle:nth-child(3){grid-column:1/-1;background:linear-gradient(110deg,#303051e8,#1b1e39e8 60%,#101729);border-color:#e7c3909c}
+.chronicle:nth-child(3) p{max-width:95ch}
+#personagens .codex-card .copy{display:flex;flex-direction:column;align-items:flex-start;min-height:270px}
+#personagens .codex-card .codex-open{margin-top:auto}
+#reinos .codex-world .copy{display:flex;flex-direction:column}
+#reinos .codex-world .codex-open{margin-top:auto}
+#musicas .track[hidden]{display:none!important}
+#musicas .tracks{max-height:580px;overflow:auto;scrollbar-color:#d3a774 #131a30;padding:5px 8px 12px 0}
+#musicas .track{border-radius:12px}
+#galeria figure{margin:0}
+#galeria figure img{object-fit:contain;background:#0e1427}
+@media(max-width:700px){.chronicles{grid-template-columns:1fr}.chronicle:nth-child(3){grid-column:auto}}
