@@ -29,3 +29,59 @@ body{font-feature-settings:"kern";text-rendering:optimizeLegibility}
 @media(max-width:1050px){.v9-realms{grid-template-columns:repeat(5,minmax(0,1fr))!important}.v9-grid{grid-template-columns:1fr!important}.v9-cover.v13-banner-ready{width:100%}}
 @media(max-width:750px){.section{padding-top:62px!important}.codex-cover{height:310px!important}.codex-grid{grid-template-columns:1fr!important}.v9-lower{grid-template-columns:1fr!important}.v9-features{gap:8px!important}}
 @media(max-width:630px){.v9-cover.v13-banner-ready{height:auto!important;min-height:0!important;aspect-ratio:auto!important}.v9-cover.v13-banner-ready .v13-banner-img{height:auto!important;object-fit:contain!important;opacity:1!important}.v9-cover.v13-banner-ready .v9-inner{display:flex!important;background:#0a1023!important}.v9-cover.v13-banner-ready .v9-intro p{display:none!important}.v9-realms{grid-template-columns:repeat(3,minmax(0,1fr))!important}.v9-portraits a{height:175px!important}}
+
+/* V14 — one content column beside the rail, shared by every section. */
+:root{--portal-rail:132px;--portal-header:70px;--portal-gutter:clamp(18px,3vw,42px)}
+html{scroll-padding-top:var(--portal-header)}
+main>.section{position:relative;scroll-margin-top:var(--portal-header);min-width:0}
+@media(min-width:1101px){
+ main{margin-left:var(--portal-rail)}
+ #inicio.hero{margin-left:0!important}
+ main>.section{width:min(1320px,calc(100% - 2 * var(--portal-gutter)));margin-inline:auto}
+ .footer{margin-left:var(--portal-rail)}
+ .v9-side{top:var(--portal-header)!important}
+}
+.top{height:auto!important;min-height:var(--portal-header);padding-block:10px!important;flex-wrap:nowrap}
+.brand{flex-shrink:0}.nav{min-width:0}
+.v9-side a:first-child:not(.v12-active){background:transparent!important;color:#d0ddf5!important}
+.v9-side a.v12-active{background:#11335a!important;color:#ffe0a4!important}
+.section-title>div{min-width:0}.section-sub{font-size:14px;line-height:1.75}
+.codex-card,.codex-world,.guardian-card{display:flex;flex-direction:column;min-width:0}
+.codex-card .copy,.codex-world .copy,.guardian-card .copy{display:flex;flex-direction:column;flex:1;gap:7px}
+.codex-open{margin-top:16px!important;flex-shrink:0}
+.codex-card .codex-open{margin-top:auto!important}
+.codex-card .codex-extra{margin-bottom:14px}
+.codex-cover{flex-shrink:0}.mystery-portrait:after{content:none}
+.v9-panel header{align-items:center;gap:12px}.v9-panel header h2{min-width:0}.v9-panel header a{flex-shrink:0}
+.v9-panel:after,.chronicle:before,.codex-card:before,.codex-world:before,.guardian-card:before{pointer-events:none}
+.v9-grid,.v9-lower{align-items:stretch}
+.v9-panel{border-radius:8px!important;box-shadow:inset 0 0 0 1px #e8bc7912,0 10px 24px #0007!important}
+.v9-panel header{background:linear-gradient(90deg,#8b61352b,transparent 80%);border-bottom-color:#c7a36b55}
+.v9-feature{min-height:142px!important}
+.codex-dialog{min-height:0}.codex-text{min-height:0;overscroll-behavior:contain}
+.codex-visual[hidden]{display:none!important}
+.codex-zoom button,.sound-filter button{min-height:44px}
+:where(a,button,input,select,textarea):focus-visible{outline:2px solid #ffe1a7;outline-offset:4px}
+@media(max-width:1100px){main{margin-left:0}.footer{margin-left:0}}
+@media(max-width:920px){
+ .top{gap:10px!important}.brand{margin-right:auto}.brand small{max-width:155px;line-height:1.4}
+ .nav{top:var(--portal-header);height:calc(100dvh - var(--portal-header));padding:18px 24px 30px!important}
+ .nav a{font-size:13px!important;min-height:46px}
+ .menu-toggle{padding:10px 12px;min-height:44px;font-size:12px;white-space:nowrap}
+ .v12-search-open{min-height:44px;padding:9px 12px}
+}
+@media(max-width:630px){
+ .section-title{align-items:flex-start;flex-direction:column}.pill{white-space:normal;max-width:100%}
+ .section h2{font-size:clamp(27px,7.5vw,35px)!important}
+ .v9-features{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+ .v9-feature{min-height:125px!important}.v9-feature span{line-height:1.4!important}
+ .v9-feature small{font-size:10px!important}
+ .v9-portraits a{height:155px!important}.v9-panel header h2{font-size:12px!important}
+ .v9-panel header a{font-size:10px!important}
+ .track{align-items:flex-start;flex-direction:column;gap:8px}.track>div{min-width:0}
+ .track strong{overflow-wrap:anywhere}.public-intro{padding:23px}.public-intro p{font-size:15px}
+ .codex-dialog{max-height:calc(100dvh - 24px)}.codex-modal{padding:12px}
+ .codex-dialog:has(.codex-visual[hidden]) .codex-text{padding:64px 24px 28px}
+ .v9-cover.v13-banner-ready .v9-actions .btn{min-width:0;font-size:11px!important}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
