@@ -7,7 +7,7 @@ Referência visual consultada: `Portal de Déia e os Nove Reinos(1).png`, imagem
 
 - O banner V13 continua com 1983 × 793 pixels e SHA256 `13fc255eccf6be18ca7139d35635bd0bb57e90e760ace846172341e4cf2787e2`. Sem redesenho, filtros ou corte. Atalhos da capa preservados; botões separados no celular.
 - Retratos contidos nos limites do card; a dimensão intrínseca das imagens já não ultrapassa o contêiner. Recortes individuais de Déia, Fhenrir e Déia Celestial usam exclusivamente as pranchas oficiais existentes.
-- As nove miniaturas de paisagem e o carrossel usam regiões do mapa oficial. As pranchas completas dos reinos continuam nas fichas, com proporção 4:3 e sem recorte. Nenhum chefe foi substituído por outra criatura.
+- As nove miniaturas de paisagem usam regiões do mapa oficial. O carrossel apresenta as pranchas oficiais inteiras, evitando ampliar miniaturas além de sua resolução. Os destaques de exploração e mistério usam recortes de paisagem do banner oficial, preservado integralmente na capa. As pranchas completas dos reinos continuam nas fichas, com proporção 4:3 e sem recorte. Nenhum chefe foi substituído por outra criatura.
 - Vovó Brasa, Alderyon, Seralyth, Elyndor, Aethrakar e as duas aparências já aprovadas de Vael’Zhar foram preservados. Aethrakar continua distinto de Vael’Zhar. Elyndor também apresenta sua arte na ficha de viajante.
 - Galeria da página inicial agora abre o modal com zoom, por clique ou teclado. A galeria principal conserva as referências e os retratos aprovados. As pranchas narrativas de Déia Celestial e Vael’Zhar são representadas pelos retratos, sem seus textos reveladores.
 - As duas folhas de refinamento `refinement-v14.css` e `layout-audit-v16.css` foram substituídas na página por uma única camada ativa, `portal-v16.css`. Os arquivos históricos permanecem disponíveis para reversão. Foram unificados limites de imagem, molduras, espaçamentos, quebras responsivas e estilos de leitura; estilos-base e módulos funcionais anteriores continuam carregados.
@@ -20,7 +20,7 @@ O workflow `Verify portal` testa Chromium em 1440, 1024, 768, 390 e 360 pixels, 
 
 Cobertura: proporção do banner, seus dois links, ausência de transbordamento horizontal, menu e Escape, todos os retratos, limites dos contêineres, todas as imagens renderizadas, nove miniaturas de paisagem, nove fichas de reino, nove fichas de viajante, galeria principal e inicial com zoom/reset, âncoras internas, filtros musicais, categoria vazia, reprodução de cada áudio publicado, exclusividade de reprodução, busca e tela de entrada administrativa em cada largura.
 
-Os 13 novos recortes foram comparados pixel a pixel com as respectivas regiões de origem, após decodificação. Resultado: zero pixels alterados. Fontes e coordenadas exatas estão em `content/recortes-oficiais-v16.json`.
+Os 15 novos recortes foram comparados pixel a pixel com as respectivas regiões de origem, após decodificação. Resultado: zero pixels alterados. Fontes e coordenadas exatas estão em `content/recortes-oficiais-v16.json`.
 
 ## Limites e pendências
 
@@ -34,6 +34,6 @@ Os 13 novos recortes foram comparados pixel a pixel com as respectivas regiões 
 
 Textos/código: `index.html`, `assets/portal-v16.css`, `assets/portal-v7.js`, `assets/codex-v82.js`, `assets/polish-v12.js`, `assets/music-catalog.js`, `content/lore.json` (somente três caminhos de imagem), `content/recortes-oficiais-v16.json`, `tests/portal-smoke.cjs`, `.github/workflows/verify-portal.yml` e este relatório.
 
-Novas imagens: `assets/img/personagens/deia-retrato-oficial.webp`, `deia-celestial-retrato-oficial.webp`, `fhenrir-retrato-oficial.webp`, `deia-acao-oficial.webp`; `assets/img/reinos/reino-0-paisagem-oficial.webp` até `reino-8-paisagem-oficial.webp`.
+Novas imagens: `assets/img/personagens/deia-retrato-oficial.webp`, `deia-celestial-retrato-oficial.webp`, `fhenrir-retrato-oficial.webp`, `deia-acao-oficial.webp`; `assets/img/reinos/reino-0-paisagem-oficial.webp` até `reino-8-paisagem-oficial.webp`, `paisagem-luminosa-oficial.webp` e `paisagem-misteriosa-oficial.webp`.
 
 Nenhum arquivo existente de imagem foi apagado ou sobrescrito. As repetições de personagem entre prévia, ficha e galeria são intencionais; cada local aponta para a identidade correspondente.

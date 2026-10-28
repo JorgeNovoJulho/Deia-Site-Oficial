@@ -143,6 +143,28 @@
         335,
         270
       ]
+    },
+    {
+      "source": "assets/img/DEIA_BANNER_APROVADO_V13.webp",
+      "source_sha256": "13fc255eccf6be18ca7139d35635bd0bb57e90e760ace846172341e4cf2787e2",
+      "file": "assets/img/reinos/paisagem-luminosa-oficial.webp",
+      "crop_xywh": [
+        1120,
+        220,
+        580,
+        380
+      ]
+    },
+    {
+      "source": "assets/img/DEIA_BANNER_APROVADO_V13.webp",
+      "source_sha256": "13fc255eccf6be18ca7139d35635bd0bb57e90e760ace846172341e4cf2787e2",
+      "file": "assets/img/reinos/paisagem-misteriosa-oficial.webp",
+      "crop_xywh": [
+        1500,
+        210,
+        280,
+        330
+      ]
     }
   ]
 }
