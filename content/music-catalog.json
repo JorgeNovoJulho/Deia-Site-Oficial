@@ -41,7 +41,7 @@
       "scope": "Terra de Fogo",
       "kind": "boss",
       "title": "Boss — Terra de Fogo",
-      "src": null
+      "src": "assets/audio/terra-de-fogo-boss.mp3"
     },
     {
       "id": "terra-de-fogo-ambiente",
