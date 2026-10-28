@@ -6,10 +6,10 @@
       "source_sha256": "a07811951106d1a4aab05cb7bbc972ed2baebfe6181dbacd8cd2b9b7c68f30aa",
       "file": "assets/img/personagens/deia-retrato-oficial.webp",
       "crop_xywh": [
-        320,
-        10,
-        322,
-        300
+        705,
+        44,
+        128,
+        155
       ]
     },
     {
@@ -17,10 +17,10 @@
       "source_sha256": "491f5e5149e978fe24e9e9eecb639a7b7020d55aff1e1b1c9ffbe469ddc4ea86",
       "file": "assets/img/personagens/fhenrir-retrato-oficial.webp",
       "crop_xywh": [
-        392,
-        12,
-        248,
-        370
+        658,
+        32,
+        132,
+        225
       ]
     },
     {
@@ -39,10 +39,10 @@
       "source_sha256": "3180c33fbf100c6cdd1138ef1be422b1f20c7b20c615f508c5b80c3e424f7a17",
       "file": "assets/img/reinos/reino-0-paisagem-oficial.webp",
       "crop_xywh": [
-        280,
-        112,
-        295,
-        162
+        419,
+        119,
+        164,
+        156
       ]
     },
     {
@@ -127,10 +127,10 @@
       "source_sha256": "3180c33fbf100c6cdd1138ef1be422b1f20c7b20c615f508c5b80c3e424f7a17",
       "file": "assets/img/reinos/reino-8-paisagem-oficial.webp",
       "crop_xywh": [
-        1040,
-        485,
-        232,
-        154
+        1048,
+        516,
+        215,
+        122
       ]
     }
   ]
