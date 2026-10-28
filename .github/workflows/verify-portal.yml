@@ -22,6 +22,24 @@ jobs:
         run: |
           python3 -m http.server 8000 >/tmp/portal-server.log 2>&1 &
           node tests/portal-smoke.cjs
+      - name: Verify deployed GitHub Pages in real Chromium
+        if: github.ref == 'refs/heads/main'
+        env:
+          PORTAL_URL: https://jorgenovojulho.github.io/Deia-Site-Oficial/
+        run: |
+          deployed=false
+          for attempt in $(seq 1 30); do
+            if curl -fsSL "${PORTAL_URL}?verify=${GITHUB_SHA}" -o /tmp/live-index.html && cmp -s index.html /tmp/live-index.html; then
+              deployed=true
+              break
+            fi
+            sleep 5
+          done
+          if [ "$deployed" != true ]; then
+            echo "Pages has not served this revision yet."
+            exit 1
+          fi
+          node tests/portal-smoke.cjs
       - uses: actions/upload-artifact@v4
         if: always()
         with:

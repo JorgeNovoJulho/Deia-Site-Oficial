@@ -132,6 +132,17 @@
         215,
         122
       ]
+    },
+    {
+      "source": "assets/img/deia.webp",
+      "source_sha256": "a07811951106d1a4aab05cb7bbc972ed2baebfe6181dbacd8cd2b9b7c68f30aa",
+      "file": "assets/img/personagens/deia-acao-oficial.webp",
+      "crop_xywh": [
+        305,
+        830,
+        335,
+        270
+      ]
     }
   ]
 }

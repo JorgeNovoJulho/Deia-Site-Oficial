@@ -70,6 +70,7 @@ const base = process.env.PORTAL_URL || 'http://127.0.0.1:8000/';
         imageAudit.push(await image.evaluate(e=>({src:e.getAttribute('src'),w:e.naturalWidth,h:e.naturalHeight})));
       }
       assert(imageAudit.every(x=>x.w>0&&x.h>0),'Missing image');
+      assert.equal(await page.locator('.v9-realms img[src*="/reinos/"]').count(),9,'Nine individual official landscape previews');
       for(const image of await page.locator('.codex-cover img').all()){
         assert(await image.evaluate(e=>{const p=e.parentElement.getBoundingClientRect(),i=e.getBoundingClientRect();return i.top>=p.top-1&&i.bottom<=p.bottom+1&&i.width<=p.width+1&&getComputedStyle(e).objectFit==='contain'}),'Portrait escapes frame');
       }
