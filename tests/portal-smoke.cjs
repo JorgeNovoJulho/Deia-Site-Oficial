@@ -102,7 +102,7 @@ const base = process.env.PORTAL_URL || 'http://127.0.0.1:8000/';
       const players=await page.locator('audio').all();
       for(const player of players){
         await player.evaluate(async e=>{await e.play()});
-        await page.waitForFunction(()=>[...document.querySelectorAll('#musicas audio')].some(a=>!a.paused&&a.currentTime>0));
+        await page.waitForFunction(()=>[...document.querySelectorAll('audio')].some(a=>!a.paused&&a.currentTime>0));
         assert(await player.evaluate(e=>!e.paused&&Number.isFinite(e.duration)&&e.duration>0),'Audio cannot play');
       }
       assert.equal(await page.locator('audio').evaluateAll(es=>es.filter(e=>!e.paused).length),1,'Simultaneous players');
