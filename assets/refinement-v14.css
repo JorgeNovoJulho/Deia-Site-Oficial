@@ -85,3 +85,9 @@ main>.section{position:relative;scroll-margin-top:var(--portal-header);min-width
  .v9-cover.v13-banner-ready .v9-actions .btn{min-width:0;font-size:11px!important}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+@media(max-width:450px){
+ .top{gap:7px!important}.brand{min-width:0;flex-shrink:1;font-size:24px!important}
+ .brand small{max-width:130px;font-size:7px!important;letter-spacing:.04em!important}
+ .v12-search-open{padding:9px 8px;font-size:10px}.menu-toggle{padding:10px 9px;font-size:11px}
+}
