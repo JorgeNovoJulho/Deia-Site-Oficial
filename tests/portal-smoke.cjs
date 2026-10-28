@@ -97,7 +97,9 @@ const base = process.env.PORTAL_URL || 'http://127.0.0.1:8000/';
       await page.locator('.sound-filter button').filter({hasText:'Encontros'}).click();
       assert(await page.locator('.music-empty').isVisible());
       await page.locator('.sound-filter button').filter({hasText:'Todas'}).click();
-      const players=await page.locator('#musicas audio').all();
+      assert(await page.locator('.v9-sound audio').isVisible(),'Homepage player controls missing');
+      assert((await page.locator('.v9-sound audio').boundingBox()).height>=36,'Homepage player collapsed');
+      const players=await page.locator('audio').all();
       for(const player of players){
         await player.evaluate(async e=>{await e.play()});
         await page.waitForFunction(()=>[...document.querySelectorAll('#musicas audio')].some(a=>!a.paused&&a.currentTime>0));

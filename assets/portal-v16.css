@@ -42,7 +42,7 @@ main>.section{position:relative;scroll-margin-top:var(--portal-header);min-width
 .v9-sound p{max-width:55ch}.v9-demos p{line-height:1.6}
 .v9-sound .music-entry{padding:0;border:0;box-shadow:none;background:none;flex-direction:column;align-items:stretch;gap:10px}
 .v9-sound .music-art{display:none}
-.v9-sound audio{width:100%;max-width:100%;height:40px}
+.v9-sound .music-entry audio{width:100%;max-width:100%;height:40px;min-height:40px;flex:0 0 40px}
 .v9-sound .music-meta{margin-bottom:4px}
 .chronicles{gap:18px}
 .chronicle{padding:clamp(24px,3vw,42px);box-shadow:inset 0 0 0 1px #fff0bf12,0 22px 48px #0008}
