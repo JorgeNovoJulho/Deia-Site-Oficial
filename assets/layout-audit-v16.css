@@ -1,0 +1,40 @@
+/* V16 — art placement and component harmonization. Kept separate for safe rollback. */
+:root{--gold16:#f9d29a;--border16:#e8bb7a88}
+body{overflow-x:clip;background-color:#060b1a!important}
+#inicio.hero{margin-bottom:10px}
+#inicio .v9-panel{min-width:0}
+.v9-cover.v13-banner-ready{height:auto!important;min-height:0!important;aspect-ratio:auto!important;overflow:hidden}
+.v9-cover.v13-banner-ready .v13-banner-img{position:relative!important;inset:auto!important;display:block!important;width:100%!important;height:auto!important;object-fit:contain!important;object-position:center!important;max-width:100%}
+.v9-cover.v13-banner-ready .v9-inner{display:none!important}
+.v9-cover.v13-banner-ready .v13-linkzones{position:absolute;inset:0}
+.v9-portraits img,.v9-feature img,.v9-gallery img,.v9-realms img{display:block;width:100%;height:100%;max-width:100%;object-fit:cover}
+.v9-portraits img{object-position:50% 24%}
+.v9-realms a{overflow:hidden;min-width:0}
+.v9-realms img{height:auto;aspect-ratio:3/4;object-position:50% 25%}
+.v9-feature img{object-position:50% 42%}
+.v9-panel{border-color:var(--border16)!important;box-shadow:0 10px 34px #000b,inset 0 0 0 1px #ffe9c51a!important}
+.v9-panel header h2{font-family:Cinzel,Georgia,serif!important;line-height:1.4}
+.codex-grid{align-items:stretch}
+.codex-card{display:flex;flex-direction:column;overflow:hidden}
+.codex-card .copy{display:flex;flex-direction:column;flex:1;gap:9px}
+.codex-card .codex-open{margin-top:auto!important}
+.codex-cover{position:relative;height:320px!important;display:grid;place-items:center;background:radial-gradient(circle at center,#4d3d67,#101529 78%);overflow:hidden}
+.codex-cover img{display:block;width:100%;height:100%;object-fit:contain!important;object-position:center!important;background:#101627}
+.codex-cover img.portrait-approved{object-fit:contain!important}
+.codex-cover:after{content:"";position:absolute;inset:7px;border:1px solid #fbd89f4e;border-radius:8px;pointer-events:none}
+.codex-world{display:flex;flex-direction:column;overflow:hidden}
+.codex-world>img{width:100%;height:270px!important;object-fit:contain!important;object-position:center!important;background:linear-gradient(#111933,#0a1125)}
+.codex-world .copy{flex:1;display:flex;flex-direction:column}
+.codex-world .codex-open{margin-top:auto!important}
+.guardian-card{display:flex;flex-direction:column}
+.guardian-card .copy{flex:1;display:flex;flex-direction:column}
+.guardian-card .codex-open{margin-top:auto!important}
+#reinos .mapshot{width:100%;height:auto;max-height:none;object-fit:contain;display:block;box-shadow:0 18px 48px #0009}
+#galeria figure img{width:100%;height:230px;object-fit:contain!important;object-position:center;background:#0b1429;border-radius:8px}
+#galeria figure{background:linear-gradient(130deg,#18233c,#090f21);border:1px solid var(--border16);overflow:hidden}
+#galeria figure figcaption{min-height:42px;padding:10px 14px;color:#eed2a5;font-size:12px}
+.codex-visual img{object-fit:contain!important;max-width:100%}
+#personagens .section-title,#reinos .section-title,#guardioes .section-title,#galeria .section-title{margin-bottom:23px}
+@media(min-width:1280px){.codex-grid{grid-template-columns:repeat(3,minmax(0,1fr))!important}}
+@media(max-width:900px){.v9-grid,.v9-lower{grid-template-columns:1fr!important}.v9-realms{grid-template-columns:repeat(5,minmax(0,1fr))!important}.codex-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}}
+@media(max-width:600px){.v9-realms{grid-template-columns:repeat(3,minmax(0,1fr))!important}.codex-grid{grid-template-columns:1fr!important}.v9-cover.v13-banner-ready .v9-inner{display:flex!important;position:relative!important;width:100%;padding:20px!important;background:#081326}.v9-cover.v13-banner-ready .v9-intro{width:100%;max-width:100%}.codex-cover{height:290px!important}.codex-world>img{height:230px!important}#galeria figure img{height:190px}}
