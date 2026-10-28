@@ -1,0 +1,93 @@
+{
+  "approval": "Modelos confirmados pelo usuário nas artes anexadas; sem redesenho.",
+  "sources": [
+    {
+      "file": "Concept Art dos Guardiões dos Nove Reinos(1).png",
+      "sha256": "f020a246383709ddd01886fd832a8b4a7bfdb1bf6f958b967409b2f05007693b"
+    },
+    {
+      "file": "Vael’Zhar_ Luz e Sombras.png",
+      "sha256": "c97318e8963af2235bda69c0abbcc23a67298a0110efcfa45fef7056ffe21d8d"
+    }
+  ],
+  "extraction": "Recortes retangulares, sem redimensionamento ou filtro, WebP sem perdas. Pranchas narrativas completas não são publicadas.",
+  "portraits": [
+    {
+      "character": "Vovó Brasa",
+      "file": "assets/img/personagens/vovo-brasa-aprovada.webp",
+      "source": "Concept Art dos Guardiões dos Nove Reinos(1).png",
+      "crop_xywh": [
+        10,
+        143,
+        297,
+        333
+      ]
+    },
+    {
+      "character": "Alderyon Valtheris",
+      "file": "assets/img/personagens/alderyon-valtheris-aprovado.webp",
+      "source": "Concept Art dos Guardiões dos Nove Reinos(1).png",
+      "crop_xywh": [
+        323,
+        144,
+        303,
+        349
+      ]
+    },
+    {
+      "character": "Seralyth Asterion",
+      "file": "assets/img/personagens/seralyth-asterion-aprovada.webp",
+      "source": "Concept Art dos Guardiões dos Nove Reinos(1).png",
+      "crop_xywh": [
+        640,
+        143,
+        274,
+        351
+      ]
+    },
+    {
+      "character": "Elyndor",
+      "file": "assets/img/personagens/elyndor-aprovado.webp",
+      "source": "Concept Art dos Guardiões dos Nove Reinos(1).png",
+      "crop_xywh": [
+        923,
+        143,
+        281,
+        351
+      ]
+    },
+    {
+      "character": "Aethrakar",
+      "file": "assets/img/personagens/aethrakar-aprovado.webp",
+      "source": "Concept Art dos Guardiões dos Nove Reinos(1).png",
+      "crop_xywh": [
+        1215,
+        639,
+        311,
+        201
+      ]
+    },
+    {
+      "character": "Vaelor",
+      "file": "assets/img/personagens/vaelor-aprovado.webp",
+      "source": "Vael’Zhar_ Luz e Sombras.png",
+      "crop_xywh": [
+        380,
+        0,
+        280,
+        590
+      ]
+    },
+    {
+      "character": "Vaelor / Vael’Zhar",
+      "file": "assets/img/personagens/vaelzhar-aprovado.webp",
+      "source": "Vael’Zhar_ Luz e Sombras.png",
+      "crop_xywh": [
+        875,
+        60,
+        395,
+        395
+      ]
+    }
+  ]
+}
