@@ -1,0 +1,18 @@
+/* Portal público V8 — identidade editorial e atmosfera de fantasia */
+body{background:#060916;color:#f5f1e9}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;background:radial-gradient(ellipse at 15% 14%,#b85f8640,transparent 30%),radial-gradient(ellipse at 90% 35%,#2a619945,transparent 38%),radial-gradient(ellipse at 45% 90%,#b17f3730,transparent 35%)}
+.hero{background:linear-gradient(140deg,#070a17,#14152e 65%,#131c32)}.hero-art{border:2px solid #efbd7a66;box-shadow:0 0 100px #e5a76229,0 30px 90px #000b;transform:rotate(-.7deg)}
+.hero-inner{gap:6%}.hero h1{text-shadow:0 4px 36px #f4c57d22}
+.public-intro{background:linear-gradient(130deg,#18243b,#21172f);border:1px solid #dfb97a75;border-radius:25px;padding:clamp(24px,4vw,58px);box-shadow:0 20px 75px #0008}
+.public-intro .kicker,.feature-kicker{font:800 11px Manrope,sans-serif;letter-spacing:.19em;color:#eec48d;text-transform:uppercase}
+.public-intro p{font:400 clamp(15px,1.6vw,18px)/1.95 Manrope,sans-serif;max-width:1000px;color:#e1e6f2}
+.feature-strip{display:grid;grid-template-columns:repeat(3,1fr);gap:19px;margin-top:24px}.feature{border:1px solid #bc96c359;background:linear-gradient(145deg,#20223a,#111a2f);border-radius:18px;padding:26px;box-shadow:0 13px 38px #0007}.feature h3{font:700 19px Cinzel,serif;color:#ffd69b;margin:10px 0}.feature p{font:400 13px/1.85 Manrope,sans-serif;color:#cfd9e9}
+.game-teaser{position:relative;display:grid;grid-template-columns:.92fr 1.08fr;gap:0;overflow:hidden;min-height:430px;border:1px solid #eab77670;border-radius:22px;background:#151a30;box-shadow:0 25px 80px #0009}
+.game-teaser>img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0;opacity:.40;filter:saturate(1.15)}.game-teaser .teaser-copy{position:relative;grid-column:1/-1;z-index:1;padding:clamp(35px,6vw,75px);background:linear-gradient(90deg,#0b0d20ef,#0b0d20bd 56%,transparent);display:flex;flex-direction:column;justify-content:center}
+.game-teaser h2{max-width:730px;font:700 clamp(30px,4.6vw,56px)/1.22 Cinzel,serif;color:#ffe0ad;text-wrap:balance}.game-teaser p{max-width:600px;font:400 15px/1.9 Manrope,sans-serif;color:#e4e8ef}
+.world-spotlight{border:1px solid #e7c18888;box-shadow:0 0 80px #c58d6240,0 30px 85px #000a}.world-spotlight .spotlight-copy{background:radial-gradient(circle at 90% 10%,#7252ad4e,transparent 55%),#15182d}
+.card:hover{box-shadow:0 0 35px #bf7cd338,0 28px 70px #0009}
+.gallery figure{position:relative;overflow:hidden;border-radius:16px}.gallery figure:after{content:"AMPLIAR ✦";position:absolute;right:12px;top:12px;padding:7px 11px;background:#070d20cb;border:1px solid #fad7a36d;border-radius:30px;font:800 9px Manrope,sans-serif;color:#ffe1ab;pointer-events:none}
+.public-world-note{margin:18px 0 25px;padding:16px 23px;border-left:3px solid #e7b874;background:#192139;color:#e0e8f7;font:13px/1.8 Manrope,sans-serif}
+.public-coda{margin-top:30px;padding:26px;border-radius:19px;background:linear-gradient(100deg,#452d4777,#152441);border:1px solid #cfb3d35b;font:500 14px/1.9 Manrope,sans-serif;color:#eee0ec}
+@media(max-width:750px){.feature-strip{grid-template-columns:1fr}.game-teaser{min-height:400px}.game-teaser .teaser-copy{padding:28px;background:linear-gradient(90deg,#0b0d20f1,#0b0d20b9)}.game-teaser h2{font-size:32px}}
