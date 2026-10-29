@@ -34,14 +34,16 @@
       "scope": "Terra de Fogo",
       "kind": "exploracao",
       "title": "Exploracao — Terra de Fogo",
-      "src": "assets/audio/terra-de-fogo-exploracao.mp3"
+      "src": "assets/audio/terra-de-fogo-exploracao.mp3",
+      "cover": "assets/img/reinos/reino-1-paisagem-oficial.webp"
     },
     {
       "id": "terra-de-fogo-boss",
       "scope": "Terra de Fogo",
       "kind": "boss",
       "title": "Boss — Terra de Fogo",
-      "src": "assets/audio/terra-de-fogo-boss.mp3"
+      "src": "assets/audio/terra-de-fogo-boss.mp3",
+      "cover": "assets/img/world_1.webp"
     },
     {
       "id": "terra-de-fogo-ambiente",
@@ -62,7 +64,8 @@
       "scope": "Terra do Gelo",
       "kind": "exploracao",
       "title": "Exploracao — Terra do Gelo",
-      "src": "assets/audio/terra-do-gelo-exploracao.mp3"
+      "src": "assets/audio/terra-do-gelo-exploracao.mp3",
+      "cover": "assets/img/reinos/reino-2-paisagem-oficial.webp"
     },
     {
       "id": "terra-do-gelo-boss",
@@ -230,7 +233,8 @@
       "scope": "Terra do Futuro",
       "kind": "exploracao",
       "title": "Exploracao — Terra do Futuro",
-      "src": "assets/audio/terra-do-futuro-exploracao.mp3"
+      "src": "assets/audio/terra-do-futuro-exploracao.mp3",
+      "cover": "assets/img/reinos/reino-8-paisagem-oficial.webp"
     },
     {
       "id": "terra-do-futuro-boss",
@@ -258,7 +262,8 @@
       "scope": "Déia",
       "kind": "tema",
       "title": "A Pequena Dragonisa — feat. Fhenrir St. George",
-      "src": "assets/audio/A-Pequena-Dragonisa---feat-Fhenrir-St-George.mp3"
+      "src": "assets/audio/A-Pequena-Dragonisa---feat-Fhenrir-St-George.mp3",
+      "cover": "assets/img/personagens/deia-retrato-oficial.webp"
     },
     {
       "id": "fhenrir-tema",
