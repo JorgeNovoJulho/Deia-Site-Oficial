@@ -18,7 +18,7 @@ const base=process.env.PORTAL_URL||'http://127.0.0.1:8000/';
    for(const im of imgs){await im.evaluate(async e=>e.decode());assert(await im.evaluate(e=>e.naturalWidth>0),'realm image missing')}
    const vael=page.locator('#inicio .v9-portraits a').nth(2).locator('img');
    assert(await vael.evaluate(e=>e.complete&&e.naturalWidth>0),'VaelZhar portrait missing');
-   await page.waitForFunction(()=>document.querySelector('#musicas .music-card-grid audio'));
+   await page.waitForFunction(()=>document.querySelector('#musicas .sound-card-v25 .sound-play-v25'));
    // Requested components must be present, not merely referenced in source.
    assert(await page.locator('#inicio .deia-video-box video').count()===1,'Homepage video element missing');
    assert(await page.locator('#inicio .deia-video-note').count()===1,'Video placeholder must exist before upload');
@@ -30,6 +30,9 @@ const base=process.env.PORTAL_URL||'http://127.0.0.1:8000/';
    await page.locator('.codex-modal .character-gallery-tools button').last().click();
    assert.notEqual(await page.locator('.codex-modal .codex-visual img').getAttribute('src'),firstPortrait,'Character next image did not work');
    await page.keyboard.press('Escape');
+   assert(await page.locator('#inicio .v9-sound .sound-featured-v25 img').count()===1,'Featured music artwork missing');
+   assert(await page.locator('#musicas .sound-play-v25').count()>=1,'Custom music player missing');
+   assert(await page.locator('#musicas .sound-cover-v25').count()>=1,'Music artwork missing');
    await page.locator('#inicio .v9-realms a').nth(1).click();
    const viewer=page.locator('.realm-viewer:not([hidden])');
    await viewer.waitFor();
