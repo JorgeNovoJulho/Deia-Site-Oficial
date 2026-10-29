@@ -1,0 +1,16 @@
+/* V18.1 homepage: realm cards fill the frame without excessive lower void */
+#inicio .v9-grid{align-items:start!important}
+#inicio .v9-grid>.v9-panel{height:auto!important;min-height:0!important}
+#inicio .v9-grid>.v9-panel:has(.v9-realms){display:flex!important;flex-direction:column;justify-content:flex-start}
+#inicio .v9-realms{display:grid!important;grid-template-columns:repeat(9,minmax(0,1fr))!important;gap:clamp(5px,.6vw,10px)!important;align-items:stretch!important;padding:12px!important;margin:0!important;min-height:0!important}
+#inicio .v9-realms a{height:auto!important;min-height:0!important;aspect-ratio:auto!important;display:flex!important;flex-direction:column;gap:6px;min-width:0;text-align:center;align-items:stretch;justify-content:flex-start;cursor:zoom-in;border-radius:7px;background:#0b1529;border:1px solid #dfb47b8c;padding:3px 3px 9px!important;overflow:hidden;transition:transform .2s,box-shadow .2s}
+#inicio .v9-realms a:hover{transform:translateY(-3px);box-shadow:0 0 15px #efc38850}
+#inicio .v9-realms img{width:100%!important;height:auto!important;aspect-ratio:3/4!important;object-fit:cover!important;object-position:center!important;border-radius:4px}
+#inicio .v9-realms a span{display:block!important;position:static!important;font:700 clamp(8px,.72vw,11px)/1.35 Manrope,Arial,sans-serif!important;color:#fff1d5!important;white-space:normal!important;background:transparent!important;padding:0 2px!important;min-height:2.7em}
+#inicio .v9-portraits{align-items:stretch}
+#inicio .v9-portraits a{height:auto!important;aspect-ratio:3/4;overflow:hidden;position:relative!important}
+#inicio .v9-portraits img{height:100%!important;width:100%!important;object-fit:cover!important}
+#inicio .v9-portraits a:last-child img{object-position:65% 12%!important;transform:scale(1.52);transform-origin:65% 16%}
+#inicio .v9-portraits a:last-child{background:#170c2e}
+@media(max-width:1250px){#inicio .v9-realms{grid-template-columns:repeat(5,minmax(0,1fr))!important}}
+@media(max-width:640px){#inicio .v9-realms{grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:8px!important}#inicio .v9-portraits a:last-child img{transform:scale(1.3)}}
