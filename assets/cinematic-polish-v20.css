@@ -1,0 +1,51 @@
+/* V20 — cinematic finishing layer, based on the approved navy/gold fantasy portal.
+   Consolidated component rules, no original artwork replacements. */
+:root{--v20-gold:#f4cd91;--v20-line:rgba(237,194,125,.57);--v20-ink:#081224;--v20-halo:rgba(176,116,235,.18)}
+html{scroll-padding-top:86px}
+body{background:radial-gradient(ellipse at 90% 6%,#38224c7a,transparent 36%),radial-gradient(ellipse at 5% 62%,#142b5366,transparent 47%),#060b19!important}
+body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;opacity:.17;background-image:radial-gradient(circle,#ffe4b0 0.75px,transparent 1.2px);background-size:62px 79px}
+.shell{max-width:min(1440px,calc(100% - 34px))}
+.section{position:relative;isolation:isolate;scroll-margin-top:75px}
+.section-title{position:relative;align-items:end;gap:14px;padding-bottom:23px;border-bottom:1px solid #d8b77b40;margin-bottom:23px}
+.section-title::after{content:"";position:absolute;bottom:-2px;left:0;width:clamp(100px,14vw,200px);height:2px;background:linear-gradient(90deg,#ffdda2,transparent)}
+.section-title h2{font-family:Cinzel,Georgia,serif!important;text-shadow:0 2px 16px #d69b6140;letter-spacing:.01em}
+.section-sub{color:#c9d4e7!important;line-height:1.8}
+.v9-panel,.codex-card,.codex-world,.guardian-card,#galeria figure,.chronicle,.music-entry{position:relative;border:1px solid var(--v20-line)!important;background-color:rgba(10,18,37,.94);box-shadow:0 16px 40px #0009,inset 0 0 0 1px #f8dfab14!important;transition:border-color .25s ease,box-shadow .25s ease,transform .25s ease}
+.v9-panel::after,.codex-card::after,.codex-world::after,.guardian-card::after{content:"";position:absolute;inset:5px;border:1px solid #f7d7a521;border-radius:inherit;pointer-events:none;z-index:2}
+.v9-panel:hover,.codex-card:hover,.codex-world:hover,.guardian-card:hover,#galeria figure:hover{border-color:#ffe3acaa!important;box-shadow:0 20px 46px #000b,0 0 28px var(--v20-halo)!important}
+.v9-panel header,.v9-panel header h2{min-width:0}
+.v9-panel header a,.codex-open,.btn{transition:transform .2s ease,background .2s ease,box-shadow .2s ease}
+.v9-panel header a:hover,.codex-open:hover,.btn:hover{transform:translateY(-2px)}
+.v9-feature{position:relative;overflow:hidden;border:1px solid #dbb77e77!important;isolation:isolate}
+.v9-feature::before{content:"";position:absolute;inset:0;pointer-events:none;z-index:1;background:linear-gradient(180deg,transparent 30%,rgba(3,8,20,.8));opacity:.9}
+.v9-feature img{transition:transform .5s cubic-bezier(.2,.7,.2,1),filter .5s}
+.v9-feature:hover img{transform:scale(1.055);filter:saturate(1.1) brightness(1.07)}
+.v9-feature span{z-index:2}
+.v9-realms a{transition:transform .25s ease,box-shadow .25s ease}
+.v9-realms a:hover img{filter:brightness(1.07) saturate(1.12)}
+.v9-portraits a{border:1px solid #eac58d70!important;box-shadow:0 14px 20px #0008;overflow:hidden}
+.v9-portraits img{transition:filter .35s ease}
+.v9-portraits a:hover img{filter:brightness(1.11) saturate(1.07)}
+.v9-portraits a span{letter-spacing:.07em;text-shadow:0 2px 12px #000}
+#personagens .codex-cover,#reinos .codex-world>img{background:radial-gradient(ellipse at center,#313952,#0a1122 80%)}
+#personagens .codex-cover img,#reinos .codex-world>img{object-fit:contain!important;object-position:center!important}
+#personagens .codex-card p,#reinos .codex-world p,.guardian-card p{line-height:1.8!important}
+#reinos .world-spotlight{border:1px solid #f3ca8f80!important;box-shadow:0 24px 55px #000a;overflow:hidden}
+#reinos .spotlight-picture{background:#10172a;min-width:0}
+#reinos .spotlight-picture img{display:block;max-width:100%;object-fit:contain!important}
+#reinos .spotlight-copy{min-width:0}
+#reinos .spotlight-controls button,.realm-viewer-tools button,.realm-viewer-close{transition:background .2s,transform .2s,box-shadow .2s}
+#reinos .spotlight-controls button:hover,.realm-viewer-tools button:hover,.realm-viewer-close:hover{background:#3c3650;box-shadow:0 0 17px #f0b57655;transform:translateY(-1px)}
+#galeria .gallery{gap:clamp(12px,1.6vw,22px)}
+#galeria figure img{object-fit:contain!important;background:#0d172b}
+#galeria figure figcaption{background:linear-gradient(90deg,#141b31,#10182c);min-height:42px}
+.music-entry{gap:14px}
+.music-entry audio{accent-color:#e8c08a}
+.realm-viewer-dialog{box-shadow:0 35px 100px #000e,0 0 36px #c1886735!important}
+.realm-viewer-dialog header{background:linear-gradient(110deg,#101c35,#090f23)!important}
+:where(a,button,[role="button"]):focus-visible{outline:3px solid #ffe0a2!important;outline-offset:3px!important}
+@media(min-width:1500px){.shell{max-width:1440px}}
+@media(max-width:1150px){.shell{width:calc(100% - 24px)!important}#inicio .v9-grid,#inicio .v9-lower{grid-template-columns:minmax(0,1fr)!important}}
+@media(max-width:760px){.section{padding-block:54px!important}.section-title{align-items:start;flex-direction:column}.section-title h2{font-size:clamp(24px,6vw,37px)!important}#inicio .v9-realms{grid-template-columns:repeat(3,minmax(0,1fr))!important}.v9-panel{max-width:100%}}
+@media(max-width:420px){.shell{width:calc(100% - 16px)!important}#inicio .v9-realms{gap:6px!important;padding:8px!important}.realm-viewer-dialog{border-radius:9px!important}#personagens .codex-card .copy{padding:17px!important}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition-duration:.01ms!important;animation-duration:.01ms!important}}
