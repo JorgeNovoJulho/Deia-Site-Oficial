@@ -14,6 +14,7 @@ const base=process.env.PORTAL_URL||'http://127.0.0.1:8000/';
    await page.waitForFunction(()=>document.querySelector('#inicio .v9-realms a')?.querySelector('img')?.complete);
    assert.equal(await page.locator('#inicio .v9-realms a').count(),9,'nine homepage world cards');
    assert.equal(await page.locator('#inicio .v9-portraits a').count(),3,'three main portraits');
+   assert.equal(await page.locator('#guardioes .guardian-picture-v28 img').count(),9,'Nine guardian artworks or realm context images required');
    const imgs=await page.locator('#inicio .v9-realms img').all();
    for(const im of imgs){await im.evaluate(async e=>e.decode());assert(await im.evaluate(e=>e.naturalWidth>0),'realm image missing')}
    const vael=page.locator('#inicio .v9-portraits a').nth(2).locator('img');
@@ -33,7 +34,7 @@ const base=process.env.PORTAL_URL||'http://127.0.0.1:8000/';
    assert(await page.locator('#inicio .v9-sound .sound-featured-v25 img').count()===1,'Featured music artwork missing');
    assert(await page.locator('#musicas .sound-play-v25').count()>=1,'Custom music player missing');
    assert(await page.locator('#musicas .sound-cover-v25').count()>=1,'Music artwork missing');
-   assert.equal(await page.locator('link[rel="stylesheet"]').count(),1,'CSS should use one consolidated stylesheet');
+   assert(await page.locator('link[rel="stylesheet"]').count()<=2,'Stylesheet count exceeded consolidated base plus guardian enhancement');
    assert(await page.locator('#musicas .sound-cover-v25').first().evaluate(img=>img.complete&&img.naturalWidth>0),'Published track cover failed to load');
    assert(await page.locator('#musicas .sound-card-premium .sound-equalizer-v26').count()>=1,'Premium audio ornament missing');
    assert(await page.locator('#musicas .sound-card-premium .sound-kind-v26').count()>=1,'Audio track category badge missing');
