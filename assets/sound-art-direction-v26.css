@@ -1,0 +1,39 @@
+/* V26 — musical art direction: celestial gold relief / violet translucency */
+#musicas{--m-gold:#f4d6a2;--m-gold2:#ab7952;--m-deep:#081225}
+#musicas .sound-tools-v25{padding:12px 0 18px;margin-bottom:12px;border-bottom:1px solid #f5d29a4d;gap:9px}
+#musicas .sound-tools-v25 button{min-height:39px;border-radius:999px;padding:8px 18px;box-shadow:inset 0 1px #ffffff13,0 5px 12px #0007;letter-spacing:.025em}
+#musicas .sound-tools-v25 button[aria-pressed=true]{color:#fff3d3;border-color:#ffdfac;box-shadow:0 0 0 1px #eac38c4d,0 0 22px #d6a46445}
+#musicas .sound-cards-v25{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.sound-card-v25.sound-card-premium{position:relative;isolation:isolate;display:grid;grid-template-columns:minmax(130px,34%) minmax(0,1fr);min-height:205px;padding:11px;gap:17px;overflow:hidden;border:1px solid #e2bd86!important;border-radius:14px;background:linear-gradient(118deg,#0b1428dd,#1a2140de 61%,#12102be8)!important;box-shadow:inset 0 0 0 1px #ffdaa727,inset 0 0 32px #dcad7820,0 18px 38px #02030caa!important}
+.sound-card-v25.sound-card-premium::before{content:"";position:absolute;pointer-events:none;inset:5px;border:1px solid #f7d8a634;border-radius:10px;z-index:3}
+.sound-card-v25.sound-card-premium::after{content:"✧";pointer-events:none;position:absolute;right:14px;top:8px;font-size:20px;color:#e9ca9455;z-index:2}
+.sound-aura-v26{position:absolute;inset:0;pointer-events:none;z-index:-1;opacity:.35;background:radial-gradient(ellipse at 12% 30%,#a783de66,transparent 57%),linear-gradient(125deg,#e2aa6f08,transparent 50%);transition:opacity .4s ease}
+.sound-card-v25:hover .sound-aura-v26,.sound-card-v25.is-playing .sound-aura-v26{opacity:1}
+.sound-card-v25.sound-card-premium .sound-cover-v25{height:100%;min-height:178px;width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center;border-radius:9px;border:1px solid #efca93;background:#111c32;box-shadow:0 0 0 4px #091021,0 0 0 5px #d6a76d99,0 12px 24px #0008}
+.sound-card-v25.sound-card-premium .sound-content-v25{position:relative;z-index:1;min-width:0;display:flex;flex-direction:column;justify-content:space-between;gap:12px;padding:9px 10px 7px 0}
+.sound-heading-v25{display:flex;flex-direction:column;align-items:flex-start;gap:7px}
+.sound-kind-v26{display:inline-block;max-width:100%;padding:5px 10px;border-radius:4px;border:1px solid #eec58e75;background:linear-gradient(100deg,#9e6c4850,#6c467b44);color:#ffe4b5;font:800 9px/1.2 Manrope,Arial,sans-serif;text-transform:uppercase;letter-spacing:.13em}
+.sound-card-v25.sound-card-premium .sound-heading-v25 h3{font:700 clamp(16px,1.4vw,23px)/1.29 Cinzel,Georgia,serif;color:#ffdfaa;text-shadow:0 2px 11px #efb67736;margin:0;overflow-wrap:anywhere}
+.sound-card-v25 .sound-heading-v25 small{font-size:11px;line-height:1.5;color:#c4d0e7}
+.sound-equalizer-v26{display:flex;align-items:end;justify-content:start;gap:4px;height:19px;margin:auto 0 1px;opacity:.8}
+.sound-equalizer-v26 i{width:3px;height:33%;border-radius:6px 6px 2px 2px;background:linear-gradient(#ffe3b4,#9d6ca3);box-shadow:0 0 6px #e8b88777}
+.sound-equalizer-v26 i:nth-child(2){height:80%}.sound-equalizer-v26 i:nth-child(3){height:55%}.sound-equalizer-v26 i:nth-child(4){height:100%}.sound-equalizer-v26 i:nth-child(5){height:45%}
+.sound-card-v25.is-playing .sound-equalizer-v26 i{animation:deia-audio-pulse .72s ease-in-out infinite alternate}
+.sound-card-v25.is-playing .sound-equalizer-v26 i:nth-child(2){animation-delay:-.4s}.sound-card-v25.is-playing .sound-equalizer-v26 i:nth-child(3){animation-delay:-.12s}.sound-card-v25.is-playing .sound-equalizer-v26 i:nth-child(4){animation-delay:-.53s}
+@keyframes deia-audio-pulse{from{height:15%}to{height:95%}}
+.sound-card-v25.sound-card-premium .sound-player-v25{grid-template-columns:43px minmax(0,1fr) auto;gap:9px;align-items:center;margin-top:0;padding-top:10px;border-top:1px solid #e1c08a55}
+.sound-card-v25.sound-card-premium .sound-play-v25{width:43px;height:43px;background:radial-gradient(circle at 35% 20%,#eacb94,#9b6a4a 70%,#412b38);border:2px solid #fff0c6;color:#181222;box-shadow:0 0 0 4px #dcb77c24,0 0 20px #dfbc7e45}
+.sound-card-v25.sound-card-premium.is-playing .sound-play-v25{box-shadow:0 0 0 5px #dfbc7e33,0 0 26px #f4d096aa}
+.sound-card-v25.sound-card-premium .sound-time-v25{color:#ead9be}
+.sound-card-v25.sound-card-premium .sound-volume-v25{grid-column:2/-1}
+.sound-card-v25.sound-card-premium input[type=range]{accent-color:#eed09b}
+#inicio .v9-sound .sound-featured-v25{min-height:210px!important;grid-template-columns:minmax(115px,37%) minmax(0,1fr)!important}
+#inicio .v9-sound .sound-featured-v25 .sound-cover-v25{min-height:175px!important;height:100%!important;width:100%!important}
+#inicio .v9-sound .sound-featured-v25 .sound-player-v25{display:grid!important;grid-template-columns:37px minmax(0,1fr) auto!important}
+#inicio .v9-sound .sound-featured-v25 .sound-play-v25{width:37px;height:37px}
+#inicio .v9-sound>a{align-self:flex-start;padding:9px 16px;border:1px solid #e3bf88;border-radius:8px;color:#ffe5ad!important;background:linear-gradient(120deg,#382d40,#17213a);text-decoration:none}
+#inicio .v9-sound>a:hover{box-shadow:0 0 18px #dab17c44}
+@media(max-width:1120px){#musicas .sound-cards-v25{grid-template-columns:1fr}.sound-card-v25.sound-card-premium{grid-template-columns:minmax(130px,29%) minmax(0,1fr)}}
+@media(max-width:580px){.sound-card-v25.sound-card-premium{grid-template-columns:minmax(96px,35%) minmax(0,1fr);gap:11px;padding:8px;min-height:166px}.sound-card-v25.sound-card-premium .sound-cover-v25{min-height:150px}.sound-card-v25.sound-card-premium .sound-content-v25{padding:3px 2px}.sound-card-v25.sound-card-premium .sound-heading-v25 h3{font-size:15px}.sound-kind-v26{font-size:8px;letter-spacing:.08em}.sound-card-v25.sound-card-premium .sound-player-v25{grid-template-columns:36px minmax(0,1fr)!important}.sound-card-v25.sound-card-premium .sound-time-v25{grid-column:2;justify-self:end}.sound-card-v25.sound-card-premium .sound-volume-v25{display:none}.sound-card-v25.sound-card-premium .sound-play-v25{height:36px;width:36px}}
+@media(max-width:370px){#inicio .v9-sound .sound-featured-v25{grid-template-columns:90px minmax(0,1fr)!important}.sound-card-v25.sound-card-premium .sound-cover-v25{min-height:125px}}
+@media(prefers-reduced-motion:reduce){.sound-card-v25.is-playing .sound-equalizer-v26 i{animation:none}}
