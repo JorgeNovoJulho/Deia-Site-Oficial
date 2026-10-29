@@ -33,6 +33,8 @@ const base=process.env.PORTAL_URL||'http://127.0.0.1:8000/';
    assert(await page.locator('#inicio .v9-sound .sound-featured-v25 img').count()===1,'Featured music artwork missing');
    assert(await page.locator('#musicas .sound-play-v25').count()>=1,'Custom music player missing');
    assert(await page.locator('#musicas .sound-cover-v25').count()>=1,'Music artwork missing');
+   assert.equal(await page.locator('link[rel="stylesheet"]').count(),1,'CSS should use one consolidated stylesheet');
+   assert(await page.locator('#musicas .sound-cover-v25').first().evaluate(img=>img.complete&&img.naturalWidth>0),'Published track cover failed to load');
    assert(await page.locator('#musicas .sound-card-premium .sound-equalizer-v26').count()>=1,'Premium audio ornament missing');
    assert(await page.locator('#musicas .sound-card-premium .sound-kind-v26').count()>=1,'Audio track category badge missing');
    await page.locator('#inicio .v9-realms a').nth(1).click();
