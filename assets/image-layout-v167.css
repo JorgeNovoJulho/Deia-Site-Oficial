@@ -1,0 +1,32 @@
+/* V16.7 — sistema unificado de enquadramento: sem cortar as pranchas oficiais */
+:root{--deia-line:#ddb57e;--deia-night:#0a1228}
+.v9-cover.v13-banner-ready{position:relative!important;height:auto!important;min-height:0!important;aspect-ratio:auto!important;overflow:hidden!important}
+.v9-cover.v13-banner-ready .v13-banner-img{position:relative!important;display:block!important;width:100%!important;max-width:100%!important;height:auto!important;object-fit:contain!important;inset:auto!important}
+.v9-cover.v13-banner-ready .v13-linkzones{position:absolute!important;inset:0!important}
+#inicio .v9-feature{height:auto!important;min-height:clamp(112px,11vw,166px)!important;border-radius:9px!important}
+#inicio .v9-feature img{object-fit:cover!important;object-position:center 40%!important}
+#inicio .v9-portraits a{aspect-ratio:3/4;height:auto!important;display:block}
+#inicio .v9-portraits img{object-fit:cover!important;object-position:center 19%!important}
+#inicio .v9-realms img{width:100%!important;height:auto!important;aspect-ratio:3/4!important;object-fit:cover!important;object-position:center center!important}
+#inicio .v9-gallery{grid-auto-rows:auto!important}
+#inicio .v9-gallery img{width:100%!important;height:auto!important;aspect-ratio:4/3!important;object-fit:cover!important}
+#personagens .codex-cover{display:flex!important;align-items:center;justify-content:center;min-height:250px;max-height:440px;height:clamp(260px,27vw,390px)!important;overflow:hidden}
+#personagens .codex-cover img{width:100%!important;height:100%!important;max-width:100%;display:block;object-fit:contain!important;object-position:center!important}
+#personagens .codex-card .copy{flex:1}
+#reinos .codex-world>img{display:block;width:100%!important;height:clamp(180px,20vw,280px)!important;object-fit:contain!important;object-position:center!important;background:radial-gradient(ellipse at center,#273450,#0b1022 80%)}
+#reinos .mapshot{display:block;width:100%;height:auto!important;object-fit:contain!important}
+#galeria .gallery{align-items:stretch}
+#galeria figure{min-width:0;display:flex;flex-direction:column;overflow:hidden}
+#galeria figure img{display:block;max-width:100%;width:100%!important;height:clamp(180px,22vw,300px)!important;object-fit:contain!important;background:#0b1429}
+#galeria figure figcaption{font:600 12px/1.6 Manrope,Arial,sans-serif!important;padding:12px 14px!important}
+.codex-visual img,.v16-lightbox-dialog>img{object-fit:contain!important}
+.v9-panel,.codex-card,.codex-world,.guardian-card{outline:1px solid #f6dca51c;outline-offset:-5px}
+.v9-panel header{min-height:40px}
+.v9-panel header h2{line-height:1.45!important}
+#inicio .v9-grid,#inicio .v9-lower{align-items:stretch}
+#inicio .v9-grid>*,#inicio .v9-lower>*{min-width:0}
+.media-fallback{display:flex;align-items:center;justify-content:center;min-height:180px;background:radial-gradient(circle,#293956,#0d1429);padding:15px;color:#f5d9aa;font:700 12px/1.6 Cinzel,Georgia,serif;text-align:center}
+.media-fallback:before{content:"✧";font-size:28px;margin-right:9px}
+@media(max-width:1050px){#inicio .v9-grid,#inicio .v9-lower{grid-template-columns:1fr!important}#inicio .v9-realms{grid-template-columns:repeat(5,minmax(0,1fr))!important}}
+@media(max-width:700px){#inicio .v9-features{grid-template-columns:repeat(2,minmax(0,1fr))!important}#inicio .v9-realms{grid-template-columns:repeat(3,minmax(0,1fr))!important}#personagens .codex-cover{height:290px!important}#galeria figure img{height:230px!important}}
+@media(max-width:500px){#inicio .v9-portraits a{aspect-ratio:2/3}#inicio .v9-features{gap:7px!important}#inicio .v9-feature{min-height:110px!important}}
