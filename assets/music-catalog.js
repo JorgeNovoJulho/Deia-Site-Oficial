@@ -18,7 +18,7 @@ function makeCard(track){
 }
 function render(tracks){
  // Planning records remain available to the existing administration panel; only actual audio is presented publicly.
- const published=tracks.filter(track=>track.src);root.replaceChildren(...published.map(makeCard));status.textContent=published.length+' faixas oficiais disponíveis para ouvir.';
+ const published=tracks.filter(track=>track.src).sort((a,b)=>Date.parse(b.published_at||0)-Date.parse(a.published_at||0));root.replaceChildren(...published.map(makeCard));status.textContent=published.length+' faixas oficiais disponíveis para ouvir.';
  const filter=document.createElement('div');filter.className='sound-filter';filter.setAttribute('aria-label','Filtrar músicas');
  const categories=[['Todas',''],['Exploração','exploracao'],['Chefes','boss'],['Ambientes','ambiente'],['Encontros','encontro']];
  for(const [label,kind] of categories){const button=document.createElement('button');button.type='button';button.textContent=label;button.setAttribute('aria-pressed',String(!kind));button.classList.toggle('active',!kind);button.addEventListener('click',()=>{filter.querySelectorAll('button').forEach(b=>{b.classList.toggle('active',b===button);b.setAttribute('aria-pressed',String(b===button))});let count=0;root.querySelectorAll('.music-entry').forEach(card=>{card.hidden=!!kind&&!card.dataset.kind.startsWith(kind);if(!card.hidden)count++});empty.hidden=count>0;if(activeAudio)activeAudio.pause()});filter.append(button)}
