@@ -1,0 +1,69 @@
+/* V23 — adaptive viewport and interaction safety for all screen classes */
+*,*::before,*::after{box-sizing:border-box}
+html{max-width:100%;overflow-x:clip;-webkit-text-size-adjust:100%}
+body{width:100%;max-width:100%;overflow-x:clip}
+img,video,canvas,svg{max-width:100%}
+img{height:auto}
+audio,video{max-width:100%}
+main,.shell,.hero,.hero-inner,.section,.v9-panel,.v9-grid,.v9-lower,.v9-sound,.v9-demos{min-width:0;max-width:100%}
+.v9-panel{overflow:hidden}
+.v9-realms a,.v9-portraits a,.v9-feature{min-width:0}
+.v9-realms img,.v9-portraits img,.v9-feature img{max-width:100%}
+.v9-gallery img{min-width:0}
+.realm-viewer,.v16-lightbox,.codex-modal{max-width:100vw}
+.realm-viewer-dialog{max-width:100%!important;min-width:0!important}
+.realm-viewer-stage{min-width:0}
+.realm-viewer-dialog footer{max-width:100%;min-width:0}
+.realm-viewer-audio{min-width:0!important}
+.realm-audio-choice{max-width:100%}
+.music-entry,.music-entry-head{min-width:0}
+.music-entry audio,.v9-sound audio{max-width:100%}
+#inicio .v9-grid,#inicio .v9-lower,#inicio .v9-features{min-width:0}
+#inicio .v9-realms a span{overflow-wrap:anywhere;hyphens:auto}
+#personagens .codex-cover img,#reinos .codex-world>img{object-fit:contain!important}
+#galeria figure img{object-fit:contain!important}
+@media(max-width:1180px){
+ #inicio .v9-grid{grid-template-columns:minmax(0,1fr)!important}
+ #inicio .v9-lower{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+ #inicio .v9-lower>.v9-panel:last-child{grid-column:1/-1}
+}
+@media(max-width:800px){
+ #inicio .v9-lower{grid-template-columns:minmax(0,1fr)!important}
+ #inicio .v9-lower>.v9-panel:last-child{grid-column:auto}
+ #inicio .v9-grid>.v9-panel,#inicio .v9-lower>.v9-panel{height:auto!important;min-height:0!important}
+ #inicio .v9-realms{grid-template-columns:repeat(3,minmax(0,1fr))!important}
+ .realm-viewer{padding:6px!important}
+ .realm-viewer-dialog{width:100%!important;height:min(96dvh,980px)!important}
+}
+@media(max-width:550px){
+ .shell{width:calc(100% - 16px)!important}
+ #inicio .v9-portraits{height:auto!important;min-height:0!important}
+ #inicio .v9-portraits a{aspect-ratio:3/4!important;height:auto!important;min-height:0!important}
+ #inicio .v9-portraits img{height:100%!important;object-fit:cover!important}
+ #inicio .v9-features{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+ #inicio .v9-realms{grid-template-columns:repeat(3,minmax(0,1fr))!important;padding:7px!important;gap:6px!important}
+ #inicio .v9-realms a{padding:3px 3px 9px!important}
+ #inicio .v9-gallery{grid-template-columns:repeat(2,minmax(0,1fr))!important;grid-template-rows:repeat(4,95px)!important}
+ #inicio .v9-gallery img:nth-child(n){grid-row:auto!important;grid-column:auto!important}
+ #inicio .v9-gallery img:nth-child(n+9){display:none!important}
+ .realm-viewer-dialog header,.realm-viewer-dialog footer{padding:10px!important}
+ .realm-viewer-title{font-size:18px!important}
+ .realm-viewer-tools{margin-inline:auto}
+ .realm-viewer-audio{display:flex!important;flex-wrap:wrap}
+ .realm-viewer-audio audio{width:100%!important;max-width:100%!important;flex-basis:100%}
+ .realm-audio-choice{flex-wrap:wrap}
+ .realm-audio-choice button{flex:1 1 auto}
+}
+@media(max-width:360px){
+ #inicio .v9-realms{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+ #inicio .v9-portraits{gap:4px!important;padding:5px!important}
+ #inicio .v9-portraits a span{font-size:10px!important}
+}
+@media(orientation:landscape) and (max-height:540px){
+ .realm-viewer-dialog{height:97dvh!important}
+ .realm-viewer-dialog header{padding:5px 10px!important}
+ .realm-viewer-dialog footer{padding:4px 8px!important}
+ .realm-viewer-title{font-size:15px!important}
+ .realm-viewer-audio audio{height:30px!important}
+}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;transition-duration:.01ms!important}}
