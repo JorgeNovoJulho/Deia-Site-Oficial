@@ -74,6 +74,7 @@ const base=process.env.PORTAL_URL||'http://127.0.0.1:8000/';
    assert(await page.locator('#login').isVisible(),'admin login missing');
    assert(await page.locator('#console').isHidden(),'admin content must require authentication');
    assert(await page.locator('#videos #videoSource').count()===1,'Admin video configuration missing');
+   assert(await page.locator('#musicCover').count()===1,'Admin cover editor missing');
    console.log('PASS '+width+'px homepage portraits/realms, zoom, audio binding, modal close, mobile layout, admin');
    await page.close();
   }
