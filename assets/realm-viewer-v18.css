@@ -14,3 +14,7 @@
 .realm-viewer-tools{grid-column:2;grid-row:1/-1}
 @media(max-width:850px){.realm-viewer-dialog footer{grid-template-columns:1fr!important}.realm-viewer-tools{grid-row:auto;grid-column:1;justify-self:end}.realm-viewer-audio{grid-template-columns:minmax(0,1fr) minmax(160px,1fr)!important}}
 @media(max-width:520px){.realm-viewer-dialog{height:97dvh!important}.realm-viewer-dialog footer{padding:9px 10px!important;gap:6px!important}.realm-viewer-audio{grid-template-columns:1fr!important;gap:5px!important}.realm-audio-choice{grid-column:1}.realm-viewer-status{grid-column:1!important}.realm-viewer-audio audio{grid-column:1!important;max-width:none!important;height:36px!important}.realm-viewer-tools{justify-self:center}.realm-audio-choice button{font-size:11px!important;padding:7px 10px!important}}
+
+/* V18.4: zoom enlarges actual image dimensions, allowing panning */
+.realm-viewer-stage{display:flex!important;align-items:safe center!important;justify-content:safe center!important;overflow:auto!important}
+.realm-viewer-stage img{flex:0 0 auto!important;object-fit:contain!important;max-width:none!important;max-height:none!important;margin:auto!important;transition:none!important}
