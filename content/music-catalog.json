@@ -244,7 +244,7 @@
       "scope": "Terra do Futuro",
       "kind": "ambiente",
       "title": "Ambiente — Terra do Futuro",
-      "src": "assets/audio/terra-do-futuro-ambiente.mp3"
+      "src": null
     },
     {
       "id": "terra-do-futuro-encontro",
