@@ -1,0 +1,14 @@
+/* V19.2 — official portraits and character art presentation */
+#personagens .codex-grid{gap:clamp(14px,1.8vw,23px)!important}
+#personagens .codex-cover{height:clamp(290px,30vw,460px)!important;background:radial-gradient(ellipse at 50% 24%,#354568,#0c1227 75%)!important}
+#personagens .codex-cover img{object-fit:contain!important;object-position:center!important;width:100%!important;height:100%!important}
+#personagens .codex-card .copy{display:flex;flex-direction:column;gap:9px}
+#personagens .codex-card .codex-open{margin-top:auto!important}
+#personagens .codex-card .tag{font-size:10px!important}
+#personagens .codex-card{box-shadow:0 16px 40px #0008,inset 0 0 0 1px #f8cf8b22!important}
+#personagens .codex-card:hover{box-shadow:0 18px 42px #000a,0 0 26px #cfac6340!important}
+#galeria .gallery figure img{object-fit:contain!important;object-position:center!important;background:linear-gradient(150deg,#192440,#070e20)}
+#galeria .gallery figure{border:1px solid #dbb27599;border-radius:12px;box-shadow:0 15px 32px #0008}
+#galeria .gallery figcaption{font-family:Cinzel,Georgia,serif!important;color:#ffe3b5!important}
+@media(max-width:790px){#personagens .codex-cover{height:clamp(290px,54vw,400px)!important}}
+@media(max-width:520px){#personagens .codex-cover{height:320px!important}}
