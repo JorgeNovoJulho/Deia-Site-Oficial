@@ -4,7 +4,7 @@ const base=process.env.PORTAL_URL||'http://127.0.0.1:8000/';
 (async()=>{
  const browser=await chromium.launch({headless:true});
  try{
-  for(const width of [1440,1024,390]){
+  for(const width of [1920,1440,1024,768,430,390,360,320]){
    const page=await browser.newPage({viewport:{width,height:900},reducedMotion:'reduce'});
    const errors=[];
    page.on('pageerror',e=>errors.push(e.message));
