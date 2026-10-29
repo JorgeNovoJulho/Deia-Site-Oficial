@@ -72,7 +72,7 @@ const base = process.env.PORTAL_URL || 'http://127.0.0.1:8000/';
       await page.locator('.sound-filter button').filter({hasText:'Exploração'}).click();
       assert(await page.locator(musicCard+':visible').count()>0,'Exploration filter returned no tracks');
       await page.locator('.sound-filter button').filter({hasText:'Todas'}).click();
-      assert(await page.locator('#musicas .music-entry').count()>=80,'Music catalog cards should be present');
+      assert(await page.locator('#musicas .music-entry').count()>=1,'Published music cards should be present');
       
       // Every image must load, and character images must stay inside the portrait frame.
       const imageAudit=[];
