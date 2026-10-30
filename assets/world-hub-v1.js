@@ -7,20 +7,76 @@ let worlds=[],active=0,previous=null,selected='enemies';
 const hub=mk('div','world-hub');hub.hidden=true;
 hub.innerHTML='<section class="world-hub-dialog" role="dialog" aria-modal="true" aria-labelledby="world-hub-title"><header class="world-hub-header"><div><small>OS NOVE REINOS MAJESTOSOS</small><h2 id="world-hub-title"></h2></div><button class="world-hub-close" aria-label="Fechar ficha">×</button></header><nav class="world-hub-tabs" aria-label="Informações do mundo" role="tablist"><button class="world-hub-tab" data-tab="enemies" role="tab">Bestiário de inimigos</button><button class="world-hub-tab" data-tab="bosses" role="tab">Subchefes e boss</button><button class="world-hub-tab" data-tab="scenes" role="tab">Cenários de exploração</button></nav><section class="world-hub-panel" data-panel="enemies" role="tabpanel"></section><section class="world-hub-panel" data-panel="bosses" role="tabpanel"></section><section class="world-hub-panel" data-panel="scenes" role="tabpanel"></section><footer class="world-hub-audio" aria-label="Músicas do reino"></footer></section>';
 const viewer=mk('div','world-hub-viewer');viewer.hidden=true;
-viewer.innerHTML='<div class="world-hub-viewer-bar"><span class="world-hub-viewer-label">Arte oficial ampliada</span><div class="world-hub-viewer-controls"><button data-vzoom="-1" aria-label="Diminuir zoom">−</button><button data-vzoom="reset">100%</button><button data-vzoom="1" aria-label="Aumentar zoom">+</button><button data-vclose aria-label="Fechar imagem">Fechar</button></div></div><div class="world-hub-viewer-viewport"><img class="world-hub-viewer-img" alt="" draggable="false"></div>';
+viewer.innerHTML='<div class="world-hub-viewer-bar"><span class="world-hub-viewer-label">Arte oficial ampliada</span><div class="world-hub-viewer-controls"><button data-vzoom="-1" aria-label="Diminuir zoom">−</button><button data-vzoom="reset">100%</button><button data-vzoom="1" aria-label="Aumentar zoom">+</button><button data-vclose aria-label="Fechar imagem">Fechar</button></div></div><div class="world-hub-viewer-viewport"><div class="world-hub-viewer-canvas"><img class="world-hub-viewer-img" alt="" draggable="false"></div></div>';
 document.body.append(hub,viewer);
 const $=(s,r=document)=>r.querySelector(s),$$=(s,r=document)=>Array.from(r.querySelectorAll(s));
 const clean=t=>String(t||'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
-let scale=1,baseW=0,baseH=0;
-const viewport=$('.world-hub-viewer-viewport',viewer),zoomImage=$('.world-hub-viewer-img',viewer);
-function fitSize(){if(!zoomImage.naturalWidth)return;const k=Math.min((viewport.clientWidth-16)/zoomImage.naturalWidth,(viewport.clientHeight-16)/zoomImage.naturalHeight);baseW=Math.max(1,Math.floor(zoomImage.naturalWidth*k));baseH=Math.max(1,Math.floor(zoomImage.naturalHeight*k));setZoom(1)}
-function setZoom(n){const oldW=zoomImage.clientWidth||baseW,oldH=zoomImage.clientHeight||baseH,cx=(viewport.scrollLeft+viewport.clientWidth/2)/(oldW||1),cy=(viewport.scrollTop+viewport.clientHeight/2)/(oldH||1);scale=Math.max(1,Math.min(5,n));const w=Math.round(baseW*scale),h=Math.round(baseH*scale);zoomImage.style.width=w+'px';zoomImage.style.height=h+'px';zoomImage.style.margin=(w<viewport.clientWidth?'auto':'0');viewport.scrollLeft=Math.max(0,cx*w-viewport.clientWidth/2);viewport.scrollTop=Math.max(0,cy*h-viewport.clientHeight/2);$('[data-vzoom="reset"]',viewer).textContent=Math.round(scale*100)+'%'}
-function openImage(src,label){if(!src)return;viewer.hidden=false;zoomImage.onload=fitSize;zoomImage.src=src;zoomImage.alt=label||'Arte oficial';$('.world-hub-viewer-label',viewer).textContent=label||'Arte oficial';if(zoomImage.complete&&zoomImage.naturalWidth)fitSize()}
-function closeViewer(){viewer.hidden=true;zoomImage.removeAttribute('src')}
+let scale=1,baseW=0,baseH=0,drag=null;
+const viewport=$('.world-hub-viewer-viewport',viewer),canvas=$('.world-hub-viewer-canvas',viewer),zoomImage=$('.world-hub-viewer-img',viewer);
+function renderZoom(centerX=.5,centerY=.5){
+  if(!baseW||!baseH)return;
+  const w=Math.max(1,Math.round(baseW*scale)),h=Math.max(1,Math.round(baseH*scale));
+  const vw=viewport.clientWidth,vh=viewport.clientHeight;
+  canvas.style.width=Math.max(vw,w)+'px';
+  canvas.style.height=Math.max(vh,h)+'px';
+  zoomImage.style.width=w+'px';
+  zoomImage.style.height=h+'px';
+  zoomImage.style.left=Math.max(0,(vw-w)/2)+'px';
+  zoomImage.style.top=Math.max(0,(vh-h)/2)+'px';
+  // A top-left scroll origin exposes all four edges, including left and top.
+  viewport.scrollLeft=Math.max(0,(w-vw)*centerX);
+  viewport.scrollTop=Math.max(0,(h-vh)*centerY);
+  $('[data-vzoom="reset"]',viewer).textContent=Math.round(scale*100)+'%';
+}
+function fitSize(){
+  if(!zoomImage.naturalWidth||!viewport.clientWidth||!viewport.clientHeight)return;
+  const k=Math.min((viewport.clientWidth-24)/zoomImage.naturalWidth,(viewport.clientHeight-24)/zoomImage.naturalHeight,1);
+  baseW=Math.max(1,zoomImage.naturalWidth*k);
+  baseH=Math.max(1,zoomImage.naturalHeight*k);
+  scale=1;
+  renderZoom();
+}
+function setZoom(n){
+  const maxX=Math.max(0,canvas.offsetWidth-viewport.clientWidth),maxY=Math.max(0,canvas.offsetHeight-viewport.clientHeight);
+  const cx=maxX?(viewport.scrollLeft+viewport.clientWidth/2)/canvas.offsetWidth:.5;
+  const cy=maxY?(viewport.scrollTop+viewport.clientHeight/2)/canvas.offsetHeight:.5;
+  scale=Math.max(1,Math.min(5,Math.round(n*100)/100));
+  // Preserve the approximate position in the artwork during zoom.
+  const w=baseW*scale,h=baseH*scale;
+  renderZoom(w>viewport.clientWidth?Math.max(0,Math.min(1,(cx*w-viewport.clientWidth/2)/(w-viewport.clientWidth))):.5,
+             h>viewport.clientHeight?Math.max(0,Math.min(1,(cy*h-viewport.clientHeight/2)/(h-viewport.clientHeight))):.5);
+}
+function openImage(src,label){
+  if(!src)return;
+  viewer.hidden=false;
+  baseW=baseH=0;scale=1;
+  viewport.scrollLeft=0;viewport.scrollTop=0;
+  zoomImage.onload=fitSize;
+  zoomImage.src=src;
+  zoomImage.alt=label||'Arte oficial';
+  $('.world-hub-viewer-label',viewer).textContent=label||'Arte oficial';
+  if(zoomImage.complete&&zoomImage.naturalWidth)fitSize();
+}
+function closeViewer(){viewer.hidden=true;zoomImage.onload=null;zoomImage.removeAttribute('src')}
 $$('[data-vzoom]',viewer).forEach(b=>b.addEventListener('click',()=>setZoom(b.dataset.vzoom==='reset'?1:scale+Number(b.dataset.vzoom)*.3)));
 $('[data-vclose]',viewer).addEventListener('click',closeViewer);
-let drag=null;viewport.addEventListener('pointerdown',e=>{if(e.button!==0)return;drag={x:e.clientX,y:e.clientY,l:viewport.scrollLeft,t:viewport.scrollTop};viewport.setPointerCapture(e.pointerId);viewport.classList.add('is-dragging')});viewport.addEventListener('pointermove',e=>{if(!drag)return;viewport.scrollLeft=drag.l+drag.x-e.clientX;viewport.scrollTop=drag.t+drag.y-e.clientY});['pointerup','pointercancel','lostpointercapture'].forEach(n=>viewport.addEventListener(n,()=>{drag=null;viewport.classList.remove('is-dragging')}));
+viewport.addEventListener('pointerdown',e=>{
+  if(e.pointerType==='mouse'&&e.button!==0)return;
+  drag={id:e.pointerId,x:e.clientX,y:e.clientY,l:viewport.scrollLeft,t:viewport.scrollTop};
+  viewport.setPointerCapture(e.pointerId);viewport.classList.add('is-dragging');e.preventDefault();
+});
+viewport.addEventListener('pointermove',e=>{
+  if(!drag||drag.id!==e.pointerId)return;
+  viewport.scrollLeft=drag.l+drag.x-e.clientX;
+  viewport.scrollTop=drag.t+drag.y-e.clientY;
+  e.preventDefault();
+});
+['pointerup','pointercancel','lostpointercapture'].forEach(n=>viewport.addEventListener(n,e=>{
+  if(drag&&e.pointerId!==undefined&&drag.id!==e.pointerId)return;
+  drag=null;viewport.classList.remove('is-dragging');
+}));
 viewport.addEventListener('wheel',e=>{e.preventDefault();setZoom(scale+(e.deltaY<0?.2:-.2))},{passive:false});
+window.addEventListener('resize',()=>{if(!viewer.hidden&&zoomImage.naturalWidth)fitSize()});
 function card(title,subtitle,src,label){const box=mk('article','world-hub-card');if(src){const im=mk('img');im.src=src;im.alt='Arte oficial: '+title;im.loading='lazy';im.addEventListener('click',()=>openImage(src,title));im.style.cursor='zoom-in';im.addEventListener('error',()=>{im.replaceWith(mk('div','world-hub-art-placeholder','Imagem oficial aguardando envio: '+src.split('/').pop()))},{once:true});box.append(im)}else{box.append(mk('div','world-hub-art-placeholder','Imagem oficial individual ainda não transferida para o site'))}const content=mk('div','world-hub-card-body');content.append(mk('h3','',title),mk('p','',subtitle));box.append(content);return box}
 let tracks=[];fetch('content/music-catalog.json',{cache:'no-store'}).then(r=>r.json()).then(d=>{tracks=d.tracks||[];renderAudio()}).catch(()=>{});
 function renderAudio(){const zone=$('.world-hub-audio',hub);if(!zone||hub.hidden)return;zone.replaceChildren();const kinds=[['exploracao','Exploração'],['boss','Batalha do boss']];const choices=mk('div','world-hub-music-choices');const player=mk('audio');player.controls=true;player.preload='none';const msg=mk('p','world-hub-audio-status');kinds.forEach(([kind,label])=>{const btn=mk('button','',label);btn.type='button';const tr=tracks.find(t=>t.scope===realmNames[active]&&t.kind===kind&&t.src);btn.disabled=!tr;btn.addEventListener('click',()=>{if(!tr)return;player.src=tr.src;player.hidden=false;msg.textContent=tr.title;player.play().catch(()=>{msg.textContent=tr.title+' · Pressione reproduzir'})});choices.append(btn)});const available=kinds.some(([kind])=>tracks.some(t=>t.scope===realmNames[active]&&t.kind===kind&&t.src));msg.textContent=available?'Selecione a trilha para ouvir.':'Trilhas de exploração e batalha ainda não publicadas no catálogo oficial.';player.hidden=true;zone.append(choices,player,msg)}
