@@ -30,11 +30,13 @@ function renderZoom(centerX=.5,centerY=.5){
 }
 function fitSize(){
   if(!zoomImage.naturalWidth||!viewport.clientWidth||!viewport.clientHeight)return;
-  const k=Math.min((viewport.clientWidth-24)/zoomImage.naturalWidth,(viewport.clientHeight-24)/zoomImage.naturalHeight,1);
+  const k=Math.min((viewport.clientWidth-24)/zoomImage.naturalWidth,(viewport.clientHeight-24)/zoomImage.naturalHeight);
   baseW=Math.max(1,zoomImage.naturalWidth*k);
   baseH=Math.max(1,zoomImage.naturalHeight*k);
   scale=1;
   renderZoom();
+  const name=$('.world-hub-viewer-label',viewer);
+  if(name)name.title='Imagem publicada: '+zoomImage.naturalWidth+' × '+zoomImage.naturalHeight+' pixels. O visualizador não pode recuperar partes ausentes do arquivo.';
 }
 function setZoom(n){
   const maxX=Math.max(0,canvas.offsetWidth-viewport.clientWidth),maxY=Math.max(0,canvas.offsetHeight-viewport.clientHeight);
