@@ -41,3 +41,15 @@ body.world-hub-locked{overflow:hidden}
 .world-hub-viewer-viewport{overflow:auto!important;overscroll-behavior:contain;touch-action:none}
 .world-hub-viewer-canvas{position:relative;min-width:100%;min-height:100%}
 .world-hub-viewer-img{position:absolute!important;display:block!important;margin:0!important;max-width:none!important;max-height:none!important;object-fit:contain!important;pointer-events:none!important;user-select:none!important}
+
+/* Terra Encantada: RPG statistical presentation, official identities */
+.world-hub-rpg-card{display:flex;flex-direction:column;border-color:#bd995c!important}
+.world-hub-rpg-card .world-hub-rpg-stats{margin:0 12px 12px;padding:9px;border:1px solid #b99657;border-radius:8px;background:linear-gradient(140deg,#08111f,#18251a);display:grid;gap:5px;color:#fff1d4}
+.world-hub-rpg-stat{display:grid;grid-template-columns:56px minmax(0,1fr) 50px;gap:6px;align-items:center;font:700 11px Arial,sans-serif}
+.world-hub-rpg-stat strong{text-align:right;font-variant-numeric:tabular-nums}
+.world-hub-rpg-track{height:10px;border:1px solid #bfa16e;border-radius:3px;overflow:hidden;background:#02040a}
+.world-hub-rpg-fill{display:block;height:100%;border-radius:2px}
+.world-hub-rpg-fill.rpg-0{background:linear-gradient(90deg,#971b2a,#ff555f)}
+.world-hub-rpg-fill.rpg-1{background:linear-gradient(90deg,#1352af,#39d4ff)}
+.world-hub-rpg-fill.rpg-2{background:linear-gradient(90deg,#b66a09,#ffe35e)}
+.world-hub-rpg-fill.rpg-3{background:linear-gradient(90deg,#176f39,#7bea6b)}
