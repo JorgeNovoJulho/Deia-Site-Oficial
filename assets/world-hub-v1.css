@@ -34,3 +34,5 @@
 body.world-hub-locked{overflow:hidden}
 @media(max-width:1000px){.world-hub-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media(max-width:640px){.world-hub-grid,.world-hub-bosses,.world-hub-scenes{grid-template-columns:repeat(2,minmax(0,1fr))}.world-hub-bosses{grid-template-columns:1fr}.world-hub-card img,.world-hub-art-placeholder{height:165px}.world-hub-header,.world-hub-panel,.world-hub-tabs{padding:12px}.world-hub-viewer-bar{flex-wrap:wrap}}
+
+.world-hub-audio{position:sticky;bottom:0;z-index:5;background:#101a30;border-top:1px solid #a5875e;padding:12px 22px;display:flex;align-items:center;gap:12px;flex-wrap:wrap}.world-hub-music-choices{display:flex;gap:8px}.world-hub-music-choices button{border:1px solid #c7a56a;background:#27344b;color:#ffe1a7;border-radius:7px;padding:9px 12px;cursor:pointer}.world-hub-music-choices button:disabled{opacity:.45;cursor:not-allowed}.world-hub-audio audio{max-width:300px}.world-hub-audio-status{font:12px Arial;color:#e5ca96;margin:0}
