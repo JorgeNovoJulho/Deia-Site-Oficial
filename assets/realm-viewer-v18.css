@@ -18,3 +18,10 @@
 /* V18.4: zoom enlarges actual image dimensions, allowing panning */
 .realm-viewer-stage{display:flex!important;align-items:safe center!important;justify-content:safe center!important;overflow:auto!important}
 .realm-viewer-stage img{flex:0 0 auto!important;object-fit:contain!important;max-width:none!important;max-height:none!important;margin:auto!important;transition:none!important}
+
+/* V18.5: panorama always fits whole screen at 100%, centered in both axes;
+   at higher zoom its independent canvas supports full drag to all edges. */
+.realm-viewer-stage{position:relative!important;display:block!important;overflow:auto!important;touch-action:none!important;overscroll-behavior:contain;cursor:grab}
+.realm-viewer-stage.is-dragging{cursor:grabbing!important}
+.realm-viewer-canvas{position:relative;min-width:100%;min-height:100%;box-sizing:border-box}
+.realm-viewer-stage .realm-viewer-canvas img{position:absolute!important;display:block!important;max-width:none!important;max-height:none!important;margin:0!important;width:auto;height:auto;object-fit:contain!important;pointer-events:none!important;user-select:none!important;cursor:inherit!important}
