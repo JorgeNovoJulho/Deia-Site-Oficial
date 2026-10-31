@@ -1,0 +1,108 @@
+{
+  "realm": "Terra dos Doces",
+  "folder": "terra_dos_doces",
+  "status": "referencias oficiais identificadas; cards RPG individuais pendentes",
+  "source": "Pranchas oficiais enviadas pelo usuário em conversa sobre Déia e os Nove Reinos Majestosos",
+  "common": [
+    {
+      "id": "trufante",
+      "name": "Trufante",
+      "ability": "Salto de trufa",
+      "path": "assets/img/cards-rpg/terra_dos_doces/trufante.webp",
+      "status": "aguardando arte RPG individual homologada"
+    },
+    {
+      "id": "piruletoide",
+      "name": "Piruletoide",
+      "ability": "Giro açucarado",
+      "path": "assets/img/cards-rpg/terra_dos_doces/piruletoide.webp",
+      "status": "aguardando arte RPG individual homologada"
+    },
+    {
+      "id": "geleca_morango",
+      "name": "Geleca Morango",
+      "ability": "Respingo pegajoso",
+      "path": "assets/img/cards-rpg/terra_dos_doces/geleca_morango.webp",
+      "status": "aguardando arte RPG individual homologada"
+    },
+    {
+      "id": "biscoitauro",
+      "name": "Biscoitauro",
+      "ability": "Cabeçada crocante",
+      "path": "assets/img/cards-rpg/terra_dos_doces/biscoitauro.webp",
+      "status": "aguardando arte RPG individual homologada"
+    },
+    {
+      "id": "marshmilope",
+      "name": "Marshmilope",
+      "ability": "Elasticidade doce",
+      "path": "assets/img/cards-rpg/terra_dos_doces/marshmilope.webp",
+      "status": "aguardando arte RPG individual homologada"
+    },
+    {
+      "id": "bombom_vespa",
+      "name": "Bombom Vespa",
+      "ability": "Ferrão de calda",
+      "path": "assets/img/cards-rpg/terra_dos_doces/bombom_vespa.webp",
+      "status": "aguardando arte RPG individual homologada"
+    },
+    {
+      "id": "rosquilda",
+      "name": "Rosquilda",
+      "ability": "Rolagem doce",
+      "path": "assets/img/cards-rpg/terra_dos_doces/rosquilda.webp",
+      "status": "aguardando arte RPG individual homologada"
+    },
+    {
+      "id": "canudilho",
+      "name": "Canudilho",
+      "ability": "Tiro de confeito",
+      "path": "assets/img/cards-rpg/terra_dos_doces/canudilho.webp",
+      "status": "aguardando arte RPG individual homologada"
+    },
+    {
+      "id": "cupcake_mimico",
+      "name": "Cupcake Mímico",
+      "ability": "Explosão de cobertura",
+      "path": "assets/img/cards-rpg/terra_dos_doces/cupcake_mimico.webp",
+      "status": "aguardando arte RPG individual homologada"
+    },
+    {
+      "id": "crocanteiro",
+      "name": "Crocanteiro",
+      "ability": "Chuva de granulado",
+      "path": "assets/img/cards-rpg/terra_dos_doces/crocanteiro.webp",
+      "status": "aguardando arte RPG individual homologada"
+    }
+  ],
+  "bosses": [
+    {
+      "id": "golem_de_caramelo",
+      "name": "Golem de Caramelo",
+      "role": "subchefe_1",
+      "path": "assets/img/cards-rpg/terra_dos_doces/golem_de_caramelo.webp",
+      "status": "aguardando arte RPG individual homologada"
+    },
+    {
+      "id": "bobo_marshmello",
+      "name": "Bobo Marshmello",
+      "role": "subchefe_2",
+      "path": "assets/img/cards-rpg/terra_dos_doces/bobo_marshmello.webp",
+      "status": "aguardando arte RPG individual homologada"
+    },
+    {
+      "id": "dona_glace_suprema",
+      "name": "Dona Glacê Suprema",
+      "role": "chefe_principal",
+      "path": "assets/img/cards-rpg/terra_dos_doces/dona_glace_suprema.webp",
+      "status": "aguardando arte RPG individual homologada"
+    }
+  ],
+  "rules": [
+    "Preservar design das pranchas oficiais e nomes acima",
+    "Inimigos comuns: modelo compacto com HP, Mana, Ataque, Defesa e ações",
+    "Subchefes e boss: formato vertical maior com ações e atributos",
+    "Não publicar arte recortada das pranchas nem substituir artes aprovadas",
+    "Publicar somente após verificar as 13 imagens e passar testes"
+  ]
+}
