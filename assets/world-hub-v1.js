@@ -85,16 +85,44 @@ const fireBosses=[['Javali Magmabrasa','Subchefe 1','javali_magmabrasa'],['Salam
 const terraStats=[[150,60,85,70],[120,140,60,50],[320,80,110,120],[280,90,100,90],[240,160,110,80],[200,100,120,80],[220,150,70,60],[180,80,90,70],[260,120,110,80],[180,180,90,100]];
 const terraBosses=[['Sir Musgoval','Subchefe 1',[3800,1200,320,280]],['Lunacórnio Guardião','Subchefe 2',[4200,1800,360,300]],['Rainha Florabel','Chefe principal',[6800,3200,480,420]]];
 function addRpgStats(box,values){box.classList.add('world-hub-rpg-card');const panel=mk('div','world-hub-rpg-stats');['HP','Mana','Ataque','Defesa'].forEach((name,i)=>{const line=mk('div','world-hub-rpg-stat');const label=mk('span','',name);const track=mk('div','world-hub-rpg-track');const fill=mk('span','world-hub-rpg-fill rpg-'+i);fill.style.width=Math.max(6,Math.min(100,values[i]/([7000,3500,550,500][i])*100))+'%';track.append(fill);line.append(label,track,mk('strong','',values[i].toLocaleString('pt-BR')));panel.append(line)});box.append(panel)}
-let tracks=[];fetch('content/music-catalog.json',{cache:'no-store'}).then(r=>r.json()).then(d=>{tracks=d.tracks||[];renderAudio()}).catch(()=>{});
-function renderAudio(){const zone=$('.world-hub-audio',hub);if(!zone||hub.hidden)return;zone.replaceChildren();const kinds=[['exploracao','Exploração'],['boss','Batalha do boss']];const choices=mk('div','world-hub-music-choices');const player=mk('audio');player.controls=true;player.preload='none';const msg=mk('p','world-hub-audio-status');kinds.forEach(([kind,label])=>{const btn=mk('button','',label);btn.type='button';const tr=tracks.find(t=>t.scope===realmNames[active]&&t.kind===kind&&t.src);btn.disabled=!tr;btn.addEventListener('click',()=>{if(!tr)return;player.src=tr.src;player.hidden=false;msg.textContent=tr.title;player.play().catch(()=>{msg.textContent=tr.title+' · Pressione reproduzir'})});choices.append(btn)});const available=kinds.some(([kind])=>tracks.some(t=>t.scope===realmNames[active]&&t.kind===kind&&t.src));msg.textContent=available?'Selecione a trilha para ouvir.':'Trilhas de exploração e batalha ainda não publicadas no catálogo oficial.';player.hidden=true;zone.append(choices,player,msg)}
+let tracks=[],playingKind=null;
+const musicArea=$('.world-hub-audio',hub);
+const player=mk('audio');player.controls=true;player.preload='none';player.loop=true;player.setAttribute('aria-label','Trilha do reino');
+const musicChoices=mk('div','world-hub-music-choices'),musicMsg=mk('p','world-hub-audio-status');
+musicArea.append(musicChoices,player,musicMsg);
+function desiredKind(){return selected==='bosses'?'boss':'exploracao'}
+function findTrack(kind){return tracks.find(t=>t.scope===realmNames[active]&&t.kind===kind&&typeof t.src==='string'&&t.src.startsWith('assets/audio/'))}
+function playTabMusic(){
+ if(hub.hidden)return;
+ const kind=desiredKind(),t=findTrack(kind);
+ musicChoices.replaceChildren();
+ for(const [k,label] of [['exploracao','Exploração'],['boss','Batalha do boss']]){
+  const btn=mk('button','',label);btn.type='button';btn.disabled=!findTrack(k);
+  btn.setAttribute('aria-pressed',String(k===kind));
+  btn.addEventListener('click',()=>{if(!btn.disabled)startTrack(k,true)});
+  musicChoices.append(btn);
+ }
+ if(!t){player.pause();player.removeAttribute('src');player.load();playingKind=null;musicMsg.textContent=kind==='boss'?'Trilha de batalha ainda não publicada para este reino.':'Trilha de exploração ainda não publicada para este reino.';return}
+ startTrack(kind,false);
+}
+function startTrack(kind,manual){
+ const t=findTrack(kind);if(!t)return;
+ if(playingKind!==kind||player.dataset.realm!==String(active)||player.getAttribute('src')!==t.src){
+  player.pause();player.src=t.src;player.dataset.realm=String(active);playingKind=kind;player.load();
+ }
+ musicMsg.textContent=t.title;
+ const pending=player.play();
+ if(pending?.catch)pending.catch(()=>{musicMsg.textContent=t.title+' — pressione Reproduzir (autoplay bloqueado pelo navegador).'});
+}
+fetch('content/music-catalog.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw Error('HTTP '+r.status);return r.json()}).then(d=>{tracks=Array.isArray(d.tracks)?d.tracks:[];playTabMusic()}).catch(()=>{tracks=[];playTabMusic()});
 function render(){const w=worlds[active],name=realmNames[active];$('#world-hub-title',hub).textContent=name;
 const ep=$('[data-panel="enemies"]',hub);ep.replaceChildren();ep.append(mk('p','world-hub-intro',active<=1?'Dez inimigos oficiais em cards RPG. Clique para ampliar; use +, − e arraste para explorar os detalhes.':'O bestiário deste mundo será exibido após a homologação e publicação das artes individuais.'));const eg=mk('div','world-hub-grid');if(active<=1)(active===0?enemies:fireEnemies).forEach(([n,a,id])=>{const folder=active===0?'terra_encantada':'terra_de_fogo';const src='assets/img/cards-rpg/'+folder+'/'+id+'.webp?v=8';const c=card(n,'Habilidade: '+a,src);c.dataset.enemy=id;c.classList.add('world-hub-rpg-art');eg.append(c)});ep.append(eg);
 const bp=$('[data-panel="bosses"]',hub);bp.replaceChildren();bp.append(mk('p','world-hub-intro','Personagens e identidades aprovados. A prancha oficial pode ser ampliada para consultar detalhes sem alterar as artes.'));const bg=mk('div','world-hub-bosses');const bossNames=active===0?terraBosses.map(t=>t[0]):active===1?fireBosses.map(t=>t[0]):[...(w?.subbosses||[]),w?.boss].filter(Boolean);bossNames.forEach((n,i)=>{const id=active===0?['sir_musgoval','lunacornio_guardiao','rainha_florabel'][i]:fireBosses[i]?.[2];const folder=active===0?'terra_encantada':'terra_de_fogo';const src=active<=1?'assets/img/cards-rpg/'+folder+'/'+id+'.webp?v=8':'assets/img/world_'+active+'.webp';const c=card(n,i===2?'Chefe principal':('Subchefe '+(i+1)),src);if(active<=1){c.classList.add('world-hub-rpg-art','world-hub-rpg-boss-art')}else{const im=$('img',c);if(im){im.style.objectFit='cover';im.style.objectPosition=(i*50)+'% 24%'}}bg.append(c)});bp.append(bg);
-const sp=$('[data-panel="scenes"]',hub);sp.replaceChildren();sp.append(mk('p','world-hub-intro','Galeria oficial de exploração. Clique para ampliar; use os botões ou a roda do mouse para zoom e arraste a imagem para examinar os detalhes.'));const sg=mk('div','world-hub-scenes');for(let i=1;i<=4;i++){const path='assets/img/cenarios/'+folders[active]+'/area_0'+i+'.webp?v=33';const f=mk('figure');const im=mk('img');im.src=path;im.alt='Cenário de exploração '+i+' — '+name;im.loading='lazy';im.addEventListener('click',()=>openImage(path,im.alt));im.addEventListener('error',()=>{f.hidden=true});f.append(im,mk('figcaption','',name+' · Cenário '+i));sg.append(f)}sp.append(sg);switchTab(selected);renderAudio()}
-function switchTab(name){selected=name;$$('.world-hub-tab',hub).forEach(b=>{b.setAttribute('aria-selected',String(b.dataset.tab===name));b.tabIndex=b.dataset.tab===name?0:-1});$$('.world-hub-panel',hub).forEach(p=>{p.hidden=p.dataset.panel!==name})}
+const sp=$('[data-panel="scenes"]',hub);sp.replaceChildren();sp.append(mk('p','world-hub-intro','Galeria oficial de exploração. Clique para ampliar; use os botões ou a roda do mouse para zoom e arraste a imagem para examinar os detalhes.'));const sg=mk('div','world-hub-scenes');for(let i=1;i<=4;i++){const path='assets/img/cenarios/'+folders[active]+'/area_0'+i+'.webp?v=33';const f=mk('figure');const im=mk('img');im.src=path;im.alt='Cenário de exploração '+i+' — '+name;im.loading='lazy';im.addEventListener('click',()=>openImage(path,im.alt));im.addEventListener('error',()=>{f.hidden=true});f.append(im,mk('figcaption','',name+' · Cenário '+i));sg.append(f)}sp.append(sg);switchTab(selected)}
+function switchTab(name){selected=name;$$('.world-hub-tab',hub).forEach(b=>{b.setAttribute('aria-selected',String(b.dataset.tab===name));b.tabIndex=b.dataset.tab===name?0:-1});$('.world-hub-panel',hub).forEach(p=>{p.hidden=p.dataset.panel!==name});playTabMusic()}
 $$('.world-hub-tab',hub).forEach(b=>b.addEventListener('click',()=>switchTab(b.dataset.tab)));
-function open(i,origin){if(i<0||i>=9)return;previous=origin||document.activeElement;active=i;selected='enemies';render();hub.hidden=false;document.body.classList.add('world-hub-locked');renderAudio();$('.world-hub-close',hub).focus()}
-function close(){const sound=$('.world-hub-audio audio',hub);if(sound){sound.pause();sound.removeAttribute('src')}closeViewer();hub.hidden=true;document.body.classList.remove('world-hub-locked');previous?.focus?.()}
+function open(i,origin){if(i<0||i>=9)return;previous=origin||document.activeElement;active=i;selected='enemies';render();hub.hidden=false;document.body.classList.add('world-hub-locked');playTabMusic();$('.world-hub-close',hub).focus()}
+function close(){const sound=$('.world-hub-audio audio',hub);if(sound){sound.pause();sound.removeAttribute('src');sound.load();playingKind=null}closeViewer();hub.hidden=true;document.body.classList.remove('world-hub-locked');previous?.focus?.()}
 $('.world-hub-close',hub).addEventListener('click',close);hub.addEventListener('click',e=>{if(e.target===hub)close()});
 document.addEventListener('keydown',e=>{if(e.key==='Escape'){if(!viewer.hidden){closeViewer();e.preventDefault()}else if(!hub.hidden){close();e.preventDefault()}}});
 fetch('content/lore.json').then(r=>r.ok?r.json():null).then(data=>{worlds=(data?.worlds||[]).slice(0,9)}).catch(()=>{});
