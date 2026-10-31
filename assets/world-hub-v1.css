@@ -61,3 +61,16 @@ body.world-hub-locked{overflow:hidden}
 .world-hub-card.world-hub-rpg-art .world-hub-card-body{padding:10px 12px 14px}
 .world-hub-viewer-viewport{min-height:0!important;min-width:0!important}
 .world-hub-viewer-canvas{display:block!important;position:relative!important}
+
+/* V12 protection: only selected tab visible; music controls never masked by generic footer styles. */
+.world-hub .world-hub-panel[hidden],.world-hub .world-hub-panel[aria-hidden="true"]{display:none!important}
+.world-hub .world-hub-tabs{position:sticky;top:74px;z-index:6;border-bottom:1px solid #b68a3f}
+.world-hub .world-hub-audio{display:flex!important;position:sticky!important;bottom:0!important;z-index:15!important;background:#121b2b!important;border-top:2px solid #c49a4b!important;padding:12px 18px!important;gap:12px!important}
+.world-hub .world-hub-music-choices{display:flex!important;flex-wrap:wrap!important;gap:9px!important;visibility:visible!important;opacity:1!important}
+.world-hub .world-hub-music-choices button{display:inline-flex!important;align-items:center!important;justify-content:center!important;min-height:40px!important;background:linear-gradient(135deg,#62401b,#aa7b30)!important;border:1px solid #f0c778!important;color:#fff0c6!important;font-weight:800!important;box-shadow:inset 0 1px #fff4!important}
+.world-hub .world-hub-music-choices button[aria-pressed="true"]{background:linear-gradient(135deg,#98641e,#e0ae4d)!important;color:#1c1508!important}
+.world-hub .world-hub-music-choices button:disabled{opacity:.55!important;filter:grayscale(.55)!important}
+.world-hub .world-hub-audio audio{display:block;max-width:min(320px,100%);min-width:200px}
+.world-hub .world-hub-audio audio[hidden]{display:none!important}
+.world-hub .world-hub-audio-status{display:block;color:#f3d59b!important;flex:1 1 160px}
+@media(max-width:640px){.world-hub .world-hub-tabs{top:70px}.world-hub .world-hub-audio{padding:8px!important}.world-hub .world-hub-audio audio{min-width:0;width:100%}}
