@@ -53,3 +53,11 @@ body.world-hub-locked{overflow:hidden}
 .world-hub-rpg-fill.rpg-1{background:linear-gradient(90deg,#1352af,#39d4ff)}
 .world-hub-rpg-fill.rpg-2{background:linear-gradient(90deg,#b66a09,#ffe35e)}
 .world-hub-rpg-fill.rpg-3{background:linear-gradient(90deg,#176f39,#7bea6b)}
+
+/* v7 — entire approved RPG card visible, never cover/crop */
+.world-hub-card.world-hub-rpg-art{overflow:hidden}
+.world-hub-card.world-hub-rpg-art>img{display:block!important;width:100%!important;height:auto!important;aspect-ratio:auto!important;object-fit:contain!important;object-position:center!important;max-height:none!important;min-height:0!important;background:#07121d}
+.world-hub-card.world-hub-rpg-boss-art>img{aspect-ratio:auto!important}
+.world-hub-card.world-hub-rpg-art .world-hub-card-body{padding:10px 12px 14px}
+.world-hub-viewer-viewport{min-height:0!important;min-width:0!important}
+.world-hub-viewer-canvas{display:block!important;position:relative!important}
