@@ -21,6 +21,7 @@ jobs:
       - name: Test desktop and mobile layouts
         run: |
           python3 -m http.server 8000 >/tmp/portal-server.log 2>&1 &
+          node tests/media-inventory.cjs
           node --test tests/world-hub-regression.test.cjs
           node tests/portal-smoke.cjs
           node tests/world-hub-e2e.cjs
