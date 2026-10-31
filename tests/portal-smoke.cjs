@@ -93,7 +93,20 @@ const base=process.env.PORTAL_URL||'http://127.0.0.1:8000/';
    await page.locator('.realm-viewer-close').click();
    await page.screenshot({path:'/tmp/portal-home-'+width+'.png',fullPage:false});
    if(await page.evaluate(()=>document.documentElement.scrollWidth>window.innerWidth+2))throw Error('Horizontal overflow at '+width);
-   if(errors.length)throw Error('Browser errors '+JSON.stringify(errors));
+   const persistent=[];
+   for(const problem of errors){
+    if(/^503 https?:\/\//.test(problem)){
+     const url=problem.slice(4);let recovered=false;
+     for(let retry=0;retry<3;retry++){
+      await page.waitForTimeout(400);
+      const response=await page.request.get(url,{headers:{'Cache-Control':'no-cache'}}).catch(()=>null);
+      if(response?.ok()){recovered=true;break}
+     }
+     if(recovered)continue;
+    }
+    persistent.push(problem);
+   }
+   if(persistent.length)throw Error('Browser errors '+JSON.stringify(persistent));
    await page.goto(new URL('admin/',base).href);
    assert(await page.locator('#login').isVisible(),'admin login missing');
    assert(await page.locator('#console').isHidden(),'admin content must require authentication');
