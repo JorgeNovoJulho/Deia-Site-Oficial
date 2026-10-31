@@ -24,6 +24,7 @@ jobs:
           node --test tests/world-hub-regression.test.cjs
           node tests/portal-smoke.cjs
           node tests/world-hub-e2e.cjs
+          node tests/realm-viewer-zoom-e2e.cjs
       - name: Verify deployed GitHub Pages in real Chromium
         if: github.ref == 'refs/heads/main'
         env:
@@ -43,6 +44,7 @@ jobs:
           fi
           node tests/portal-smoke.cjs
           node tests/world-hub-e2e.cjs
+          node tests/realm-viewer-zoom-e2e.cjs
       - uses: actions/upload-artifact@v4
         if: always()
         with:
