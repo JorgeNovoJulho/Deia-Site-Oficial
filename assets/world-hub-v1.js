@@ -96,19 +96,19 @@ function desiredKind(){return selected==='bosses'?'boss':'exploracao'}
 function findTrack(kind){return tracks.find(t=>t.scope===realmNames[active]&&t.kind===kind&&typeof t.src==='string'&&t.src.startsWith('assets/audio/'))}
 function playTabMusic(){
  if(hub.hidden)return;
- const kind=desiredKind(),t=findTrack(kind);
+ const kind=desiredKind(),t=findTrack(kind);musicArea.hidden=false;musicChoices.hidden=false;
  musicChoices.replaceChildren();
  for(const [k,label] of [['exploracao','Exploração'],['boss','Batalha do boss']]){
-  const btn=mk('button','',label);btn.type='button';btn.disabled=!findTrack(k);
+  const btn=mk('button','',label);btn.type='button';btn.disabled=!findTrack(k);btn.title=btn.disabled?'Música ainda não cadastrada no catálogo oficial':label;
   btn.setAttribute('aria-pressed',String(k===kind));
   btn.addEventListener('click',()=>{if(!btn.disabled)startTrack(k,true)});
   musicChoices.append(btn);
  }
- if(!t){player.pause();player.removeAttribute('src');player.load();playingKind=null;musicMsg.textContent=kind==='boss'?'Trilha de batalha ainda não publicada para este reino.':'Trilha de exploração ainda não publicada para este reino.';return}
+ if(!t){player.pause();player.removeAttribute('src');player.load();player.hidden=true;playingKind=null;musicMsg.textContent=kind==='boss'?'Trilha de batalha ainda não publicada para este reino.':'Trilha de exploração ainda não publicada para este reino.';return}
  startTrack(kind,false);
 }
 function startTrack(kind,manual){
- const t=findTrack(kind);if(!t)return;
+ const t=findTrack(kind);if(!t)return;player.hidden=false;
  if(playingKind!==kind||player.dataset.realm!==String(active)||player.getAttribute('src')!==t.src){
   player.pause();player.src=t.src;player.dataset.realm=String(active);playingKind=kind;player.load();
  }
@@ -121,9 +121,15 @@ function render(){const w=worlds[active],name=realmNames[active];$('#world-hub-t
 const ep=$('[data-panel="enemies"]',hub);ep.replaceChildren();ep.append(mk('p','world-hub-intro',active<=2?'Dez inimigos oficiais em cards RPG. Clique para ampliar; use +, − e arraste para explorar os detalhes.':'O bestiário deste mundo será exibido após a homologação e publicação das artes individuais.'));const eg=mk('div','world-hub-grid');if(active<=2)(active===0?enemies:active===1?fireEnemies:iceEnemies).forEach(([n,a,id])=>{const folder=['terra_encantada','terra_de_fogo','terra_do_gelo'][active];const src='assets/img/cards-rpg/'+folder+'/'+id+'.webp?v=8';const c=card(n,'Habilidade: '+a,src);c.dataset.enemy=id;c.classList.add('world-hub-rpg-art');eg.append(c)});ep.append(eg);
 const bp=$('[data-panel="bosses"]',hub);bp.replaceChildren();bp.append(mk('p','world-hub-intro','Personagens e identidades aprovados. A prancha oficial pode ser ampliada para consultar detalhes sem alterar as artes.'));const bg=mk('div','world-hub-bosses');const bossNames=active===0?terraBosses.map(t=>t[0]):active===1?fireBosses.map(t=>t[0]):active===2?iceBosses.map(t=>t[0]):[...(w?.subbosses||[]),w?.boss].filter(Boolean);bossNames.forEach((n,i)=>{const id=active===0?['sir_musgoval','lunacornio_guardiao','rainha_florabel'][i]:active===1?fireBosses[i]?.[2]:iceBosses[i]?.[1];const folder=['terra_encantada','terra_de_fogo','terra_do_gelo'][active]||'';const src=active<=2?'assets/img/cards-rpg/'+folder+'/'+id+'.webp?v=8':'assets/img/world_'+active+'.webp';const c=card(n,i===2?'Chefe principal':('Subchefe '+(i+1)),src);if(active<=2){c.classList.add('world-hub-rpg-art','world-hub-rpg-boss-art')}else{const im=$('img',c);if(im){im.style.objectFit='cover';im.style.objectPosition=(i*50)+'% 24%'}}bg.append(c)});bp.append(bg);
 const sp=$('[data-panel="scenes"]',hub);sp.replaceChildren();sp.append(mk('p','world-hub-intro','Galeria oficial de exploração. Clique para ampliar; use os botões ou a roda do mouse para zoom e arraste a imagem para examinar os detalhes.'));const sg=mk('div','world-hub-scenes');for(let i=1;i<=4;i++){const path='assets/img/cenarios/'+folders[active]+'/area_0'+i+'.webp?v=33';const f=mk('figure');const im=mk('img');im.src=path;im.alt='Cenário de exploração '+i+' — '+name;im.loading='lazy';im.addEventListener('click',()=>openImage(path,im.alt));im.addEventListener('error',()=>{f.hidden=true});f.append(im,mk('figcaption','',name+' · Cenário '+i));sg.append(f)}sp.append(sg);switchTab(selected)}
-function switchTab(name){selected=name;$$('.world-hub-tab',hub).forEach(b=>{b.setAttribute('aria-selected',String(b.dataset.tab===name));b.tabIndex=b.dataset.tab===name?0:-1});$('.world-hub-panel',hub).forEach(p=>{p.hidden=p.dataset.panel!==name});playTabMusic()}
+function switchTab(name){
+ if(!['enemies','bosses','scenes'].includes(name))name='enemies';
+ selected=name;
+ $$('.world-hub-tab',hub).forEach(b=>{const activeTab=b.dataset.tab===name;b.setAttribute('aria-selected',String(activeTab));b.tabIndex=activeTab?0:-1});
+ $$('.world-hub-panel',hub).forEach(p=>{const visible=p.dataset.panel===name;p.hidden=!visible;p.style.setProperty('display',visible?'block':'none','important');p.setAttribute('aria-hidden',String(!visible))});
+ playTabMusic();
+}
 $$('.world-hub-tab',hub).forEach(b=>b.addEventListener('click',()=>switchTab(b.dataset.tab)));
-function open(i,origin){if(i<0||i>=9)return;previous=origin||document.activeElement;active=i;selected='enemies';hub.hidden=false;document.body.classList.add('world-hub-locked');try{render()}catch(error){console.error('Falha ao montar o mundo',realmNames[i],error);const ep=$('[data-panel="enemies"]',hub);if(ep){ep.replaceChildren(mk('p','world-hub-intro','Este mundo está temporariamente indisponível. Recarregue a página para tentar novamente.'))}$('.world-hub-panel',hub).forEach(p=>p.hidden=p.dataset.panel!=='enemies')}playTabMusic();$('.world-hub-close',hub)?.focus()}
+function open(i,origin){if(i<0||i>=9)return;previous=origin||document.activeElement;active=i;selected='enemies';hub.hidden=false;document.body.classList.add('world-hub-locked');try{render()}catch(error){console.error('Falha ao montar o mundo',realmNames[i],error);const ep=$('[data-panel="enemies"]',hub);if(ep){ep.replaceChildren(mk('p','world-hub-intro','Este mundo está temporariamente indisponível. Recarregue a página para tentar novamente.'))}$('.world-hub-panel',hub).forEach(p=>{p.hidden=p.dataset.panel!=='enemies';p.style.setProperty('display',p.hidden?'none':'block','important')})}playTabMusic();$('.world-hub-close',hub)?.focus()}
 function close(){const sound=$('.world-hub-audio audio',hub);if(sound){sound.pause();sound.removeAttribute('src');sound.load();playingKind=null}closeViewer();hub.hidden=true;document.body.classList.remove('world-hub-locked');previous?.focus?.()}
 $('.world-hub-close',hub).addEventListener('click',close);hub.addEventListener('click',e=>{if(e.target===hub)close()});
 document.addEventListener('keydown',e=>{if(e.key==='Escape'){if(!viewer.hidden){closeViewer();e.preventDefault()}else if(!hub.hidden){close();e.preventDefault()}}});
