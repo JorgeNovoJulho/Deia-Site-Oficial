@@ -127,7 +127,7 @@
       "name": "Déia Celestial",
       "role": "Alvorecer Pleno",
       "image": "assets/img/personagens/deia-celestial-retrato-oficial.webp",
-      "description": "Forma adulta com nove manifestações materiais de energia do Alvorecer, asas douradas, armadura azul e dourada. A forma sem armadura permanece adulta.",
+      "description": "Forma celestial plenamente adulta alcançada com a nona peça da Armadura Celestial do Alvorecer na Terra do Futuro; grandes asas douradas, poder estelar e laço vermelho preservado.",
       "status": "confirmado"
     },
     {
@@ -141,14 +141,14 @@
       "name": "Vaelor / Vael’Zhar",
       "role": "O irmão que se perdeu",
       "image": "assets/img/personagens/vaelzhar-aprovado.webp",
-      "description": "Vaelor Valtheris, irmão de Alderyon e tio de Fhenrir, outrora guerreiro honrado; a inveja após a sucessão abriu caminho às Sombras. Vael’Zhar pode recuperar a consciência de Vaelor e despedir-se do sobrinho; destino material permanece ambíguo.",
+      "description": "Vaelor Valtheris, irmão de Alderyon, tio, padrinho e mestre de armas de Fhenrir. A inveja o torna vulnerável à corrupção das Sombras e ele assume a identidade sombria Vael’Zhar. O destino final do antagonista não está narrado no PDF revisado.",
       "status": "confirmado"
     },
     {
       "name": "Vovó Brasa",
       "role": "A Última Chama da Terra Encantada",
       "image": "assets/img/personagens/vovo-brasa-aprovada.webp",
-      "description": "Ex-guardiã da Terra Encantada, aposentada pela idade; encontra e cria Déia nascida de ovo cósmico. Sacrifica a própria reserva vital ao derrotar invasores para proteger sua neta. Restauração excepcional no melhor final.",
+      "description": "Anciã dracônica de origem misteriosa que encontra Déia em um ovo cósmico e a cria na Terra Encantada. Usa o Último Fogo para salvar a neta dos invasores e morre no sacrifício. Déia parte em busca da Joia do Renascimento Estelar, na esperança de recuperá-la; o resultado dessa busca ainda não está no PDF.",
       "status": "confirmado"
     },
     {
@@ -176,7 +176,7 @@
       "name": "Aethrakar",
       "role": "O Primeiro Juramento",
       "image": "assets/img/personagens/aethrakar-aprovado.webp",
-      "description": "Força antagonista misteriosa reservada à continuação de Fhenrir; não revelar o segredo ou a eventual ligação com Alderyon no primeiro jogo.",
+      "description": "Figura mencionada em material complementar anterior, mas não apresentada no PDF revisado de 69 páginas. Sua existência e função não são parte da narrativa principal atualmente confirmada.",
       "status": "reservado"
     }
   ],
@@ -185,13 +185,13 @@
       "name": "Thalorien",
       "world": "Terra Encantada",
       "role": "Mercador das Estrelas",
-      "description": "Comércio, mapas, esperança do Coração da Segunda Aurora e histórias antigas de Déia."
+      "description": "Mercador e cartógrafo estelar; entrega a Déia os Mapas da Segunda Aurora e fala da Joia do Renascimento Estelar, esperança para resgatar Vovó Brasa."
     },
     {
       "name": "Kaeldrath",
       "world": "Terra de Fogo",
       "role": "Forjador do Juramento",
-      "description": "Armas e participação na consagração de Val’Aster."
+      "description": "Mestre ferreiro da Terra do Fogo. Após Vulkrag e a partida de Fhenrir, encontra Déia de modo independente, aplicando runas de forja e preparando slots de poder na arma de haste."
     },
     {
       "name": "Elyndor",
@@ -208,26 +208,26 @@
     {
       "name": "Vorathen",
       "world": "Cavernas Obscuras",
-      "role": "Sentinela Esquecido",
-      "description": "Treino e campanhas de Alderyon e Vaelor."
+      "role": "Cartógrafo dos Segredos",
+      "description": "Auxilia Déia a compreender trilhas ocultas e passagens nas Cavernas Obscuras."
     },
     {
       "name": "Selvaris",
       "world": "Terra dos Mortos",
-      "role": "Guardiã dos Ecos",
-      "description": "Crônicas dos mortos, memória e Juramento dos Dois Irmãos."
+      "role": "Guardiã dos Portais",
+      "description": "Abre e orienta rotas dimensionais, permitindo retorno aos reinos anteriores e acesso a regiões antes inacessíveis."
     },
     {
       "name": "Aeryndra",
       "world": "Pântano Venenoso",
       "role": "Lança das Amazonas",
-      "description": "Guerreira de Seralyth, defesa de comunidades e treinamento."
+      "description": "Lança das Amazonas; treina Déia de modo independente após a queda de Vulkrag, aprimorando agilidade, mobilidade e técnicas de combate."
     },
     {
       "name": "Drakmorn",
       "world": "Terra dos Dinossauros",
       "role": "Escudo das Eras",
-      "description": "Treinamento de combate, testemunhos dos irmãos e proteção local."
+      "description": "Escudo das Eras. Orienta Déia na Terra dos Dinossauros, ensinando defesa, centro de gravidade e como utilizar o peso do inimigo contra ele."
     },
     {
       "name": "Caelthar",
@@ -421,13 +421,10 @@
       "id": "world-shadow",
       "name": "Reino das Sombras",
       "image": null,
-      "subbosses": [
-        "Kharvok",
-        "Seraphyne"
-      ],
-      "boss": "Vael’Zhar — 3 fases",
+      "subbosses": [],
+      "boss": "Vael’Zhar",
       "guardian": null,
-      "description": "Destino final, não um décimo reino com peça de armadura. Confronto exige os dois protagonistas.",
+      "description": "Destino do confronto final anunciado ao término do capítulo XI do PDF revisado. A batalha final, subchefes e desfecho ainda não foram narrados neste documento.",
       "demo": null,
       "demo_status": "não há build jogável publicada",
       "music_ids": []
@@ -1361,18 +1358,16 @@
     "Manter as artes e identidades oficiais, sem substituí-las por novas versões sem aprovação."
   ],
   "pending": [
+    "Não anunciar cinco finais ou ressurreição concluída: esses eventos não aparecem no PDF revisado de 69 páginas.",
     "Reconciliar as inconsistências internas de contagem das peças (por exemplo, Capítulos VIII–IX e referências divergentes nos capítulos V–VI).",
     "Rever continuidade entre a partida de Fhenrir no Capítulo IV e a passagem subsequente que cita treino conjunto, preservando a cena independente de Déia com Kaeldrath e Aeryndra.",
     "Concluir e aprovar o capítulo final: Reino das Sombras, confronto e desfecho ainda não estão neste PDF.",
     "Verificar nomenclatura dos Nove Mundos/Reinos e referências numéricas divergentes ao Reino do Futuro sem alterar a ordem explicitamente listada no PDF.",
-    "Catálogo formal dos cinco finais, gatilhos e epílogos.",
-    "Nome Última Chama do Coração e Coração da Segunda Aurora propostos; validação nominal pendente.",
     "Como o nível 100 será integrado no código.",
     "Variante Vulkrag quando Fhenrir é personagem controlado.",
     "Associação definitiva das artes aprovadas aos nomes de subchefes e chefes.",
     "Gates exatos e ordem de acesso aos reinos; rampas e mapas definitivos.",
     "Detalhes da consciência Primeiro Alvorecer e condições cósmicas de ressurreição.",
-    "Fase 02C.10 ainda não executada / confirmada.",
     "Nome Atlas das Constelações Perdidas já aprovado, registros ainda não implementados."
   ],
   "canonical_source": {
