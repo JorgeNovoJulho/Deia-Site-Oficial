@@ -255,7 +255,9 @@
         "terra-encantada-boss",
         "terra-encantada-ambiente",
         "terra-encantada-encontro"
-      ]
+      ],
+      "armor_reward_piece": 1,
+      "armor_reward_boss": "Rainha Florabel"
     },
     {
       "id": "world-1",
@@ -275,7 +277,9 @@
         "terra-de-fogo-boss",
         "terra-de-fogo-ambiente",
         "terra-de-fogo-encontro"
-      ]
+      ],
+      "armor_reward_piece": 2,
+      "armor_reward_boss": "Vulkrag"
     },
     {
       "id": "world-2",
@@ -295,7 +299,9 @@
         "terra-do-gelo-boss",
         "terra-do-gelo-ambiente",
         "terra-do-gelo-encontro"
-      ]
+      ],
+      "armor_reward_piece": 3,
+      "armor_reward_boss": "Aurorix"
     },
     {
       "id": "world-3",
@@ -315,7 +321,9 @@
         "terra-dos-doces-boss",
         "terra-dos-doces-ambiente",
         "terra-dos-doces-encontro"
-      ]
+      ],
+      "armor_reward_piece": 4,
+      "armor_reward_boss": "Dona Glacê Suprema"
     },
     {
       "id": "world-4",
@@ -335,7 +343,9 @@
         "cavernas-obscuras-boss",
         "cavernas-obscuras-ambiente",
         "cavernas-obscuras-encontro"
-      ]
+      ],
+      "armor_reward_piece": 5,
+      "armor_reward_boss": "Nocturnox"
     },
     {
       "id": "world-5",
@@ -355,7 +365,9 @@
         "terra-dos-mortos-boss",
         "terra-dos-mortos-ambiente",
         "terra-dos-mortos-encontro"
-      ]
+      ],
+      "armor_reward_piece": 8,
+      "armor_reward_boss": "Necrodrake Rei"
     },
     {
       "id": "world-6",
@@ -375,7 +387,9 @@
         "pântano-venenoso-boss",
         "pântano-venenoso-ambiente",
         "pântano-venenoso-encontro"
-      ]
+      ],
+      "armor_reward_piece": 7,
+      "armor_reward_boss": "Crocomandra"
     },
     {
       "id": "world-7",
@@ -395,7 +409,9 @@
         "terra-dos-dinossauros-boss",
         "terra-dos-dinossauros-ambiente",
         "terra-dos-dinossauros-encontro"
-      ]
+      ],
+      "armor_reward_piece": 6,
+      "armor_reward_boss": "Tirano Rexor"
     },
     {
       "id": "world-8",
@@ -415,7 +431,9 @@
         "terra-do-futuro-boss",
         "terra-do-futuro-ambiente",
         "terra-do-futuro-encontro"
-      ]
+      ],
+      "armor_reward_piece": 9,
+      "armor_reward_boss": "Overlord Chronark"
     },
     {
       "id": "world-shadow",
@@ -1347,7 +1365,9 @@
     "last_commit": "verificar branch atual do repositório do jogo",
     "push": "NÃO autorizado",
     "save": "produção v3; ARCH-02B v4 isolado",
-    "tests": "Testes anteriores relatados na documentação do jogo; não reexecutados nesta atualização editorial"
+    "tests": "Testes anteriores relatados na documentação do jogo; não reexecutados nesta atualização editorial",
+    "official_domain": "https://superstarcreator.online",
+    "hosting_note": "Domínio registrado pelo autor na Hostinger; apontamento DNS, certificado SSL e ligação ao GitHub Pages ainda não verificados."
   },
   "rules": [
     "A fonte primária obrigatória do jogo e do site é o PDF revisado de 69 páginas, identificado pelo SHA-256 em canonical_source.",
@@ -1358,8 +1378,8 @@
     "Manter as artes e identidades oficiais, sem substituí-las por novas versões sem aprovação."
   ],
   "pending": [
+    "Contagens conflitantes do PDF identificadas e resolvidas pelo autor quanto à sequência oficial de obtenção das nove peças; texto original do PDF ainda contém referências não revisadas.",
     "Não anunciar cinco finais ou ressurreição concluída: esses eventos não aparecem no PDF revisado de 69 páginas.",
-    "Reconciliar as inconsistências internas de contagem das peças (por exemplo, Capítulos VIII–IX e referências divergentes nos capítulos V–VI).",
     "Rever continuidade entre a partida de Fhenrir no Capítulo IV e a passagem subsequente que cita treino conjunto, preservando a cena independente de Déia com Kaeldrath e Aeryndra.",
     "Concluir e aprovar o capítulo final: Reino das Sombras, confronto e desfecho ainda não estão neste PDF.",
     "Verificar nomenclatura dos Nove Mundos/Reinos e referências numéricas divergentes ao Reino do Futuro sem alterar a ordem explicitamente listada no PDF.",
@@ -1375,10 +1395,73 @@
     "sha256": "8359f6880dbf0ccd540c89867836851b5862252ab3a96510a2cc31245f25ef34",
     "pages": 69,
     "priority": "primária",
-    "note": "Resumo editorial fiel à fonte. O PDF original, incluindo as artes das páginas, deve acompanhar o acervo canônico. Materiais antigos servem apenas de complemento quando não contradizem esta fonte."
+    "note": "PDF revisado é fonte primária, com complementos apenas quando não contraditórios. A ordem das nove peças foi corrigida e explicitamente aprovada pelo autor em 2026-11-03; esta correção específica prevalece sobre os erros internos de contagem do PDF."
   },
   "legacy_chapters_reference": {
     "version": "V6.3",
     "note": "A narrativa anterior está no histórico Git. Não é a fonte canônica atual; não reutilizar desfechos não presentes no PDF revisado."
+  },
+  "armor_progression": {
+    "source": "Correção canônica explícita do autor, 2026-11-03; prevalece sobre contagens divergentes no PDF revisado",
+    "total_pieces": 9,
+    "sequence": [
+      {
+        "piece": 1,
+        "realm": "Terra Encantada",
+        "boss": "Rainha Florabel",
+        "item_name": "Grevas (Botas) sagradas",
+        "status": "aprovado"
+      },
+      {
+        "piece": 2,
+        "realm": "Terra de Fogo",
+        "boss": "Vulkrag",
+        "status": "aprovado"
+      },
+      {
+        "piece": 3,
+        "realm": "Terra do Gelo",
+        "boss": "Aurorix",
+        "status": "aprovado"
+      },
+      {
+        "piece": 4,
+        "realm": "Terra dos Doces",
+        "boss": "Dona Glacê Suprema",
+        "status": "aprovado"
+      },
+      {
+        "piece": 5,
+        "realm": "Cavernas Obscuras",
+        "boss": "Nocturnox",
+        "status": "aprovado"
+      },
+      {
+        "piece": 6,
+        "realm": "Terra dos Dinossauros",
+        "boss": "Tirano Rexor",
+        "status": "aprovado"
+      },
+      {
+        "piece": 7,
+        "realm": "Pântano Venenoso",
+        "boss": "Crocomandra",
+        "status": "aprovado"
+      },
+      {
+        "piece": 8,
+        "realm": "Terra dos Mortos",
+        "boss": "Necrodrake Rei",
+        "status": "aprovado"
+      },
+      {
+        "piece": 9,
+        "realm": "Terra do Futuro",
+        "boss": "Overlord Chronark",
+        "status": "aprovado"
+      }
+    ],
+    "completion": "A nona peça, obtida após Overlord Chronark, completa a armadura e desencadeia a forma celestial adulta de Déia",
+    "shadow_realm_piece": false
   }
 }
