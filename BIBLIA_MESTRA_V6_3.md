@@ -1,3 +1,5 @@
+> **DOCUMENTO HISTÓRICO — NÃO É MAIS A FONTE CANÔNICA PRINCIPAL (03/11/2026).** O PDF revisado de 69 páginas fornecido pelo autor prevalece sobre esta V6.3. Consulte `docs/CANONE_PDF_REVISADO_20261103.md` e `content/lore.json` para resumos da referência atual. Use esta versão somente para complementar lacunas sem contrariar o PDF. O capítulo final não está incluído no PDF revisado; quaisquer finais descritos abaixo pertencem a uma versão anterior.
+
 # DÉIA E OS NOVE REINOS MAJESTOSOS
 ## BÍBLIA MESTRA — V6.3 | 28/10/2026
 

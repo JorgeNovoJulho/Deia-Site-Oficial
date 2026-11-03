@@ -1,83 +1,118 @@
 {
   "title": "Déia e os Nove Reinos Majestosos",
-  "version": "V6.3 — Portal de referência 01",
-  "date": "2026-10-28",
-  "status": "lore consolidada em elaboração; implementação não inferida",
+  "version": "PDF revisado 2026-11-03 — referência canônica principal",
+  "date": "2026-11-03",
+  "status": "adaptação editorial do PDF de 69 páginas; capítulo final ainda não fornecido; conflitos internos registrados sem correção unilateral",
   "chapters": [
     {
-      "id": "cap-0",
-      "title": "Prólogo — Antes da primeira aurora",
-      "text": "Uma consciência anterior às fronteiras dos nove mundos, chamada Primeiro Alvorecer, guarda a possibilidade de renovação da vida. Não determina o livre-arbítrio da futura herdeira. O Reino do Crepúsculo, independente e povoado por guerreiros guardiões, envia defensores a outros mundos ameaçados. A Guerra das Mil Estrelas consolida a amizade dos irmãos Alderyon e Vaelor e o Juramento dos Dois Irmãos."
-    },
-    {
       "id": "cap-1",
-      "title": "I — A dinastia Valtheris",
-      "text": "Alderyon, soberano humilde e estrategista, une-se a Seralyth, poderosa rainha amazona. Vaelor, seu irmão e amigo íntimo, torna-se padrinho e mestre de armas do jovem Fhenrir. Os irmãos consagram Val’Aster, a Espada Estelar, que somente Fhenrir pode comandar. No Julgamento das Sete Virtudes, Alderyon é escolhido para o trono. Vaelor, antes herói genuíno, passa de mágoa e inveja à corrupção consciente. Como Vael’Zhar, rompe seu juramento e petrifica o Crepúsculo mediante a malha estelar e a linhagem soberana; o reino e as constelações desaparecem."
+      "title": "Capítulo I — A Guerra das Mil Estrelas e a Sombra do Crepúsculo",
+      "text": "No Reino do Crepúsculo, Fhenrir cresce entre os ensinamentos de Elyndor e o treinamento de seu tio e padrinho Vaelor, sob os cuidados de Alderyon e Seralyth. A inveja de Vaelor, explorada pelo Reino das Sombras, leva à transformação em Vael’Zhar. A malha estelar petrifica a civilização e oculta o mundo e suas constelações. Em patrulha distante, Fhenrir escapa e, ao tentar regressar, é lançado por uma fenda temporal com outros nove sobreviventes, entre eles Elyndor e Thalorien.",
+      "source_pages": [
+        1,
+        6
+      ],
+      "source": "PDF revisado — resumo editorial; consultar a íntegra para diálogos e arte"
     },
     {
       "id": "cap-2",
-      "title": "II — A guerra que uniu Alvorecer e Crepúsculo",
-      "text": "Fhenrir sobrevive porque combatia fora do alcance da malha estelar. Seguindo Vael’Zhar, encontra Déia já adulta e celestial na primeira Guerra Santa que os dois lutam juntos — não na primeira guerra da longa vida de Déia. Suas energias ressoam. Fhenrir enfrenta o tio e se sacrifica para proteger Déia; ela sela Vael’Zhar por aproximadamente mil anos. As memórias de ambos atravessam os ciclos de modo distinto."
+      "title": "Capítulo II — O Encontro das Eras e o Sacrifício Dourado",
+      "text": "Projetado para uma época remota no Reino do Alvorecer, Fhenrir encontra Déia em sua encarnação celestial lutando contra Vael’Zhar, sem reconhecer inicialmente seu tio corrompido. Ele usa o Avatar Gigante como escudo vivo para protegê-la e perde sua armadura e energia. Déia assume a forma da Grande Flecha Dourada da Aurora e sela a essência de Vael’Zhar durante mil anos. Os dois seguem para um novo ciclo, separados pelo tempo.",
+      "source_pages": [
+        6,
+        9
+      ],
+      "source": "PDF revisado — resumo editorial; consultar a íntegra para diálogos e arte"
     },
     {
       "id": "cap-3",
-      "title": "III — O ovo sob um segundo amanhecer",
-      "text": "Após incontáveis ciclos de renovação, a essência consciente do Primeiro Alvorecer retorna na forma de ovo cósmico. Vovó Brasa, antiga protetora da Terra Encantada e agora idosa, encontra-o e escolhe acolher a pequena dragonesa. A fita vermelha une sua infância ao amor da avó. Brasa conheceu Alderyon e Seralyth por antigas rotas dimensionais, mas sua memória idosa é imprecisa."
+      "title": "Capítulo III — A Sopa de Brasa, a Cozinha da Cabana e o Fim de uma Era",
+      "text": "Mil anos depois, Vovó Brasa acolhe Déia, nascida de um ovo cósmico, na Terra Encantada. A pequena dragonesa vive uma infância alegre, com fome constante, laço vermelho e bolsa de viagem. A invasão sombria leva Brasa a sacrificar sua vida com o Último Fogo. Thalorien entrega os Mapas da Segunda Aurora e apresenta a possibilidade de resgatar Brasa por meio da Joia do Renascimento Estelar. Déia parte sozinha, supera Sir Musgoval, Lunacórnio Guardião e a Rainha Florabel com estratégia e recebe a primeira peça da Armadura Celestial: as Grevas sagradas.",
+      "source_pages": [
+        9,
+        18
+      ],
+      "source": "PDF revisado — resumo editorial; consultar a íntegra para diálogos e arte"
     },
     {
       "id": "cap-4",
-      "title": "IV — A Última Chama de Vovó Brasa",
-      "text": "A vida doméstica é interrompida por uma invasão das Sombras, que ataca uma zona de proteção, não Déia especificamente: sua assinatura celestial está adormecida. Brasa, já sem força, resistência ou magia confiável, usa um esforço derradeiro para recuperar por instantes a potência de juventude; derrota os agressores daquele setor e morre pelo custo vital. Antes, despede-se carinhosamente da neta, reforça a fita vermelha e entrega sua relíquia familiar. A sucessora da guardiã defende outro setor; não será aprofundada como personagem nesta versão."
+      "title": "Capítulo IV — As Caldeiras da Terra do Fogo, a Queda de Vulkrag e os Caminhos dos Viajantes",
+      "text": "Na Terra do Fogo, Déia enfrenta Vulkrag até a intervenção de Fhenrir, que aparece pela primeira vez na jornada atual e recebe energia da luz de Déia para derrotar o titã. Fhenrir desaparece logo após o confronto. Déia conquista a segunda peça da armadura, iniciando a transformação da forma infantil para a adolescência; então encontra, de maneira independente, Kaeldrath na forja e Aeryndra para treinamento tático. A passagem subsequente também menciona estudos com Drakmorn e exige revisão de continuidade.",
+      "source_pages": [
+        18,
+        24
+      ],
+      "source": "PDF revisado — resumo editorial; consultar a íntegra para diálogos e arte"
     },
     {
       "id": "cap-5",
-      "title": "V — A promessa e o guardião das estrelas",
-      "text": "Thalorien, sobrevivente do Crepúsculo presente na Terra Encantada, conta a Déia sobre uma possibilidade extraordinária: o Coração da Segunda Aurora. A menina inicia a jornada para tentar restaurar a vida de Brasa. A relíquia não é uma ferramenta comum nem uma coleta obrigatória de nove pedaços. O pedido íntimo de Déia conduz à guerra pelos nove mundos."
+      "title": "Capítulo V — Os Ventos do Silêncio e o Desabrochar da Coragem",
+      "text": "Na Terra do Gelo, Déia e Fhenrir percorrem rotas distintas. Elyndor orienta Déia no Santuário dos Sonhos; Selvaris mantém abertas as rotas dimensionais e o retorno aos reinos. Déia supera Yetigor e Morsa de Cristal e derrota Aurorix, a Fênix Glacial, sem a ajuda de Fhenrir, obtendo a terceira peça da armadura e um fragmento opcional do Atlas das Constelações Perdidas. Os dois trocam palavras e o fragmento após a batalha.",
+      "source_pages": [
+        24,
+        29
+      ],
+      "source": "PDF revisado — resumo editorial; consultar a íntegra para diálogos e arte"
     },
     {
       "id": "cap-6",
-      "title": "VI — O desconhecido de armadura azul",
-      "text": "Ainda criança, Déia cruza com Fhenrir, renascido antes dela e portador de lembranças incompletas. Ele a protege, suspeita reconhecer a antiga companheira, mas não a pressiona nem revela certezas que não possui. O primeiro vínculo é amizade, proteção e descoberta. Romance somente poderá surgir quando Déia atingir maturidade adulta, sempre opcional."
+      "title": "Capítulo VI — Os Doces Amargos e o Orgulho do Guardião",
+      "text": "Na Terra dos Doces, Déia é acolhida por Miralune e aconselhada por Elyndor. Ela e Fhenrir cruzam caminhos para enfrentar Golem de Caramelo e Bobo Marshmello, mas Déia derrota Dona Glacê Suprema com uma tática baseada no cenário e na própria arma de haste. A quarta peça da armadura e um fragmento opcional do Atlas são recuperados.",
+      "source_pages": [
+        29,
+        34
+      ],
+      "source": "PDF revisado — resumo editorial; consultar a íntegra para diálogos e arte"
     },
     {
       "id": "cap-7",
-      "title": "VII — Nove reinos, nove auroras",
-      "text": "Déia percorre os nove mundos interligados. A armadura é energia do Primeiro Alvorecer materializada em nove peças, vinculadas a chefes e núcleos de proteção corrompidos. O crescimento físico e emocional acompanha memórias, experiências e despertar; Déia alcança estatura adulta compatível com Fhenrir, sem perder humor ou individualidade. Cada reino comporta dois subchefes, um chefe principal e registros de um sobrevivente do Crepúsculo. Os sobreviventes protegem suas comunidades, vendem e aprimoram itens e contam relatos progressivos; reconhecem Déia de modo gradual."
+      "title": "Capítulo VII — As Sombras Profundas das Cavernas Obscuras",
+      "text": "Déia explora as Cavernas Obscuras e encontra Vorathen e Elyndor. Ela e Fhenrir enfrentam Morcegaia Eco e Toupeira Obsidiana. Depois, Déia entra sozinha no Abismo dos Ecos e vence Nocturnox, o Senhor do Abismo, usando a instabilidade dos cristais da arena. Obtém a quinta peça e mais um fragmento opcional do Atlas.",
+      "source_pages": [
+        34,
+        39
+      ],
+      "source": "PDF revisado — resumo editorial; consultar a íntegra para diálogos e arte"
     },
     {
       "id": "cap-8",
-      "title": "VIII — Vulkrag e o eco do sacrifício",
-      "text": "Na Terra de Fogo, se Déia enfrenta Vulkrag como protagonista, Fhenrir intervém obrigatoriamente em um momento crítico da batalha, independentemente de mortes anteriores. Enfraquece Vulkrag, libera a manifestação da armadura, Déia recupera HP e ganha defesa permanente, concluindo o combate. Se a campanha for jogada com Fhenrir, a variante do evento continua pendente de definição para não contrariar esse acontecimento."
+      "title": "Capítulo VIII — As Selvas Colossais e o Rugido da Terra dos Dinossauros",
+      "text": "Na Terra dos Dinossauros, Drakmorn ensina princípios de defesa e aproveitamento do ambiente. Déia e Fhenrir combatem Raptor Alfa Escarlate e Anquilo Xamã; Déia derrota sozinha Tirano Rexor, usando estruturas fósseis suspensas como armadilha. O altar concede a sexta peça da armadura e o fragmento do Atlas. O capítulo contém uma divergência local: após anunciar a sexta peça, refere-se à quinta relíquia.",
+      "source_pages": [
+        39,
+        45
+      ],
+      "source": "PDF revisado — resumo editorial; consultar a íntegra para diálogos e arte"
     },
     {
       "id": "cap-9",
-      "title": "IX — A biblioteca das vidas esquecidas",
-      "text": "Elyndor, guardião mais antigo, conserva no Arquivo das Eras registros de todas as Guerras Santas conhecidas. Seu conhecimento não é onisciência: crônicas, cristais e relatos possuem lacunas. Déia recupera memórias de vidas e perdas; continua sendo a neta de Brasa. Os guardiões também registram histórias contraditórias em interpretação, mas coerentes nos fatos, sobre o Vaelor bondoso e sua queda."
+      "title": "Capítulo IX — As Águas da Morte e o Peso do Sacrifício",
+      "text": "No Pântano Venenoso, Fhenrir sofre envenenamento ao proteger Déia, invertendo o papel de protetor. Déia enfrenta Sapo Toximago e Hidra Lodoverde, derrota Crocomandra ao usar os gases voláteis dos esporos e purifica o veneno que ameaça Fhenrir com a energia do Alvorecer. O texto anuncia diferentes contagens de peças no título, na recompensa e na cura, a serem revistas sem suposição editorial.",
+      "source_pages": [
+        45,
+        51
+      ],
+      "source": "PDF revisado — resumo editorial; consultar a íntegra para diálogos e arte"
     },
     {
       "id": "cap-10",
-      "title": "X — Os Nove Refúgios e o Atlas",
-      "text": "A Guerra dos Nove Refúgios é CONTEXTO NARRATIVO, não conteúdo jogável: os sobreviventes do Crepúsculo defendem as novas comunidades em que construíram laços. As histórias são contadas por diálogos, memórias e registros. Cada guardião conserva um fragmento opcional do Atlas das Constelações Perdidas; os nove registros sugerem rotas para localizar o Crepúsculo sem liberar o reino nem substituir a campanha de Déia."
+      "title": "Capítulo X — Os Ecos do Adeus e as Asas do Crepúsculo",
+      "text": "Na Terra dos Mortos, a Dama Lamento evoca ilusões de Vovó Brasa, Seralyth, Alderyon e Vaelor. Fhenrir rompe a ilusão, mergulha no Abismo da Morte e manifesta as Asas do Crepúsculo, fortalecidas por uma manifestação espiritual de Alderyon, para salvar Déia. Após vencerem Necrodrake Rei, Déia recebe a oitava peça da Armadura Celestial e se aproxima da forma adulta.",
+      "source_pages": [
+        51,
+        58
+      ],
+      "source": "PDF revisado — resumo editorial; consultar a íntegra para diálogos e arte"
     },
     {
       "id": "cap-11",
-      "title": "XI — Duas vontades e um destino",
-      "text": "Depois do encontro e desbloqueio narrativo, Fhenrir torna-se segundo protagonista. Mapa e mundo são compartilhados; XP, habilidades, equipamentos e memórias são próprios. Déia pode emprestar energia do Alvorecer para acelerar a recuperação de Fhenrir, cuja joia perde brilho sem as constelações; ao zerar, a armadura desaparece, sua espada permanece com 50% do dano, e a energia recarrega gradualmente. A amizade basta para sincronia máxima. Nenhum dos dois vence Vael’Zhar sozinho."
-    },
-    {
-      "id": "cap-12",
-      "title": "XII — O reino das sombras e os três confrontos",
-      "text": "O Reino das Sombras apresenta Kharvok e Seraphyne antes do confronto em três fases com Vael’Zhar: quebra de defesa, manifestação da corrupção e eclipse/sincronia. Fhenrir reconhece o tio amado; suas hesitações permitem contra-ataques. Vael’Zhar também hesita diante de lembranças do sobrinho e do irmão, criando aberturas. Déia possui o golpe e a decisão finais. Vaelor pode recuperar a consciência, arrepender-se e se despedir de Fhenrir, mas não apaga seus crimes nem desfaz a prisão do Crepúsculo."
-    },
-    {
-      "id": "cap-13",
-      "title": "XIII — Cinco destinos e a Segunda Aurora",
-      "text": "A campanha possui exatamente cinco finais principais, ainda sem catálogo formal completo. A vitória melhor, associada à purificação definitiva e condições narrativas, manifesta o Coração da Segunda Aurora e restaura Vovó Brasa. A essência da avó foi preservada de forma excepcional pelo sacrifício em ressonância com Déia; a restauração não pode ser repetida livremente. Os demais finais continuam válidos e conclusivos, sem obrigação de romance. A cena final pode reunir Brasa e Déia adulta na antiga casa."
-    },
-    {
-      "id": "cap-14",
-      "title": "Epílogo — O Crepúsculo permanece oculto",
-      "text": "O desaparecimento de Vaelor em partículas crepusculares deixa em aberto se sua essência morreu ou foi levada, petrificada, à Dimensão das Sombras; sua derrota como Vael’Zhar permanece efetiva. Os registros de Seralyth, o símbolo de Alderyon, a espada e os sinais estelares preparam discretamente a continuação de Fhenrir. Aethrakar — O Primeiro Juramento — e a possível ligação de Alderyon ao último selo não são revelados no primeiro jogo."
+      "title": "Capítulo XI — O Labirinto do Tempo, o Despertar Adulto e a Fúria do Reino das Sombras",
+      "text": "Na Terra do Futuro, os ciclos temporais são rompidos após confrontos com Samurai Drone-X e Escorpiotron. Contra Overlord Chronark, Fhenrir invoca o Gigante de Luz e perde sua armadura ao destruir o mecanismo de regeneração do chefe; Déia completa a vitória. Ao obter a nona e última peça, ela assume a forma celestial adulta. O poder reunido supera o véu protetor do laço vermelho, tornando-a detectável por Vael’Zhar. Déia e Fhenrir retornam aos oito reinos anteriores, enfrentam subchefes corrompidos, completam três joias de ataque e três de defesa em suas armas e recuperam memórias ancestrais. O texto encerra antes da batalha final no Reino das Sombras.",
+      "source_pages": [
+        58,
+        69
+      ],
+      "source": "PDF revisado — resumo editorial; consultar a íntegra para diálogos e arte"
     }
   ],
   "characters": [
@@ -92,7 +127,7 @@
       "name": "Déia Celestial",
       "role": "Alvorecer Pleno",
       "image": "assets/img/personagens/deia-celestial-retrato-oficial.webp",
-      "description": "Forma adulta com nove manifestações materiais de energia do Alvorecer, asas douradas, armadura azul e dourada. A forma sem armadura permanece adulta.",
+      "description": "Forma celestial plenamente adulta alcançada com a nona peça da Armadura Celestial do Alvorecer na Terra do Futuro; grandes asas douradas, poder estelar e laço vermelho preservado.",
       "status": "confirmado"
     },
     {
@@ -106,14 +141,14 @@
       "name": "Vaelor / Vael’Zhar",
       "role": "O irmão que se perdeu",
       "image": "assets/img/personagens/vaelzhar-aprovado.webp",
-      "description": "Vaelor Valtheris, irmão de Alderyon e tio de Fhenrir, outrora guerreiro honrado; a inveja após a sucessão abriu caminho às Sombras. Vael’Zhar pode recuperar a consciência de Vaelor e despedir-se do sobrinho; destino material permanece ambíguo.",
+      "description": "Vaelor Valtheris, irmão de Alderyon, tio, padrinho e mestre de armas de Fhenrir. A inveja o torna vulnerável à corrupção das Sombras e ele assume a identidade sombria Vael’Zhar. O destino final do antagonista não está narrado no PDF revisado.",
       "status": "confirmado"
     },
     {
       "name": "Vovó Brasa",
       "role": "A Última Chama da Terra Encantada",
       "image": "assets/img/personagens/vovo-brasa-aprovada.webp",
-      "description": "Ex-guardiã da Terra Encantada, aposentada pela idade; encontra e cria Déia nascida de ovo cósmico. Sacrifica a própria reserva vital ao derrotar invasores para proteger sua neta. Restauração excepcional no melhor final.",
+      "description": "Anciã dracônica de origem misteriosa que encontra Déia em um ovo cósmico e a cria na Terra Encantada. Usa o Último Fogo para salvar a neta dos invasores e morre no sacrifício. Déia parte em busca da Joia do Renascimento Estelar, na esperança de recuperá-la; o resultado dessa busca ainda não está no PDF.",
       "status": "confirmado"
     },
     {
@@ -141,7 +176,7 @@
       "name": "Aethrakar",
       "role": "O Primeiro Juramento",
       "image": "assets/img/personagens/aethrakar-aprovado.webp",
-      "description": "Força antagonista misteriosa reservada à continuação de Fhenrir; não revelar o segredo ou a eventual ligação com Alderyon no primeiro jogo.",
+      "description": "Figura mencionada em material complementar anterior, mas não apresentada no PDF revisado de 69 páginas. Sua existência e função não são parte da narrativa principal atualmente confirmada.",
       "status": "reservado"
     }
   ],
@@ -150,13 +185,13 @@
       "name": "Thalorien",
       "world": "Terra Encantada",
       "role": "Mercador das Estrelas",
-      "description": "Comércio, mapas, esperança do Coração da Segunda Aurora e histórias antigas de Déia."
+      "description": "Mercador e cartógrafo estelar; entrega a Déia os Mapas da Segunda Aurora e fala da Joia do Renascimento Estelar, esperança para resgatar Vovó Brasa."
     },
     {
       "name": "Kaeldrath",
       "world": "Terra de Fogo",
       "role": "Forjador do Juramento",
-      "description": "Armas e participação na consagração de Val’Aster."
+      "description": "Mestre ferreiro da Terra do Fogo. Após Vulkrag e a partida de Fhenrir, encontra Déia de modo independente, aplicando runas de forja e preparando slots de poder na arma de haste."
     },
     {
       "name": "Elyndor",
@@ -173,26 +208,26 @@
     {
       "name": "Vorathen",
       "world": "Cavernas Obscuras",
-      "role": "Sentinela Esquecido",
-      "description": "Treino e campanhas de Alderyon e Vaelor."
+      "role": "Cartógrafo dos Segredos",
+      "description": "Auxilia Déia a compreender trilhas ocultas e passagens nas Cavernas Obscuras."
     },
     {
       "name": "Selvaris",
       "world": "Terra dos Mortos",
-      "role": "Guardiã dos Ecos",
-      "description": "Crônicas dos mortos, memória e Juramento dos Dois Irmãos."
+      "role": "Guardiã dos Portais",
+      "description": "Abre e orienta rotas dimensionais, permitindo retorno aos reinos anteriores e acesso a regiões antes inacessíveis."
     },
     {
       "name": "Aeryndra",
       "world": "Pântano Venenoso",
       "role": "Lança das Amazonas",
-      "description": "Guerreira de Seralyth, defesa de comunidades e treinamento."
+      "description": "Lança das Amazonas; treina Déia de modo independente após a queda de Vulkrag, aprimorando agilidade, mobilidade e técnicas de combate."
     },
     {
       "name": "Drakmorn",
       "world": "Terra dos Dinossauros",
       "role": "Escudo das Eras",
-      "description": "Treinamento de combate, testemunhos dos irmãos e proteção local."
+      "description": "Escudo das Eras. Orienta Déia na Terra dos Dinossauros, ensinando defesa, centro de gravidade e como utilizar o peso do inimigo contra ele."
     },
     {
       "name": "Caelthar",
@@ -212,7 +247,7 @@
       ],
       "boss": "Rainha Florabel",
       "guardian": "Thalorien",
-      "description": "Floresta encantada, aldeia de Brasa, nascimento e perda; primeira âncora emocional e exploração inicial.",
+      "description": "Infância de Déia com Vovó Brasa, sacrifício da avó, primeiros perigos da floresta. Déia vence Sir Musgoval, Lunacórnio Guardião e Rainha Florabel com estratégia e obtém as Grevas sagradas, primeira peça da armadura.",
       "demo": null,
       "demo_status": "não há build jogável publicada",
       "music_ids": [
@@ -220,7 +255,9 @@
         "terra-encantada-boss",
         "terra-encantada-ambiente",
         "terra-encantada-encontro"
-      ]
+      ],
+      "armor_reward_piece": 1,
+      "armor_reward_boss": "Rainha Florabel"
     },
     {
       "id": "world-1",
@@ -232,7 +269,7 @@
       ],
       "boss": "Vulkrag",
       "guardian": "Kaeldrath",
-      "description": "Calor extremo, fortalezas vulcânicas e intervenção obrigatória de Fhenrir no combate de Déia contra Vulkrag.",
+      "description": "Vulkrag é derrotado após a intervenção de Fhenrir e o reforço de energia de Déia. Ela obtém a segunda peça da armadura e depois encontra Kaeldrath e Aeryndra de modo independente.",
       "demo": null,
       "demo_status": "não há build jogável publicada",
       "music_ids": [
@@ -240,7 +277,9 @@
         "terra-de-fogo-boss",
         "terra-de-fogo-ambiente",
         "terra-de-fogo-encontro"
-      ]
+      ],
+      "armor_reward_piece": 2,
+      "armor_reward_boss": "Vulkrag"
     },
     {
       "id": "world-2",
@@ -252,7 +291,7 @@
       ],
       "boss": "Aurorix",
       "guardian": "Elyndor",
-      "description": "Memória congelada, Arquivo das Eras e registros de ciclos milenares.",
+      "description": "Exploração em rotas distintas; Elyndor e Selvaris orientam a jornada. Déia vence Yetigor, Morsa de Cristal e Aurorix sozinha no confronto principal; terceira peça e fragmento opcional do Atlas.",
       "demo": null,
       "demo_status": "não há build jogável publicada",
       "music_ids": [
@@ -260,7 +299,9 @@
         "terra-do-gelo-boss",
         "terra-do-gelo-ambiente",
         "terra-do-gelo-encontro"
-      ]
+      ],
+      "armor_reward_piece": 3,
+      "armor_reward_boss": "Aurorix"
     },
     {
       "id": "world-3",
@@ -272,7 +313,7 @@
       ],
       "boss": "Dona Glacê Suprema",
       "guardian": "Miralune",
-      "description": "Fantasia doce e perigo encantado; humor, culinária, vínculos de Déia e histórias de Seralyth.",
+      "description": "Miralune acolhe Déia, que enfrenta Golem de Caramelo e Bobo Marshmello com Fhenrir. Ela derrota Dona Glacê Suprema, recebe a quarta peça e um fragmento opcional do Atlas.",
       "demo": null,
       "demo_status": "não há build jogável publicada",
       "music_ids": [
@@ -280,7 +321,9 @@
         "terra-dos-doces-boss",
         "terra-dos-doces-ambiente",
         "terra-dos-doces-encontro"
-      ]
+      ],
+      "armor_reward_piece": 4,
+      "armor_reward_boss": "Dona Glacê Suprema"
     },
     {
       "id": "world-4",
@@ -292,7 +335,7 @@
       ],
       "boss": "Nocturnox",
       "guardian": "Vorathen",
-      "description": "Profundezas, ruínas e testemunhos das antigas campanhas dos irmãos.",
+      "description": "Vorathen e Elyndor auxiliam na exploração. Morcegaia Eco e Toupeira Obsidiana são os subchefes; Déia derrota Nocturnox no Abismo dos Ecos e recebe a quinta peça.",
       "demo": null,
       "demo_status": "não há build jogável publicada",
       "music_ids": [
@@ -300,7 +343,9 @@
         "cavernas-obscuras-boss",
         "cavernas-obscuras-ambiente",
         "cavernas-obscuras-encontro"
-      ]
+      ],
+      "armor_reward_piece": 5,
+      "armor_reward_boss": "Nocturnox"
     },
     {
       "id": "world-5",
@@ -312,7 +357,7 @@
       ],
       "boss": "Necrodrake Rei",
       "guardian": "Selvaris",
-      "description": "Ecos de perdas e memórias; distinguir morte e aprisionamento espiritual.",
+      "description": "Dama Lamento cria ilusões e Fhenrir manifesta as Asas do Crepúsculo para salvar Déia. A dupla enfrenta Necrodrake Rei e a oitava peça é conquistada.",
       "demo": null,
       "demo_status": "não há build jogável publicada",
       "music_ids": [
@@ -320,7 +365,9 @@
         "terra-dos-mortos-boss",
         "terra-dos-mortos-ambiente",
         "terra-dos-mortos-encontro"
-      ]
+      ],
+      "armor_reward_piece": 8,
+      "armor_reward_boss": "Necrodrake Rei"
     },
     {
       "id": "world-6",
@@ -332,7 +379,7 @@
       ],
       "boss": "Crocomandra",
       "guardian": "Aeryndra",
-      "description": "Biomas venenosos, proteção de comunidades e memórias da rainha Seralyth.",
+      "description": "Fhenrir é envenenado ao salvar Déia. Ela derrota Sapo Toximago, Hidra Lodoverde e Crocomandra, depois purifica o veneno. A contagem de peças neste trecho requer revisão editorial.",
       "demo": null,
       "demo_status": "não há build jogável publicada",
       "music_ids": [
@@ -340,7 +387,9 @@
         "pântano-venenoso-boss",
         "pântano-venenoso-ambiente",
         "pântano-venenoso-encontro"
-      ]
+      ],
+      "armor_reward_piece": 7,
+      "armor_reward_boss": "Crocomandra"
     },
     {
       "id": "world-7",
@@ -352,7 +401,7 @@
       ],
       "boss": "Tirano Rexor",
       "guardian": "Drakmorn",
-      "description": "Terras ancestrais, criaturas enormes e treinamentos opcionais.",
+      "description": "Drakmorn ensina defesa e uso do terreno; Raptor Alfa Escarlate e Anquilo Xamã precedem Tirano Rexor, vencido por Déia com armadilhas fósseis. Sexta peça no altar.",
       "demo": null,
       "demo_status": "não há build jogável publicada",
       "music_ids": [
@@ -360,7 +409,9 @@
         "terra-dos-dinossauros-boss",
         "terra-dos-dinossauros-ambiente",
         "terra-dos-dinossauros-encontro"
-      ]
+      ],
+      "armor_reward_piece": 6,
+      "armor_reward_boss": "Tirano Rexor"
     },
     {
       "id": "world-8",
@@ -372,7 +423,7 @@
       ],
       "boss": "Overlord Chronark",
       "guardian": "Caelthar",
-      "description": "Tecnologias e anomalias temporais; análise das rotas para o Crepúsculo.",
+      "description": "Samurai Drone-X e Escorpiotron guardam loops temporais; Overlord Chronark é derrotado pela ação combinada da dupla. Déia recebe a nona peça e assume forma adulta; segue-se o retorno aos reinos anteriores.",
       "demo": null,
       "demo_status": "não há build jogável publicada",
       "music_ids": [
@@ -380,19 +431,18 @@
         "terra-do-futuro-boss",
         "terra-do-futuro-ambiente",
         "terra-do-futuro-encontro"
-      ]
+      ],
+      "armor_reward_piece": 9,
+      "armor_reward_boss": "Overlord Chronark"
     },
     {
       "id": "world-shadow",
       "name": "Reino das Sombras",
       "image": null,
-      "subbosses": [
-        "Kharvok",
-        "Seraphyne"
-      ],
-      "boss": "Vael’Zhar — 3 fases",
+      "subbosses": [],
+      "boss": "Vael’Zhar",
       "guardian": null,
-      "description": "Destino final, não um décimo reino com peça de armadura. Confronto exige os dois protagonistas.",
+      "description": "Destino do confronto final anunciado ao término do capítulo XI do PDF revisado. A batalha final, subchefes e desfecho ainda não foram narrados neste documento.",
       "demo": null,
       "demo_status": "não há build jogável publicada",
       "music_ids": []
@@ -1311,36 +1361,107 @@
   ],
   "development": {
     "engine": "Godot 4.7.2",
-    "phase": "02C.10 — integração de habilidades, pausada, execução não confirmada",
-    "last_commit": "7966688efb9b275ba1a36957805966a7fd4c20e4",
+    "phase": "Fases Godot 01A–01E documentadas em docs/PROGRESSO.md do repositório DeiaNoveReinos; não presumir implementação das habilidades narradas",
+    "last_commit": "verificar branch atual do repositório do jogo",
     "push": "NÃO autorizado",
     "save": "produção v3; ARCH-02B v4 isolado",
-    "tests": "última fase: 33/33 + 12/12 + ARCH-02B 36/36 conforme relatório do OpenCode"
+    "tests": "Testes anteriores relatados na documentação do jogo; não reexecutados nesta atualização editorial",
+    "official_domain": "https://superstarcreator.online",
+    "hosting_note": "Domínio registrado pelo autor na Hostinger; apontamento DNS, certificado SSL e ligação ao GitHub Pages ainda não verificados."
   },
   "rules": [
-    "Cânone mais recente aprovado prevalece sobre V6.1 em caso de conflito pontual.",
-    "Guerra dos Nove Refúgios é narrativa NÃO jogável.",
-    "A Sucessora de Vovó Brasa não precisa de desenvolvimento próprio.",
-    "Primeiro encontro com Fhenrir enquanto Déia ainda é criança; nenhum romance infantil.",
-    "Fhenrir jogável apenas após primeiro encontro; integração real futura.",
-    "Mundo compartilhado; progressão individual.",
-    "Nove peças energéticas da armadura; possibilidade de recuperação por Fhenrir mas despertar só por Déia.",
-    "Cinco finais; estrutura formal ainda pendente.",
-    "Melhor final traz Brasa de volta por evento singular.",
-    "Fhenrir e Déia ambos indispensáveis contra Vael’Zhar.",
-    "Não publicar builds fictícias ou links de teste quebrados.",
-    "Música só toca se arquivo real licenciado/produzido for fornecido."
+    "A fonte primária obrigatória do jogo e do site é o PDF revisado de 69 páginas, identificado pelo SHA-256 em canonical_source.",
+    "Versões antigas, incluindo Bíblia V3 do jogo e V6.3 do site, só complementam lacunas que não contrariem o PDF revisado.",
+    "Não divulgar como canônico um capítulo final que ainda não consta do PDF.",
+    "Não resolver automaticamente as divergências internas de contagem de peças e cronologia; registrar e obter aprovação.",
+    "Diferenciar narrativa aprovada de recursos implementados e testados.",
+    "Manter as artes e identidades oficiais, sem substituí-las por novas versões sem aprovação."
   ],
   "pending": [
-    "Catálogo formal dos cinco finais, gatilhos e epílogos.",
-    "Alcance e custo final da relíquia inicial de Brasa; nome Medalhão da Chama Viva e habilidade Calor de Brasa propostos.",
-    "Nome Última Chama do Coração e Coração da Segunda Aurora propostos; validação nominal pendente.",
+    "Contagens conflitantes do PDF identificadas e resolvidas pelo autor quanto à sequência oficial de obtenção das nove peças; texto original do PDF ainda contém referências não revisadas.",
+    "Não anunciar cinco finais ou ressurreição concluída: esses eventos não aparecem no PDF revisado de 69 páginas.",
+    "Rever continuidade entre a partida de Fhenrir no Capítulo IV e a passagem subsequente que cita treino conjunto, preservando a cena independente de Déia com Kaeldrath e Aeryndra.",
+    "Concluir e aprovar o capítulo final: Reino das Sombras, confronto e desfecho ainda não estão neste PDF.",
+    "Verificar nomenclatura dos Nove Mundos/Reinos e referências numéricas divergentes ao Reino do Futuro sem alterar a ordem explicitamente listada no PDF.",
     "Como o nível 100 será integrado no código.",
     "Variante Vulkrag quando Fhenrir é personagem controlado.",
     "Associação definitiva das artes aprovadas aos nomes de subchefes e chefes.",
     "Gates exatos e ordem de acesso aos reinos; rampas e mapas definitivos.",
     "Detalhes da consciência Primeiro Alvorecer e condições cósmicas de ressurreição.",
-    "Fase 02C.10 ainda não executada / confirmada.",
     "Nome Atlas das Constelações Perdidas já aprovado, registros ainda não implementados."
-  ]
+  ],
+  "canonical_source": {
+    "title": "DÉIA E OS NOVE MUNDOS MAJESTOSOS - REVISADO(1).pdf",
+    "sha256": "8359f6880dbf0ccd540c89867836851b5862252ab3a96510a2cc31245f25ef34",
+    "pages": 69,
+    "priority": "primária",
+    "note": "PDF revisado é fonte primária, com complementos apenas quando não contraditórios. A ordem das nove peças foi corrigida e explicitamente aprovada pelo autor em 2026-11-03; esta correção específica prevalece sobre os erros internos de contagem do PDF."
+  },
+  "legacy_chapters_reference": {
+    "version": "V6.3",
+    "note": "A narrativa anterior está no histórico Git. Não é a fonte canônica atual; não reutilizar desfechos não presentes no PDF revisado."
+  },
+  "armor_progression": {
+    "source": "Correção canônica explícita do autor, 2026-11-03; prevalece sobre contagens divergentes no PDF revisado",
+    "total_pieces": 9,
+    "sequence": [
+      {
+        "piece": 1,
+        "realm": "Terra Encantada",
+        "boss": "Rainha Florabel",
+        "item_name": "Grevas (Botas) sagradas",
+        "status": "aprovado"
+      },
+      {
+        "piece": 2,
+        "realm": "Terra de Fogo",
+        "boss": "Vulkrag",
+        "status": "aprovado"
+      },
+      {
+        "piece": 3,
+        "realm": "Terra do Gelo",
+        "boss": "Aurorix",
+        "status": "aprovado"
+      },
+      {
+        "piece": 4,
+        "realm": "Terra dos Doces",
+        "boss": "Dona Glacê Suprema",
+        "status": "aprovado"
+      },
+      {
+        "piece": 5,
+        "realm": "Cavernas Obscuras",
+        "boss": "Nocturnox",
+        "status": "aprovado"
+      },
+      {
+        "piece": 6,
+        "realm": "Terra dos Dinossauros",
+        "boss": "Tirano Rexor",
+        "status": "aprovado"
+      },
+      {
+        "piece": 7,
+        "realm": "Pântano Venenoso",
+        "boss": "Crocomandra",
+        "status": "aprovado"
+      },
+      {
+        "piece": 8,
+        "realm": "Terra dos Mortos",
+        "boss": "Necrodrake Rei",
+        "status": "aprovado"
+      },
+      {
+        "piece": 9,
+        "realm": "Terra do Futuro",
+        "boss": "Overlord Chronark",
+        "status": "aprovado"
+      }
+    ],
+    "completion": "A nona peça, obtida após Overlord Chronark, completa a armadura e desencadeia a forma celestial adulta de Déia",
+    "shadow_realm_piece": false
+  }
 }
