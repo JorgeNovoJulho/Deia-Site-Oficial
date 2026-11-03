@@ -1,3 +1,5 @@
+> **Retificação autoral em 03/11/2026:** a contagem oficial das nove peças está agora definitivamente estabelecida em [ARMADURA_CELESTIAL_PROGRESSAO_APROVADA.md](ARMADURA_CELESTIAL_PROGRESSAO_APROVADA.md). As contradições numéricas internas do PDF estão resolvidas para aplicação no jogo e no site; o PDF original é preservado. As demais ambiguidades permanecem pendentes.
+
 # Referência canônica principal — PDF revisado (03/11/2026)
 
 ## Documento obrigatório
@@ -30,11 +32,11 @@
 
 **Atenção:** o PDF termina na preparação para a travessia ao Reino das Sombras. O capítulo final completo não aparece no documento fornecido.
 
-## Divergências INTERNAS da própria fonte, mantidas pendentes
+## Divergências INTERNAS da própria fonte — revisão de status
 - **Cap. IV, p. 22–24:** os encontros de Déia com Kaeldrath e Aeryndra são explicitamente independentes após a partida de Fhenrir; uma passagem subsequente menciona a dupla realizando treinamentos juntos. Não unificar as duas cenas sem decisão do autor.
-- **Cap. V–VI, p. 25 e 30:** descrições pontuais citam peças da armadura com contagem que difere das recompensas declaradas no final de cada reino.
-- **Cap. VIII, p. 43:** é anunciada a **sexta peça**, mas a frase seguinte se refere à **quinta relíquia**.
-- **Cap. IX, p. 49–50:** o título da seção fala em **sexta peça**, o pedestal em **sétima**, e a cura em **seis peças**, sem uma contagem única consistente.
+- **Cap. V–VI, p. 25 e 30:** contagens divergentes resolvidas pela tabela explícita aprovada pelo autor; texto original permanece intacto.
+- **Cap. VIII, p. 43:** a peça obtida após Tirano Rexor é definitivamente a **sexta**, por correção autoral.
+- **Cap. IX, p. 49–50:** a peça obtida após Crocomandra é definitivamente a **sétima**, por correção autoral.
 - **Cap. XI, p. 58:** a Terra do Futuro aparece como “oitavo e penúltimo reino”, enquanto a relação explícita de nove reinos do mesmo capítulo a coloca como o nono. Preservar a relação integral dos nove e marcar a inconsistência para revisão.
 - **Identidade de Vael’Zhar:** o PDF narra a corrupção e transformação de Vaelor Valtheris; não descrever Vael’Zhar como entidade sem passado distinto do que esta versão estabelece.
 - **Grafia e títulos:** o PDF diz “Nove Mundos Majestosos”, enquanto o portal usa “Nove Reinos Majestosos”. Manter a marca existente até aprovação de padronização.
